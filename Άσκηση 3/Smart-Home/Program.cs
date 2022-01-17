@@ -16,7 +16,7 @@ namespace Smart_Home
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormMainMenu());
+            Application.Run(new FormLogin());
         }
     }
 }

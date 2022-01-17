@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Smart_Home
 {
-    public partial class FormMainMenu : Form
+    public partial class FormLogin : Form
     {
-        public FormMainMenu()
+        public FormLogin()
         {
             InitializeComponent();
         }
