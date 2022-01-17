@@ -33,12 +33,14 @@ namespace Smart_Home
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.buttonLogin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBoxUsername
             // 
             this.textBoxUsername.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxUsername.Location = new System.Drawing.Point(12, 82);
+            this.textBoxUsername.Location = new System.Drawing.Point(11, 117);
             this.textBoxUsername.Name = "textBoxUsername";
             this.textBoxUsername.Size = new System.Drawing.Size(296, 26);
             this.textBoxUsername.TabIndex = 0;
@@ -46,7 +48,7 @@ namespace Smart_Home
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(12, 174);
+            this.textBox1.Location = new System.Drawing.Point(11, 209);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(296, 26);
             this.textBox1.TabIndex = 1;
@@ -54,7 +56,7 @@ namespace Smart_Home
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 63);
+            this.label1.Location = new System.Drawing.Point(12, 98);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(76, 17);
             this.label1.TabIndex = 2;
@@ -63,17 +65,41 @@ namespace Smart_Home
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 154);
+            this.label2.Location = new System.Drawing.Point(12, 189);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 17);
             this.label2.TabIndex = 3;
             this.label2.Text = "Password";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(89, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(245, 17);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Παρακαλώ εισάγετε τα στοιχεία σας.";
+            // 
+            // buttonLogin
+            // 
+            this.buttonLogin.BackColor = System.Drawing.Color.DarkGreen;
+            this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonLogin.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLogin.ForeColor = System.Drawing.Color.White;
+            this.buttonLogin.Location = new System.Drawing.Point(11, 484);
+            this.buttonLogin.Name = "buttonLogin";
+            this.buttonLogin.Size = new System.Drawing.Size(406, 56);
+            this.buttonLogin.TabIndex = 5;
+            this.buttonLogin.Text = "ΣΥΝΔΕΣΗ";
+            this.buttonLogin.UseVisualStyleBackColor = false;
             // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(429, 552);
+            this.Controls.Add(this.buttonLogin);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
@@ -95,6 +121,8 @@ namespace Smart_Home
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button buttonLogin;
     }
 }
 
