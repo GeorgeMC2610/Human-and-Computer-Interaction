@@ -16,5 +16,10 @@ namespace Smart_Home
         {
             InitializeComponent();
         }
+
+        private void buttonLogin_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

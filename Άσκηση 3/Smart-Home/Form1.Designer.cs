@@ -92,9 +92,11 @@ namespace Smart_Home
             this.buttonLogin.TabIndex = 5;
             this.buttonLogin.Text = "ΣΥΝΔΕΣΗ";
             this.buttonLogin.UseVisualStyleBackColor = false;
+            this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
             // FormLogin
             // 
+            this.AcceptButton = this.buttonLogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(429, 552);
