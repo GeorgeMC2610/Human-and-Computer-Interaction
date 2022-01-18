@@ -19,26 +19,36 @@ namespace Smart_Home
 
         private void FormLogin_Load(object sender, EventArgs e)
         {
+            //με το που ανοίγει η φόρμα κλειδώνουμε το κουμπί.
             HandleLoginButton(false);
         }
 
         private void AnyTextboxTextChanged(object sender, EventArgs e)
         {
+            //για να ξεκλειδωθεί το κουμπί, πρέπει να υπάρχει τουλάχιστον ένας χαρακτήρας σε κάθε πεδίο.
             if (textBoxUsername.TextLength < 1 || textBoxPassword.TextLength < 1)
                 HandleLoginButton(false);
+            //αν δεν υπάρχει για οποιονδήποτε λόγο, το κλειδώνουμε.
             else
                 HandleLoginButton(true);
         }
 
         private void linkLabelForgotCredentials_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
+            //αν ο χρήστης δεν ξέρει τι να βάλει στα πεδία, του δείχνουμε το message box.
             MessageBox.Show("Δεν έχει σημασία τι θα βάλετε στα πεδία του Username και του Password (υπάρχουν για διακοσμητικούς σκοπούς). Αρκεί να συμπληρώσετε τουλάχιστον ένα χαρακτήρα σε κάθε πεδίο.", "Υπενθύμιση Στοιχείων", MessageBoxButtons.OK, MessageBoxIcon.Question);
         }
 
+        /// <summary>
+        /// Η συνάρτηση κλειδώνει ή ξεκλειδώνει το κουμπί, ανάλογα με το τι έχει βάλει ο χρήστης στο <paramref name="handle"/>.
+        /// Αν ο χρήστης έχει βάλει <b>true</b>, το ξεκλειδώνουμε. Αν έχει βάλει <b>false</b> το ξεκλειδώνουμε.
+        /// </summary>
+        /// <param name="handle">Η παράμετρος που χειρίζεται το κουμπί. (True για ξεκλείδωμα, False για κλείδωμα)</param>
         private void HandleLoginButton(bool handle)
         {
             buttonLogin.Enabled = handle;
 
+            //και για εφέ, κάνουμε γκρίζο το κουμπί όταν θέλουμε να το κλειδώσουμε.
             if (handle)
             {
                 buttonLogin.BackColor = Color.DarkGreen;
@@ -53,7 +63,8 @@ namespace Smart_Home
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            
+            Hide();
+            new Form2().Show();
         }
 
     }
