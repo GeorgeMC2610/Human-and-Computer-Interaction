@@ -30,6 +30,11 @@ namespace Smart_Home
                 HandleLoginButton(true);
         }
 
+        private void linkLabelForgotCredentials_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            MessageBox.Show("Δεν έχει σημασία τι θα βάλετε στα πεδία του Username και του Password (υπάρχουν για διακοσμητικούς σκοπούς). Αρκεί να συμπληρώσετε τουλάχιστον ένα χαρακτήρα σε κάθε πεδίο.", "Υπενθύμιση Στοιχείων", MessageBoxButtons.OK, MessageBoxIcon.Question);
+        }
+
         private void HandleLoginButton(bool handle)
         {
             buttonLogin.Enabled = handle;
