@@ -15,11 +15,17 @@ namespace Smart_Home
         public Form2()
         {
             InitializeComponent();
+            label1.Text = "EΣΥ ΤΟΝ ΠΑΙΡΝΕΙΣ ΜΑΛΑΚΑ";
         }
 
         private void Form2_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.OpenForms[0].Close();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
