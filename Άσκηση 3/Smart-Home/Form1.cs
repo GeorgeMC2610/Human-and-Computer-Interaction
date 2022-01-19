@@ -63,6 +63,7 @@ namespace Smart_Home
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
+            //όταν ο χρήστης κάνει λογκιν, κρύβουμε την φόρμα αυτή και ανοίγουμε την άλλη.
             Hide();
             new Form2().Show();
         }

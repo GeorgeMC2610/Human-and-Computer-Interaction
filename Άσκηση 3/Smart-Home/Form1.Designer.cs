@@ -42,6 +42,7 @@ namespace Smart_Home
             // 
             this.textBoxUsername.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxUsername.Location = new System.Drawing.Point(11, 117);
+            this.textBoxUsername.MaxLength = 30;
             this.textBoxUsername.Name = "textBoxUsername";
             this.textBoxUsername.Size = new System.Drawing.Size(296, 26);
             this.textBoxUsername.TabIndex = 1;
@@ -51,6 +52,7 @@ namespace Smart_Home
             // 
             this.textBoxPassword.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxPassword.Location = new System.Drawing.Point(11, 209);
+            this.textBoxPassword.MaxLength = 30;
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(296, 26);
             this.textBoxPassword.TabIndex = 2;
