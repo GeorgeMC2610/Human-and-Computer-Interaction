@@ -46,7 +46,7 @@ namespace Smart_Home
             this.textBoxUsername.Location = new System.Drawing.Point(11, 117);
             this.textBoxUsername.MaxLength = 30;
             this.textBoxUsername.Name = "textBoxUsername";
-            this.textBoxUsername.Size = new System.Drawing.Size(296, 26);
+            this.textBoxUsername.Size = new System.Drawing.Size(313, 26);
             this.textBoxUsername.TabIndex = 1;
             this.textBoxUsername.TextChanged += new System.EventHandler(this.AnyTextboxTextChanged);
             // 
@@ -57,7 +57,7 @@ namespace Smart_Home
             this.textBoxPassword.Location = new System.Drawing.Point(11, 209);
             this.textBoxPassword.MaxLength = 30;
             this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.Size = new System.Drawing.Size(296, 26);
+            this.textBoxPassword.Size = new System.Drawing.Size(313, 26);
             this.textBoxPassword.TabIndex = 2;
             this.textBoxPassword.UseSystemPasswordChar = true;
             this.textBoxPassword.TextChanged += new System.EventHandler(this.AnyTextboxTextChanged);
@@ -67,11 +67,11 @@ namespace Smart_Home
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Location = new System.Drawing.Point(12, 98);
+            this.label1.Location = new System.Drawing.Point(12, 97);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 17);
+            this.label1.Size = new System.Drawing.Size(80, 17);
             this.label1.TabIndex = 98;
-            this.label1.Text = "Username";
+            this.label1.Text = "Username:";
             // 
             // label2
             // 
@@ -80,16 +80,16 @@ namespace Smart_Home
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Location = new System.Drawing.Point(12, 189);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 17);
+            this.label2.Size = new System.Drawing.Size(78, 17);
             this.label2.TabIndex = 97;
-            this.label2.Text = "Password";
+            this.label2.Text = "Password:";
             // 
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(89, 9);
+            this.label3.Location = new System.Drawing.Point(12, 32);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(245, 17);
             this.label3.TabIndex = 99;
@@ -104,9 +104,9 @@ namespace Smart_Home
             this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonLogin.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLogin.ForeColor = System.Drawing.Color.White;
-            this.buttonLogin.Location = new System.Drawing.Point(11, 484);
+            this.buttonLogin.Location = new System.Drawing.Point(11, 332);
             this.buttonLogin.Name = "buttonLogin";
-            this.buttonLogin.Size = new System.Drawing.Size(406, 56);
+            this.buttonLogin.Size = new System.Drawing.Size(313, 56);
             this.buttonLogin.TabIndex = 4;
             this.buttonLogin.Text = "ΣΥΝΔΕΣΗ";
             this.buttonLogin.UseVisualStyleBackColor = false;
@@ -118,7 +118,7 @@ namespace Smart_Home
             this.linkLabelForgotCredentials.AutoSize = true;
             this.linkLabelForgotCredentials.BackColor = System.Drawing.Color.Transparent;
             this.linkLabelForgotCredentials.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabelForgotCredentials.Location = new System.Drawing.Point(12, 282);
+            this.linkLabelForgotCredentials.Location = new System.Drawing.Point(8, 258);
             this.linkLabelForgotCredentials.Name = "linkLabelForgotCredentials";
             this.linkLabelForgotCredentials.Size = new System.Drawing.Size(144, 15);
             this.linkLabelForgotCredentials.TabIndex = 3;
@@ -132,8 +132,7 @@ namespace Smart_Home
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(429, 552);
+            this.ClientSize = new System.Drawing.Size(336, 420);
             this.Controls.Add(this.linkLabelForgotCredentials);
             this.Controls.Add(this.buttonLogin);
             this.Controls.Add(this.label3);
@@ -145,6 +144,9 @@ namespace Smart_Home
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(352, 459);
+            this.MinimumSize = new System.Drawing.Size(352, 459);
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Σύνδεση";
