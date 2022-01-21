@@ -63,6 +63,7 @@ namespace Smart_Home
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(12, 98);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(76, 17);
@@ -72,6 +73,7 @@ namespace Smart_Home
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Location = new System.Drawing.Point(12, 189);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 17);
@@ -81,6 +83,7 @@ namespace Smart_Home
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(89, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(245, 17);
@@ -105,6 +108,7 @@ namespace Smart_Home
             // linkLabelForgotCredentials
             // 
             this.linkLabelForgotCredentials.AutoSize = true;
+            this.linkLabelForgotCredentials.BackColor = System.Drawing.Color.Transparent;
             this.linkLabelForgotCredentials.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabelForgotCredentials.Location = new System.Drawing.Point(12, 282);
             this.linkLabelForgotCredentials.Name = "linkLabelForgotCredentials";

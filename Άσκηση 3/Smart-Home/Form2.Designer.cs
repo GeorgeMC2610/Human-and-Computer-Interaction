@@ -37,6 +37,7 @@ namespace Smart_Home
             // 
             this.labelWelcome.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.labelWelcome.AutoSize = true;
+            this.labelWelcome.BackColor = System.Drawing.Color.Transparent;
             this.labelWelcome.Location = new System.Drawing.Point(21, 31);
             this.labelWelcome.Name = "labelWelcome";
             this.labelWelcome.Size = new System.Drawing.Size(101, 17);
