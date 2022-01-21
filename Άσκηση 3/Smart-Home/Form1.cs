@@ -12,6 +12,8 @@ namespace Smart_Home
 {
     public partial class FormLogin : Form
     {
+        public static string Username { get; private set; }
+
         public FormLogin()
         {
             InitializeComponent();
@@ -65,7 +67,8 @@ namespace Smart_Home
         {
             //όταν ο χρήστης κάνει λογκιν, κρύβουμε την φόρμα αυτή και ανοίγουμε την άλλη.
             Hide();
-            new Form2().Show();
+            Username = textBoxUsername.Text;
+            new FormMain().Show();
         }
 
     }

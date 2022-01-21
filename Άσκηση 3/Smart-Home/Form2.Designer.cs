@@ -1,7 +1,7 @@
 ﻿
 namespace Smart_Home
 {
-    partial class Form2
+    partial class FormMain
     {
         /// <summary>
         /// Required designer variable.
@@ -29,32 +29,32 @@ namespace Smart_Home
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.labelWelcome = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // labelWelcome
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Consolas", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(47, 203);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(452, 75);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Τον παίρνεις";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.labelWelcome.AutoSize = true;
+            this.labelWelcome.Location = new System.Drawing.Point(21, 31);
+            this.labelWelcome.Name = "labelWelcome";
+            this.labelWelcome.Size = new System.Drawing.Size(101, 17);
+            this.labelWelcome.TabIndex = 0;
+            this.labelWelcome.Text = "labelWelcome";
             // 
-            // Form2
+            // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(871, 502);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labelWelcome);
             this.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Form2";
+            this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form2_FormClosed);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormMain_FormClosed);
+            this.Load += new System.EventHandler(this.FormMain_Load);
+            this.Resize += new System.EventHandler(this.FormMain_Resize);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -62,6 +62,6 @@ namespace Smart_Home
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelWelcome;
     }
 }

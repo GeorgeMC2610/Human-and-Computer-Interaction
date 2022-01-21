@@ -10,22 +10,28 @@ using System.Windows.Forms;
 
 namespace Smart_Home
 {
-    public partial class Form2 : Form
+    public partial class FormMain : Form
     {
-        public Form2()
+        public FormMain()
         {
             InitializeComponent();
-            label1.Text = "EΣΥ ΤΟΝ ΠΑΙΡΝΕΙΣ ΜΑΛΑΚΑ";
         }
 
-        private void Form2_FormClosed(object sender, FormClosedEventArgs e)
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+            labelWelcome.Text = "Καλώς ορίσατε, " + FormLogin.Username + ".";
+            labelWelcome.Location = new Point(Width / 2 - labelWelcome.Width / 2, labelWelcome.Location.Y);
+        }
+
+        private void FormMain_Resize(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormMain_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.OpenForms[0].Close();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
