@@ -21,7 +21,11 @@ namespace Smart_Home
         {
             //εμφανίζουμε το μήνυμα στον χρήστη όταν φορτώνει η φόρμα.
             labelWelcome.Text = "Καλώς ορίσατε, " + FormLogin.Username + ".";
+            label_choose_action.Text = "Παρακαλώ, επιλέξτε μία ενέργεια: ";
+
+            //φτιάχνουμε τα positions των labels της φόρμας
             labelWelcome.Location = new Point(Width / 2 - labelWelcome.Width / 2, labelWelcome.Location.Y);
+            label_choose_action.Location = new Point(Width / 2 - label_choose_action.Width / 2, label_choose_action.Location.Y);
         }
 
         private void FormMain_Resize(object sender, EventArgs e)
@@ -35,5 +39,30 @@ namespace Smart_Home
             Application.OpenForms[0].Close();
         }
 
+        private void buttonThermansi_Click(object sender, EventArgs e)
+        {
+            //open form
+            RemoteDeviceControl rmctrl = new RemoteDeviceControl();
+            rmctrl.Show();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonTimeSchedule_Click(object sender, EventArgs e)
+        {
+            //open form
+            TimeSchedule schedule = new TimeSchedule();
+            schedule.Show();
+        }
+
+        private void buttonAnimalCare_Click(object sender, EventArgs e)
+        {
+            //open form
+            AnimalCare animal = new AnimalCare();
+            animal.Show();
+        }
     }
 }

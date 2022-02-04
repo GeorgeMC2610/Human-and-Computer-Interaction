@@ -28,10 +28,29 @@ namespace Smart_Home
         private void AnyTextboxTextChanged(object sender, EventArgs e)
         {
             //για να ξεκλειδωθεί το κουμπί, πρέπει να υπάρχει τουλάχιστον ένας χαρακτήρας σε κάθε πεδίο.
-            if (textBoxUsername.TextLength < 1 || textBoxPassword.TextLength < 1)
+            if (textBoxUsername.TextLength < 1)
+            {
                 HandleLoginButton(false);
-            //αν δεν υπάρχει για οποιονδήποτε λόγο, το κλειδώνουμε.
+                wrongUsername.Visible = true;
+            }
             else
+            {
+                wrongUsername.Visible = false;
+            }
+
+            if (textBoxPassword.TextLength < 1)
+            {
+                HandleLoginButton(false);
+                wrongPassword.Visible = true;
+            }
+            else
+            {
+                HandleLoginButton(false);
+                wrongPassword.Visible = false;
+            }
+
+             //αν δεν υπάρχει για οποιονδήποτε λόγο, το κλειδώνουμε.
+              if (textBoxUsername.TextLength >=1 && textBoxPassword.TextLength >=1)
                 HandleLoginButton(true);
         }
 

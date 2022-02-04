@@ -31,11 +31,19 @@ namespace Smart_Home
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.labelWelcome = new System.Windows.Forms.Label();
-            this.buttonThermansi = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.buttonRemoteControl = new System.Windows.Forms.Button();
+            this.buttonTimeSchedule = new System.Windows.Forms.Button();
+            this.buttonAnimalCare = new System.Windows.Forms.Button();
+            this.buttonHelp = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.label_choose_action = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // labelWelcome
@@ -44,75 +52,118 @@ namespace Smart_Home
             this.labelWelcome.AutoSize = true;
             this.labelWelcome.BackColor = System.Drawing.Color.Transparent;
             this.labelWelcome.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelWelcome.Location = new System.Drawing.Point(368, 9);
+            this.labelWelcome.Location = new System.Drawing.Point(84, 22);
             this.labelWelcome.Name = "labelWelcome";
-            this.labelWelcome.Size = new System.Drawing.Size(115, 19);
+            this.labelWelcome.Size = new System.Drawing.Size(0, 19);
             this.labelWelcome.TabIndex = 0;
-            this.labelWelcome.Text = "labelWelcome";
             // 
-            // buttonThermansi
+            // buttonRemoteControl
             // 
-            this.buttonThermansi.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonThermansi.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.buttonThermansi.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
-            this.buttonThermansi.Location = new System.Drawing.Point(12, 162);
-            this.buttonThermansi.Name = "buttonThermansi";
-            this.buttonThermansi.Size = new System.Drawing.Size(847, 57);
-            this.buttonThermansi.TabIndex = 1;
-            this.buttonThermansi.Text = "ΘΕΡΜΑΝΣΗ";
-            this.buttonThermansi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonThermansi.UseVisualStyleBackColor = true;
+            this.buttonRemoteControl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonRemoteControl.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.buttonRemoteControl.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
+            this.buttonRemoteControl.Location = new System.Drawing.Point(91, 96);
+            this.buttonRemoteControl.Name = "buttonRemoteControl";
+            this.buttonRemoteControl.Size = new System.Drawing.Size(331, 57);
+            this.buttonRemoteControl.TabIndex = 1;
+            this.buttonRemoteControl.Text = "Έλεγχος Συσκευών";
+            this.buttonRemoteControl.UseVisualStyleBackColor = false;
+            this.buttonRemoteControl.Click += new System.EventHandler(this.buttonThermansi_Click);
             // 
-            // button1
+            // buttonTimeSchedule
             // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button1.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(12, 225);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(847, 57);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "ΚΑΦΕΤΙΕΡΑ";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonTimeSchedule.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonTimeSchedule.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.buttonTimeSchedule.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
+            this.buttonTimeSchedule.Location = new System.Drawing.Point(91, 182);
+            this.buttonTimeSchedule.Name = "buttonTimeSchedule";
+            this.buttonTimeSchedule.Size = new System.Drawing.Size(331, 57);
+            this.buttonTimeSchedule.TabIndex = 2;
+            this.buttonTimeSchedule.Text = "Εισαγωγή Προγράμματος";
+            this.buttonTimeSchedule.UseVisualStyleBackColor = true;
+            this.buttonTimeSchedule.Click += new System.EventHandler(this.buttonTimeSchedule_Click);
             // 
-            // button2
+            // buttonAnimalCare
             // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button2.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
-            this.button2.Location = new System.Drawing.Point(12, 288);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(847, 57);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "ΠΑΠΟΥΤΣΟΘΗΚΗ";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonAnimalCare.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonAnimalCare.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.buttonAnimalCare.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
+            this.buttonAnimalCare.Location = new System.Drawing.Point(91, 268);
+            this.buttonAnimalCare.Name = "buttonAnimalCare";
+            this.buttonAnimalCare.Size = new System.Drawing.Size(331, 57);
+            this.buttonAnimalCare.TabIndex = 3;
+            this.buttonAnimalCare.Text = "Φροντίδα Κατοικιδίου";
+            this.buttonAnimalCare.UseVisualStyleBackColor = true;
+            this.buttonAnimalCare.Click += new System.EventHandler(this.buttonAnimalCare_Click);
             // 
-            // button3
+            // buttonHelp
             // 
-            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button3.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
-            this.button3.Location = new System.Drawing.Point(12, 351);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(847, 57);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "ΦΩΤΑ";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonHelp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonHelp.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.buttonHelp.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
+            this.buttonHelp.Location = new System.Drawing.Point(91, 416);
+            this.buttonHelp.Name = "buttonHelp";
+            this.buttonHelp.Size = new System.Drawing.Size(331, 44);
+            this.buttonHelp.TabIndex = 4;
+            this.buttonHelp.Text = "Bοήθεια";
+            this.buttonHelp.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // pictureBox1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 128);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 18);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Οι συσκευές σας";
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 96);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(64, 57);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(12, 182);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(64, 57);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(12, 268);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(64, 57);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 8;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(12, 416);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(64, 44);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 9;
+            this.pictureBox4.TabStop = false;
+            // 
+            // label_choose_action
+            // 
+            this.label_choose_action.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label_choose_action.AutoSize = true;
+            this.label_choose_action.BackColor = System.Drawing.Color.Transparent;
+            this.label_choose_action.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label_choose_action.Location = new System.Drawing.Point(151, 44);
+            this.label_choose_action.Name = "label_choose_action";
+            this.label_choose_action.Size = new System.Drawing.Size(110, 18);
+            this.label_choose_action.TabIndex = 10;
+            this.label_choose_action.Text = "choose_action";
+            this.label_choose_action.Click += new System.EventHandler(this.label2_Click);
             // 
             // FormMain
             // 
@@ -120,12 +171,16 @@ namespace Smart_Home
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(871, 502);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.buttonThermansi);
+            this.ClientSize = new System.Drawing.Size(434, 502);
+            this.Controls.Add(this.label_choose_action);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.buttonHelp);
+            this.Controls.Add(this.buttonAnimalCare);
+            this.Controls.Add(this.buttonTimeSchedule);
+            this.Controls.Add(this.buttonRemoteControl);
             this.Controls.Add(this.labelWelcome);
             this.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -136,6 +191,10 @@ namespace Smart_Home
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormMain_FormClosed);
             this.Load += new System.EventHandler(this.FormMain_Load);
             this.Resize += new System.EventHandler(this.FormMain_Resize);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -144,10 +203,14 @@ namespace Smart_Home
         #endregion
 
         private System.Windows.Forms.Label labelWelcome;
-        private System.Windows.Forms.Button buttonThermansi;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button buttonRemoteControl;
+        private System.Windows.Forms.Button buttonTimeSchedule;
+        private System.Windows.Forms.Button buttonAnimalCare;
+        private System.Windows.Forms.Button buttonHelp;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label label_choose_action;
     }
 }
