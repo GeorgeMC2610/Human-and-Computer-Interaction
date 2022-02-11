@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Smart_Home
 {
-    public partial class RemoteDeviceControl : Form
+    public partial class Remote_Device_Control : Form
     {
-        public RemoteDeviceControl()
+        public Remote_Device_Control()
         {
             InitializeComponent();
         }

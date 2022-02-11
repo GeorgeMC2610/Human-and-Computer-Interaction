@@ -60,6 +60,7 @@ namespace Smart_Home
             // buttonRemoteControl
             // 
             this.buttonRemoteControl.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonRemoteControl.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonRemoteControl.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.buttonRemoteControl.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
             this.buttonRemoteControl.Location = new System.Drawing.Point(91, 96);
@@ -73,6 +74,7 @@ namespace Smart_Home
             // buttonTimeSchedule
             // 
             this.buttonTimeSchedule.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonTimeSchedule.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonTimeSchedule.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.buttonTimeSchedule.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
             this.buttonTimeSchedule.Location = new System.Drawing.Point(91, 182);
@@ -86,6 +88,7 @@ namespace Smart_Home
             // buttonAnimalCare
             // 
             this.buttonAnimalCare.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonAnimalCare.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonAnimalCare.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.buttonAnimalCare.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
             this.buttonAnimalCare.Location = new System.Drawing.Point(91, 268);
@@ -99,6 +102,7 @@ namespace Smart_Home
             // buttonHelp
             // 
             this.buttonHelp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonHelp.Cursor = System.Windows.Forms.Cursors.Hand;
             this.buttonHelp.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.buttonHelp.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
             this.buttonHelp.Location = new System.Drawing.Point(91, 416);
@@ -111,6 +115,7 @@ namespace Smart_Home
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Default;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(12, 96);
             this.pictureBox1.Name = "pictureBox1";

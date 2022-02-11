@@ -42,7 +42,7 @@ namespace Smart_Home
         private void buttonThermansi_Click(object sender, EventArgs e)
         {
             //open form
-            RemoteDeviceControl rmctrl = new RemoteDeviceControl();
+            Remote_Device_Control rmctrl = new Remote_Device_Control();
             rmctrl.Show();
         }
 
