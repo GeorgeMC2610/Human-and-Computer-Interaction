@@ -42,7 +42,7 @@ namespace Smart_Home
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AnimalCare";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "AnimalCare";
+            this.Text = "Φροντίδα Κατοικιδίων";
             this.ResumeLayout(false);
 
         }

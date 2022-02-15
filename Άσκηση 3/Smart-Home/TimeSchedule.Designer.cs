@@ -42,7 +42,7 @@ namespace Smart_Home
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TimeSchedule";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TimeSchedule";
+            this.Text = "Διαχείριση Χρονοπρογράμματος";
             this.ResumeLayout(false);
 
         }
