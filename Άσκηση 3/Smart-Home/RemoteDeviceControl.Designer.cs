@@ -247,7 +247,7 @@ namespace Smart_Home
             this.panel1.Controls.Add(this.pictureBox6);
             this.panel1.Controls.Add(this.shoeCase);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(7, 11);
+            this.panel1.Location = new System.Drawing.Point(9, 11);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(230, 379);
             this.panel1.TabIndex = 55;
@@ -265,7 +265,7 @@ namespace Smart_Home
             this.panel2.Controls.Add(this.pictureBox7);
             this.panel2.Controls.Add(this.pictureBox8);
             this.panel2.Controls.Add(this.pictureBox17);
-            this.panel2.Location = new System.Drawing.Point(263, 11);
+            this.panel2.Location = new System.Drawing.Point(265, 11);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(230, 379);
             this.panel2.TabIndex = 56;
@@ -395,7 +395,7 @@ namespace Smart_Home
             this.panel3.Controls.Add(this.pictureBox18);
             this.panel3.Controls.Add(this.pictureBox19);
             this.panel3.Controls.Add(this.pictureBox20);
-            this.panel3.Location = new System.Drawing.Point(517, 11);
+            this.panel3.Location = new System.Drawing.Point(519, 11);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(230, 379);
             this.panel3.TabIndex = 57;
@@ -525,7 +525,7 @@ namespace Smart_Home
             this.panel4.Controls.Add(this.pictureBox9);
             this.panel4.Controls.Add(this.pictureBox10);
             this.panel4.Controls.Add(this.pictureBox11);
-            this.panel4.Location = new System.Drawing.Point(7, 412);
+            this.panel4.Location = new System.Drawing.Point(9, 412);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(230, 379);
             this.panel4.TabIndex = 57;
@@ -655,7 +655,7 @@ namespace Smart_Home
             this.panel5.Controls.Add(this.pictureBox13);
             this.panel5.Controls.Add(this.pictureBox21);
             this.panel5.Controls.Add(this.pictureBox22);
-            this.panel5.Location = new System.Drawing.Point(263, 412);
+            this.panel5.Location = new System.Drawing.Point(265, 412);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(230, 379);
             this.panel5.TabIndex = 58;
@@ -785,7 +785,7 @@ namespace Smart_Home
             this.panel6.Controls.Add(this.pictureBox15);
             this.panel6.Controls.Add(this.pictureBox16);
             this.panel6.Controls.Add(this.pictureBox23);
-            this.panel6.Location = new System.Drawing.Point(517, 412);
+            this.panel6.Location = new System.Drawing.Point(519, 412);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(230, 379);
             this.panel6.TabIndex = 59;
@@ -919,7 +919,7 @@ namespace Smart_Home
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Remote_Device_Control";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "RemoteDeviceControl";
+            this.Text = "Απομακρυνσμένος Έλεγχος Συσκευών";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.shoeCase)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
