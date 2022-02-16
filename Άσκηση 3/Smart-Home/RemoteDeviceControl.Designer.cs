@@ -37,7 +37,6 @@ namespace Smart_Home
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -51,8 +50,6 @@ namespace Smart_Home
             this.button6 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.kitchen_label = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button9 = new System.Windows.Forms.Button();
@@ -75,6 +72,14 @@ namespace Smart_Home
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.pictureBox23 = new System.Windows.Forms.PictureBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shoeCase)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -85,8 +90,6 @@ namespace Smart_Home
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -100,10 +103,13 @@ namespace Smart_Home
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.No;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(5, 23);
             this.pictureBox1.Name = "pictureBox1";
@@ -126,7 +132,7 @@ namespace Smart_Home
             // shoeCase
             // 
             this.shoeCase.BackColor = System.Drawing.Color.Transparent;
-            this.shoeCase.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.shoeCase.Cursor = System.Windows.Forms.Cursors.No;
             this.shoeCase.Image = ((System.Drawing.Image)(resources.GetObject("shoeCase.Image")));
             this.shoeCase.Location = new System.Drawing.Point(5, 303);
             this.shoeCase.Name = "shoeCase";
@@ -138,7 +144,7 @@ namespace Smart_Home
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox6.Cursor = System.Windows.Forms.Cursors.No;
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(3, 229);
             this.pictureBox6.Name = "pictureBox6";
@@ -150,7 +156,7 @@ namespace Smart_Home
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox5.Cursor = System.Windows.Forms.Cursors.No;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(3, 267);
             this.pictureBox5.Name = "pictureBox5";
@@ -188,20 +194,6 @@ namespace Smart_Home
             this.button2.Text = "Άνοιγμα παπουτσοθήκης";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(62, 267);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(159, 31);
-            this.button3.TabIndex = 29;
-            this.button3.Text = "Άνοιγμα θέρμανσης";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -237,6 +229,7 @@ namespace Smart_Home
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.button4);
             this.panel2.Controls.Add(this.button15);
             this.panel2.Controls.Add(this.living_room_label);
@@ -261,6 +254,7 @@ namespace Smart_Home
             this.button4.TabIndex = 29;
             this.button4.Text = "Άνοιγμα θέρμανσης";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button15
             // 
@@ -291,7 +285,7 @@ namespace Smart_Home
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.No;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(3, 267);
             this.pictureBox2.Name = "pictureBox2";
@@ -303,7 +297,7 @@ namespace Smart_Home
             // pictureBox7
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox7.Cursor = System.Windows.Forms.Cursors.No;
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.Location = new System.Drawing.Point(3, 229);
             this.pictureBox7.Name = "pictureBox7";
@@ -314,6 +308,7 @@ namespace Smart_Home
             // 
             // pictureBox17
             // 
+            this.pictureBox17.Cursor = System.Windows.Forms.Cursors.No;
             this.pictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox17.Image")));
             this.pictureBox17.Location = new System.Drawing.Point(5, 23);
             this.pictureBox17.Name = "pictureBox17";
@@ -326,11 +321,12 @@ namespace Smart_Home
             // 
             this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.pictureBox4);
             this.panel3.Controls.Add(this.button6);
+            this.panel3.Controls.Add(this.pictureBox8);
             this.panel3.Controls.Add(this.button8);
             this.panel3.Controls.Add(this.kitchen_label);
-            this.panel3.Controls.Add(this.pictureBox4);
-            this.panel3.Controls.Add(this.pictureBox18);
             this.panel3.Controls.Add(this.pictureBox20);
             this.panel3.Location = new System.Drawing.Point(519, 11);
             this.panel3.Name = "panel3";
@@ -350,6 +346,7 @@ namespace Smart_Home
             this.button6.TabIndex = 29;
             this.button6.Text = "Άνοιγμα θέρμανσης";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button8
             // 
@@ -377,32 +374,9 @@ namespace Smart_Home
             this.kitchen_label.TabIndex = 26;
             this.kitchen_label.Text = "Κουζίνα:";
             // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(3, 267);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(44, 32);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 13;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox18
-            // 
-            this.pictureBox18.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox18.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox18.Image")));
-            this.pictureBox18.Location = new System.Drawing.Point(3, 229);
-            this.pictureBox18.Name = "pictureBox18";
-            this.pictureBox18.Size = new System.Drawing.Size(44, 32);
-            this.pictureBox18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox18.TabIndex = 12;
-            this.pictureBox18.TabStop = false;
-            // 
             // pictureBox20
             // 
+            this.pictureBox20.Cursor = System.Windows.Forms.Cursors.No;
             this.pictureBox20.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox20.Image")));
             this.pictureBox20.Location = new System.Drawing.Point(5, 23);
             this.pictureBox20.Name = "pictureBox20";
@@ -415,6 +389,7 @@ namespace Smart_Home
             // 
             this.panel4.BackColor = System.Drawing.Color.Transparent;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.button9);
             this.panel4.Controls.Add(this.button11);
             this.panel4.Controls.Add(this.bathroom_label);
@@ -439,6 +414,7 @@ namespace Smart_Home
             this.button9.TabIndex = 29;
             this.button9.Text = "Άνοιγμα θέρμανσης";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button11
             // 
@@ -469,7 +445,7 @@ namespace Smart_Home
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.No;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(3, 267);
             this.pictureBox3.Name = "pictureBox3";
@@ -481,7 +457,7 @@ namespace Smart_Home
             // pictureBox9
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox9.Cursor = System.Windows.Forms.Cursors.No;
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
             this.pictureBox9.Location = new System.Drawing.Point(3, 229);
             this.pictureBox9.Name = "pictureBox9";
@@ -492,6 +468,7 @@ namespace Smart_Home
             // 
             // pictureBox11
             // 
+            this.pictureBox11.Cursor = System.Windows.Forms.Cursors.No;
             this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
             this.pictureBox11.Location = new System.Drawing.Point(5, 23);
             this.pictureBox11.Name = "pictureBox11";
@@ -504,6 +481,7 @@ namespace Smart_Home
             // 
             this.panel5.BackColor = System.Drawing.Color.Transparent;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.label5);
             this.panel5.Controls.Add(this.button12);
             this.panel5.Controls.Add(this.button17);
             this.panel5.Controls.Add(this.bedroom_label);
@@ -528,6 +506,7 @@ namespace Smart_Home
             this.button12.TabIndex = 29;
             this.button12.Text = "Άνοιγμα θέρμανσης";
             this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button17
             // 
@@ -558,7 +537,7 @@ namespace Smart_Home
             // pictureBox12
             // 
             this.pictureBox12.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox12.Cursor = System.Windows.Forms.Cursors.No;
             this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
             this.pictureBox12.Location = new System.Drawing.Point(3, 267);
             this.pictureBox12.Name = "pictureBox12";
@@ -570,7 +549,7 @@ namespace Smart_Home
             // pictureBox13
             // 
             this.pictureBox13.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox13.Cursor = System.Windows.Forms.Cursors.No;
             this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
             this.pictureBox13.Location = new System.Drawing.Point(3, 229);
             this.pictureBox13.Name = "pictureBox13";
@@ -581,6 +560,7 @@ namespace Smart_Home
             // 
             // pictureBox22
             // 
+            this.pictureBox22.Cursor = System.Windows.Forms.Cursors.No;
             this.pictureBox22.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox22.Image")));
             this.pictureBox22.Location = new System.Drawing.Point(5, 23);
             this.pictureBox22.Name = "pictureBox22";
@@ -593,6 +573,7 @@ namespace Smart_Home
             // 
             this.panel6.BackColor = System.Drawing.Color.Transparent;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel6.Controls.Add(this.label6);
             this.panel6.Controls.Add(this.button13);
             this.panel6.Controls.Add(this.button18);
             this.panel6.Controls.Add(this.garage_label);
@@ -617,6 +598,7 @@ namespace Smart_Home
             this.button13.TabIndex = 29;
             this.button13.Text = "Άνοιγμα θέρμανσης";
             this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // button18
             // 
@@ -647,7 +629,7 @@ namespace Smart_Home
             // pictureBox14
             // 
             this.pictureBox14.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox14.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox14.Cursor = System.Windows.Forms.Cursors.No;
             this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
             this.pictureBox14.Location = new System.Drawing.Point(3, 267);
             this.pictureBox14.Name = "pictureBox14";
@@ -659,7 +641,7 @@ namespace Smart_Home
             // pictureBox15
             // 
             this.pictureBox15.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox15.Cursor = System.Windows.Forms.Cursors.No;
             this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
             this.pictureBox15.Location = new System.Drawing.Point(3, 229);
             this.pictureBox15.Name = "pictureBox15";
@@ -670,6 +652,7 @@ namespace Smart_Home
             // 
             // pictureBox23
             // 
+            this.pictureBox23.Cursor = System.Windows.Forms.Cursors.No;
             this.pictureBox23.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox23.Image")));
             this.pictureBox23.Location = new System.Drawing.Point(5, 23);
             this.pictureBox23.Name = "pictureBox23";
@@ -677,6 +660,110 @@ namespace Smart_Home
             this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox23.TabIndex = 4;
             this.pictureBox23.TabStop = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button3.Location = new System.Drawing.Point(62, 267);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(159, 31);
+            this.button3.TabIndex = 29;
+            this.button3.Text = "Άνοιγμα θέρμανσης";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.No;
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(5, 268);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(44, 32);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 31;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.No;
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(5, 230);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(44, 32);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 30;
+            this.pictureBox8.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label2.ForeColor = System.Drawing.Color.Maroon;
+            this.label2.Location = new System.Drawing.Point(3, 354);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(162, 15);
+            this.label2.TabIndex = 36;
+            this.label2.Text = "Περισσότερες Ρυθμίσεις";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label3.ForeColor = System.Drawing.Color.Maroon;
+            this.label3.Location = new System.Drawing.Point(3, 354);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(162, 15);
+            this.label3.TabIndex = 37;
+            this.label3.Text = "Περισσότερες Ρυθμίσεις";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label4.ForeColor = System.Drawing.Color.Maroon;
+            this.label4.Location = new System.Drawing.Point(3, 354);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(162, 15);
+            this.label4.TabIndex = 38;
+            this.label4.Text = "Περισσότερες Ρυθμίσεις";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label5.ForeColor = System.Drawing.Color.Maroon;
+            this.label5.Location = new System.Drawing.Point(3, 354);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(162, 15);
+            this.label5.TabIndex = 39;
+            this.label5.Text = "Περισσότερες Ρυθμίσεις";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label6.ForeColor = System.Drawing.Color.Maroon;
+            this.label6.Location = new System.Drawing.Point(3, 354);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(162, 15);
+            this.label6.TabIndex = 40;
+            this.label6.Text = "Περισσότερες Ρυθμίσεις";
             // 
             // Remote_Device_Control
             // 
@@ -709,8 +796,6 @@ namespace Smart_Home
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
@@ -727,6 +812,8 @@ namespace Smart_Home
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -740,7 +827,6 @@ namespace Smart_Home
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
@@ -754,8 +840,6 @@ namespace Smart_Home
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label kitchen_label;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox18;
         private System.Windows.Forms.PictureBox pictureBox20;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button button9;
@@ -778,5 +862,13 @@ namespace Smart_Home
         private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.PictureBox pictureBox15;
         private System.Windows.Forms.PictureBox pictureBox23;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }
