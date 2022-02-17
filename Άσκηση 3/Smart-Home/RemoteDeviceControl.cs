@@ -395,5 +395,47 @@ namespace Smart_Home
                 MessageBox.Show("Η θέρμανση στην κουζίνα δεν είναι ενεργοποιημένη!");
             }
         }
+
+        // περισσότερες ρυθμίσεις για το δωμάτιο 'μπάνιο'
+        private void label4_Click(object sender, EventArgs e)
+        {
+            panel10.Visible = true;
+            panel4.Visible = true;
+        }
+
+        // διαχείριση θερμοκρασίας στο μπάνιο
+        private void button22_Click(object sender, EventArgs e)
+        {
+            if (temp_bathroom) // έλεγχος για το εάν η θέρμανση είναι ενεργοποιημένη στο μπάνιο
+            {
+                if (radioButton12.Checked == true)
+                {
+                    MessageBox.Show("Η θερμοκρασία στο μπάνιο ορίστηκε σε: χαμηλή");
+                }
+                else if (radioButton11.Checked == true)
+                {
+                    MessageBox.Show("Η θερμοκρασία στο μπάνιο ορίστηκε σε: μέτρια");
+                }
+                else if (radioButton10.Checked == true)
+                {
+                    MessageBox.Show("Η θερμοκρασία στο μπάνιο ορίστηκε σε: υψηλή");
+                }
+                else
+                {
+                    MessageBox.Show("Παρακαλώ, ορίστε θερμοκρασία!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Η θέρμανση στο μπάνιο δεν είναι ενεργοποιημένη!");
+            }
+        }
+
+        // επιστροφή στο κύριο μενού διαχείρισης για το δωμάτιο 'μπάνιο'
+        private void button23_Click(object sender, EventArgs e)
+        {
+            panel10.Visible = false;
+            panel4.Visible = true;
+        }
     }
 }
