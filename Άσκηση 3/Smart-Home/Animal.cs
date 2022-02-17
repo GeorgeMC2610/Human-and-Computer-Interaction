@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace Smart_Home
 {
-    class FragileFurniture
+    abstract class Animal
     {
-        public bool Broken { get; set; }
+        public bool Asleep { get; set; }
+        
+        private int HungerPercentage;
+        private int ActivityPercentage;
 
-        public FragileFurniture()
-        {
-            Broken = false;
-        }
     }
 }

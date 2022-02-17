@@ -12,6 +12,7 @@ namespace Smart_Home
 {
     public partial class FormMain : Form
     {
+
         public FormMain()
         {
             InitializeComponent();
