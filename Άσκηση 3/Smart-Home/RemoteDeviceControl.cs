@@ -32,6 +32,9 @@ namespace Smart_Home
         // διακόπτης που ρυθμίζει την κατάσταση λειτουργίας της παπουτσοθήκης
         bool papoutsotiki = false;
 
+        // διακόπτης που ρυθμίζει την κατάσταση λειτουργίας της καφετιέρας
+        bool kafetiera = false;
+
         public Remote_Device_Control()
         {
             InitializeComponent();
@@ -61,14 +64,14 @@ namespace Smart_Home
         {
             if (light_living_room)
             {
-                pictureBox17.Image = Properties.Resources.living_room_medium_light;
+                pictureBox17.Image = Properties.Resources.living_room_dark_light;
                 pictureBox7.Image = Properties.Resources.lights_off;
                 button15.Text = "Άνοιγμα φωτός";
                 light_living_room = false;
             }
             else
             {
-                pictureBox17.Image = Properties.Resources.living_room_dark_light;
+                pictureBox17.Image = Properties.Resources.living_room_medium_light;
                 pictureBox7.Image = Properties.Resources.lights_on;
                 button15.Text = "Κλείσιμο φωτός";
                 light_living_room = true;
@@ -80,12 +83,14 @@ namespace Smart_Home
         {
             if (light_kitchen)
             {
-                pictureBox20.ImageLocation = @"C:\Users\strat\OneDrive\Έγγραφα\GitHub\Human-and-Computer-Interaction\Άσκηση 3\Imageshole-dark-light";
+                pictureBox20.Image = Properties.Resources.kitchen_dark_light;
                 light_kitchen = false;
+                pictureBox8.Image = Properties.Resources.lights_off;
             }
             else
             {
-                pictureBox20.ImageLocation = @"C:\Users\strat\OneDrive\Έγγραφα\GitHub\Human-and-Computer-Interaction\Άσκηση 3\Images\hole";
+                pictureBox20.Image = Properties.Resources.kitchen_medium_light;
+                pictureBox8.Image = Properties.Resources.lights_on;
                 light_kitchen = true;
             }
         }
@@ -181,6 +186,7 @@ namespace Smart_Home
             if (temp_kitchen == false)
             {
                 button6.Text = "Κλέίσιμο θέρμανσης";
+                pictureBox4.Image = Properties.Resources.temperature;
                 MessageBox.Show("Η θέρμανση στην κουζίνα έχει ανοίξει.");
                 temp_kitchen = true;
 
@@ -188,6 +194,7 @@ namespace Smart_Home
             else
             {
                 temp_kitchen = false;
+                pictureBox4.Image = Properties.Resources.temperature_cold;
                 button6.Text = "Άνοιγμα θέρμανσης";
                 MessageBox.Show("Η θέρμανση στην κουζίνα έχει κλείσει.");
             }
@@ -255,6 +262,7 @@ namespace Smart_Home
             panel1.Visible = false;
             panel7.Visible = true;
             pictureBox10.Image = pictureBox5.Image;
+            panel7.Location = panel1.Location;
         }
 
         // επιστροφή στο κύριο μενού διαχείρισης του χωλ
@@ -338,6 +346,7 @@ namespace Smart_Home
             panel8.Visible = true;
             panel2.Visible = false;
             pictureBox16.Image = pictureBox2.Image;
+            panel8.Location = panel2.Location;
         }
 
         // επιστροφή στο κύριο μενού διαχείρισης του σαλονιού
@@ -378,8 +387,10 @@ namespace Smart_Home
         // περισσότερες ρυθμίσεις για το δωμάτιο 'κουζίνα'
         private void label3_Click(object sender, EventArgs e)
         {
-            panel9.Visible = true;
             panel3.Visible = true;
+            panel9.Visible = true;
+            pictureBox19.Image = pictureBox4.Image;
+            panel9.Location = panel3.Location;
         }
 
         // επιστροφή στο κύριο μενού διαχείρισης για το δωμάτιο 'κουζίνα'
@@ -459,6 +470,41 @@ namespace Smart_Home
         {
             panel10.Visible = false;
             panel4.Visible = true;
+        }
+
+        // κουμπί για το άνοιγμα και το κλείσιμο της καφετιέρας
+        private void button24_Click(object sender, EventArgs e)
+        {
+            if (kafetiera == false)
+            {
+                button24.Text = "Κλείσιμο καφετιέρας";
+                MessageBox.Show("Η καφετιέρα ενεργοποιήθηκε.");
+                kafetiera = true;
+            }
+            else
+            {
+                button24.Text = "Άνοιγμα καφετιέρας";
+                MessageBox.Show("Η καφετιέρα απενεργοποιήθηκε.");
+                kafetiera = false;
+            }
+        }
+
+        // κουμπί για αυτοκαθαρισμό της καφετιέρας
+        private void button25_Click(object sender, EventArgs e)
+        {
+            if (kafetiera)
+                MessageBox.Show("Η καφετιέρα έχει καθαριστεί με επιτυχία!");
+            else
+                MessageBox.Show("Η καφετιέρα είναι απενεργοποιημένη!");
+        }
+
+        // κουμπί για παρασεκυή καφέ
+        private void button26_Click(object sender, EventArgs e)
+        {
+            if (kafetiera)
+                MessageBox.Show("Ο καφές σας είναι έτοιμος, καλή απόλαυση!");
+            else
+                MessageBox.Show("Η καφετιέρα είναι απενεργοποιημένη!");
         }
     }
 }
