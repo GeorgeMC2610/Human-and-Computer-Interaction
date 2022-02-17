@@ -52,7 +52,7 @@ namespace Smart_Home
             this.labelWelcome.AutoSize = true;
             this.labelWelcome.BackColor = System.Drawing.Color.Transparent;
             this.labelWelcome.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelWelcome.Location = new System.Drawing.Point(84, 22);
+            this.labelWelcome.Location = new System.Drawing.Point(93, 22);
             this.labelWelcome.Name = "labelWelcome";
             this.labelWelcome.Size = new System.Drawing.Size(0, 19);
             this.labelWelcome.TabIndex = 0;
@@ -65,7 +65,7 @@ namespace Smart_Home
             this.buttonRemoteControl.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
             this.buttonRemoteControl.Location = new System.Drawing.Point(91, 96);
             this.buttonRemoteControl.Name = "buttonRemoteControl";
-            this.buttonRemoteControl.Size = new System.Drawing.Size(331, 57);
+            this.buttonRemoteControl.Size = new System.Drawing.Size(350, 57);
             this.buttonRemoteControl.TabIndex = 1;
             this.buttonRemoteControl.Text = "Έλεγχος Συσκευών";
             this.buttonRemoteControl.UseVisualStyleBackColor = false;
@@ -79,7 +79,7 @@ namespace Smart_Home
             this.buttonTimeSchedule.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
             this.buttonTimeSchedule.Location = new System.Drawing.Point(91, 182);
             this.buttonTimeSchedule.Name = "buttonTimeSchedule";
-            this.buttonTimeSchedule.Size = new System.Drawing.Size(331, 57);
+            this.buttonTimeSchedule.Size = new System.Drawing.Size(350, 57);
             this.buttonTimeSchedule.TabIndex = 2;
             this.buttonTimeSchedule.Text = "Εισαγωγή Προγράμματος";
             this.buttonTimeSchedule.UseVisualStyleBackColor = true;
@@ -93,7 +93,7 @@ namespace Smart_Home
             this.buttonAnimalCare.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
             this.buttonAnimalCare.Location = new System.Drawing.Point(91, 268);
             this.buttonAnimalCare.Name = "buttonAnimalCare";
-            this.buttonAnimalCare.Size = new System.Drawing.Size(331, 57);
+            this.buttonAnimalCare.Size = new System.Drawing.Size(350, 57);
             this.buttonAnimalCare.TabIndex = 3;
             this.buttonAnimalCare.Text = "Φροντίδα Κατοικιδίου";
             this.buttonAnimalCare.UseVisualStyleBackColor = true;
@@ -107,7 +107,7 @@ namespace Smart_Home
             this.buttonHelp.Font = new System.Drawing.Font("Arial", 16F, System.Drawing.FontStyle.Bold);
             this.buttonHelp.Location = new System.Drawing.Point(91, 416);
             this.buttonHelp.Name = "buttonHelp";
-            this.buttonHelp.Size = new System.Drawing.Size(331, 44);
+            this.buttonHelp.Size = new System.Drawing.Size(350, 44);
             this.buttonHelp.TabIndex = 4;
             this.buttonHelp.Text = "Bοήθεια";
             this.buttonHelp.UseVisualStyleBackColor = false;
@@ -167,7 +167,7 @@ namespace Smart_Home
             this.label_choose_action.AutoSize = true;
             this.label_choose_action.BackColor = System.Drawing.Color.Transparent;
             this.label_choose_action.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label_choose_action.Location = new System.Drawing.Point(151, 44);
+            this.label_choose_action.Location = new System.Drawing.Point(160, 44);
             this.label_choose_action.Name = "label_choose_action";
             this.label_choose_action.Size = new System.Drawing.Size(110, 18);
             this.label_choose_action.TabIndex = 10;
@@ -180,7 +180,7 @@ namespace Smart_Home
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(434, 502);
+            this.ClientSize = new System.Drawing.Size(453, 502);
             this.Controls.Add(this.label_choose_action);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
