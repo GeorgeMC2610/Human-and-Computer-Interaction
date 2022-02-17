@@ -29,6 +29,9 @@ namespace Smart_Home
         bool temp_bathroom = false;
         bool temp_bedroom = false;
 
+        // διακόπτης που ρυθμίζει την κατάσταση λειτουργίας της παπουτσοθήκης
+        bool papoutsotiki = false;
+
         public Remote_Device_Control()
         {
             InitializeComponent();
@@ -225,6 +228,88 @@ namespace Smart_Home
                 temp_garage = false;
                 button13.Text = "Άνοιγμα θέρμανσης";
                 MessageBox.Show("Η θέρμανση στο γκαράζ έχει κλείσει.");
+            }
+        }
+
+        // περισσότερες ρυθμίσεις για το δωμάτιο 'χωλ'
+        private void label1_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = false;
+            panel7.Visible = true;
+        }
+
+        // επιστροφή στο κύριο μενού διαχείρισης του χωλ
+        private void button5_Click(object sender, EventArgs e)
+        {
+            panel7.Visible = false;
+            panel1.Visible = true;
+        }
+
+        // κουμπί για πλύσιμο παπουτσιών
+        private void button7_Click(object sender, EventArgs e)
+        {
+            if (papoutsotiki)
+                MessageBox.Show("Τα παπούτσια πλύθηκαν με επιτυχία!");
+            else
+                MessageBox.Show("Η παπουτσοθήκη δεν έχει ενεργοποιηθεί!");
+        }
+
+        // κουμπί για αυτοκαθαρισμό της παπουτσοθήκης
+        private void button14_Click(object sender, EventArgs e)
+        {
+            if (papoutsotiki)
+                MessageBox.Show("Η παπουτσοθήκη έχει καθαριστεί!");
+            else
+                MessageBox.Show("Η παπουτσοθήκη δεν έχει ενεργοποιηθεί!");
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        // διαχείριση έντασης θερμοκρασίας στο χωλ
+        private void button16_Click(object sender, EventArgs e)
+        {
+            if (temp_hol) // έλεγχος για το εάν η θέρμανση είναι ενεργοποιημένη στο χωλ
+            {
+                if (radioButton1.Checked == true)
+                {
+                    MessageBox.Show("Η θερμοκρασία στο χωλ ορίστηκε σε: χαμηλή");
+                }
+                else if (radioButton2.Checked == true)
+                {
+                    MessageBox.Show("Η θερμοκρασία στο χωλ ορίστηκε σε: μέτρια");
+                }
+                else if (radioButton3.Checked == true)
+                {
+                    MessageBox.Show("Η θερμοκρασία στο χωλ ορίστηκε σε: υψηλή");
+                }
+                else
+                {
+                    MessageBox.Show("Παρακαλώ, ορίστε θερμοκρασία!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Η θέρμανση στο χωλ δεν είναι ενεργοποιημένη!");
+            }
+        }
+
+        // κουμπί για το άνοιγμα και κλείσιμο της παπουτσοθήκης
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (papoutsotiki)
+            {
+                button2.Text = "Άνοιγμα παπουτσόθήκης";
+                MessageBox.Show("Η παπουτσοθήκη απενεργοποιήθηκε!");
+                papoutsotiki = false;
+            }
+            else
+            {
+                button2.Text = "Κλείσιμο παπουτσοθ.";
+                MessageBox.Show("Η παπουτσοθήκη ενεργοποιήθηκε!");
+                papoutsotiki = true;
             }
         }
     }
