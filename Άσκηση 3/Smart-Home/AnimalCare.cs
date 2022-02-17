@@ -12,6 +12,7 @@ namespace Smart_Home
 {
     public partial class AnimalCare : Form
     {
+
         public AnimalCare()
         {
             InitializeComponent();
