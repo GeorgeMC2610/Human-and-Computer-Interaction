@@ -115,7 +115,10 @@ namespace Smart_Home
             this.button21 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
+<<<<<<< HEAD
             this.label11 = new System.Windows.Forms.Label();
+=======
+>>>>>>> 57edc1fd2d73b156d2801c3367230f3098c5711b
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shoeCase)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -1162,7 +1165,7 @@ namespace Smart_Home
             // 
             this.pictureBox10.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox10.Cursor = System.Windows.Forms.Cursors.No;
-            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+            this.pictureBox10.Image = global::Smart_Home.Properties.Resources.temperature;
             this.pictureBox10.Location = new System.Drawing.Point(6, 42);
             this.pictureBox10.Name = "pictureBox10";
             this.pictureBox10.Size = new System.Drawing.Size(36, 31);
@@ -1288,6 +1291,7 @@ namespace Smart_Home
             this.pictureBox16.TabIndex = 13;
             this.pictureBox16.TabStop = false;
             // 
+<<<<<<< HEAD
             // label11
             // 
             this.label11.AutoSize = true;
@@ -1299,6 +1303,8 @@ namespace Smart_Home
             this.label11.TabIndex = 44;
             this.label11.Text = "Έλεγχος παπουτσοθήκης:";
             // 
+=======
+>>>>>>> 57edc1fd2d73b156d2801c3367230f3098c5711b
             // Remote_Device_Control
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1306,7 +1312,7 @@ namespace Smart_Home
             this.AutoScroll = true;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(781, 585);
+            this.ClientSize = new System.Drawing.Size(815, 585);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);

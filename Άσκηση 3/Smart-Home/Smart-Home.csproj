@@ -142,5 +142,104 @@
   <ItemGroup>
     <None Include="Resources\shoe_case2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background_21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bathroom-dark-light1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bathroom-medium-light1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bedroom-dark-light1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bedroom-medium-light1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffee1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffee_machine_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffee_machine_21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffee_machine_41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cold_temperatutre1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\garage1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hole1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hole-dark-light1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hole-medium-light1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kitchen-dark-light1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kitchen-medium-light1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lifesaver1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lights-off1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lights-on1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\living_room-dark-light1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\living_room-medium-light1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pawprint1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power_button_11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power_button_21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remote-control1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shoe1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shoe_case11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shoe_case21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\temperature1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\temperature_hot1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\temperature_hot_21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\temperature-cold1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
