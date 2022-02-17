@@ -213,6 +213,16 @@ namespace Smart_Home.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap garage_dark_light {
+            get {
+                object obj = ResourceManager.GetObject("garage_dark_light", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hole {
             get {
                 object obj = ResourceManager.GetObject("hole", resourceCulture);

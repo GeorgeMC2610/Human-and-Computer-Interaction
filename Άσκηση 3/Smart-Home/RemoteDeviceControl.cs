@@ -140,12 +140,14 @@ namespace Smart_Home
         {
             if (light_garage)
             {
+                pictureBox23.Image = Properties.Resources.garage_dark_light;
                 pictureBox15.Image = Properties.Resources.lights_off;
                 button18.Text = "Άνοιγμα φωτός";
                 light_garage = false;
             }
             else
             {
+                pictureBox23.Image = Properties.Resources.garage;
                 pictureBox15.Image = Properties.Resources.lights_on;
                 button18.Text = "Κλείσιμο φωτός";
                 light_garage = true;
@@ -564,6 +566,50 @@ namespace Smart_Home
             else
             {
                 MessageBox.Show("Η θέρμανση στο υπνοδωμάτιο δεν είναι ενεργοποιημένη!");
+            }
+        }
+
+        // περισσότερες ρυμθμίσεις για το δωμάτιο 'γκαραζ'
+        private void label6_Click(object sender, EventArgs e)
+        {
+            pictureBox27.Image = pictureBox14.Image;
+            panel6.Visible = true;
+            panel12.Visible = true;
+            panel12.Location = panel6.Location;
+        }
+
+        // επιστροφή στο κύριο μενού διαχείρισης του δωματίου 'γκαράζ'
+        private void button30_Click(object sender, EventArgs e)
+        {
+            panel6.Visible = true;
+            panel12.Visible = false;
+        }
+
+        // διαχείριση θερμοκρασίας του δωματίου γκαράζ
+        private void button29_Click(object sender, EventArgs e)
+        {
+            if (temp_garage) // έλεγχος για το εάν η θέρμανση είναι ενεργοποιημένη στο γκαράζ
+            {
+                if (radioButton18.Checked == true)
+                {
+                    MessageBox.Show("Η θερμοκρασία στο γκαράζ ορίστηκε σε: χαμηλή");
+                }
+                else if (radioButton17.Checked == true)
+                {
+                    MessageBox.Show("Η θερμοκρασία στο γκαράζ ορίστηκε σε: μέτρια");
+                }
+                else if (radioButton16.Checked == true)
+                {
+                    MessageBox.Show("Η θερμοκρασία στο γκαράζ ορίστηκε σε: υψηλή");
+                }
+                else
+                {
+                    MessageBox.Show("Παρακαλώ, ορίστε θερμοκρασία!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Η θέρμανση στο γκαράζ δεν είναι ενεργοποιημένη!");
             }
         }
     }
