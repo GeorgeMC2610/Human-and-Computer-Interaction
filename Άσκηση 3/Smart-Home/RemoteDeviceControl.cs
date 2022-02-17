@@ -42,12 +42,14 @@ namespace Smart_Home
         {
             if (light_hol)
             {
-                pictureBox1.ImageLocation = @"C:\Users\strat\OneDrive\Έγγραφα\GitHub\Human-and-Computer-Interaction\Άσκηση 3\Imageshole-dark-light";
+                //ΤΙ ΜΑΛΑΚΑΣ ΘΕΕ ΜΟΥ
+                pictureBox1.Image = Properties.Resources.hole_dark_light;
                 light_hol = false;
             }
             else
             {
-                pictureBox1.ImageLocation = @"C:\Users\strat\OneDrive\Έγγραφα\GitHub\Human-and-Computer-Interaction\Άσκηση 3\Images\hole";
+                //ΟΡΙΣΤΕ ΜΑΛΑΚΑ, ΑΥΤΟ ΕΠΡΕΠΕ ΝΑ ΑΛΛΑΞΕΙΣ
+                pictureBox1.Image = Properties.Resources.hole;
                 light_hol = true;
             }
         }

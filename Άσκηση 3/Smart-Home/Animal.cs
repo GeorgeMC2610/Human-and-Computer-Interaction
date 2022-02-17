@@ -8,10 +8,11 @@ namespace Smart_Home
 {
     abstract class Animal
     {
-        public bool Asleep { get; set; }
+        public bool Asleep { get; private set; }
         
         private int HungerPercentage;
         private int ActivityPercentage;
+
 
     }
 }
