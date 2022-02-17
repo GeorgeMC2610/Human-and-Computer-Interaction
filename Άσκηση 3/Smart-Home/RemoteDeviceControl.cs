@@ -42,14 +42,16 @@ namespace Smart_Home
         {
             if (light_hol)
             {
-                //ΤΙ ΜΑΛΑΚΑΣ ΘΕΕ ΜΟΥ
                 pictureBox1.Image = Properties.Resources.hole_dark_light;
+                pictureBox6.Image = Properties.Resources.lights_off;
+                button1.Text = "Άνοιγμα φωτός";
                 light_hol = false;
             }
             else
             {
-                //ΟΡΙΣΤΕ ΜΑΛΑΚΑ, ΑΥΤΟ ΕΠΡΕΠΕ ΝΑ ΑΛΛΑΞΕΙΣ
                 pictureBox1.Image = Properties.Resources.hole;
+                pictureBox6.Image = Properties.Resources.lights_on;
+                button1.Text = "Κλείσιμο φωτός";
                 light_hol = true;
             }
         }
@@ -59,12 +61,16 @@ namespace Smart_Home
         {
             if (light_living_room)
             {
-                pictureBox17.ImageLocation = @"C:/Users/strat/OneDrive/Έγγραφα/GitHub/Human-and-Computer-Interaction/Άσκηση 3/Imageshole-dark-light";
+                pictureBox17.Image = Properties.Resources.living_room_medium_light;
+                pictureBox7.Image = Properties.Resources.lights_off;
+                button15.Text = "Άνοιγμα φωτός";
                 light_living_room = false;
             }
             else
             {
-                pictureBox17.ImageLocation = @"C:\Users\strat\OneDrive\Έγγραφα\GitHub\Human-and-Computer-Interaction\Άσκηση 3\Images\hole";
+                pictureBox17.Image = Properties.Resources.living_room_dark_light;
+                pictureBox7.Image = Properties.Resources.lights_on;
+                button15.Text = "Κλείσιμο φωτός";
                 light_living_room = true;
             }
         }
@@ -89,12 +95,16 @@ namespace Smart_Home
         {
             if (light_bathroom)
             {
-                pictureBox11.ImageLocation = @"C:\Users\strat\OneDrive\Έγγραφα\GitHub\Human-and-Computer-Interaction\Άσκηση 3\Imageshole-dark-light";
+                pictureBox11.Image = Properties.Resources.bathroom_dark_light;
+                pictureBox9.Image = Properties.Resources.lights_off;
+                button11.Text = "Κλείσιμο φωτός";
                 light_bathroom = false;
             }
             else
             {
-                pictureBox11.ImageLocation = @"C:\Users\strat\OneDrive\Έγγραφα\GitHub\Human-and-Computer-Interaction\Άσκηση 3\Images\hole";
+                pictureBox11.Image = Properties.Resources.bathroom_medium_light;
+                pictureBox9.Image = Properties.Resources.lights_on;
+                button11.Text = "Άνοιγμα φωτός";
                 light_bathroom = true;
             }
         }
@@ -131,6 +141,7 @@ namespace Smart_Home
             if (temp_hol == false)
             {
                 button3.Text = "Κλέίσιμο θέρμανσης";
+                pictureBox5.Image = Properties.Resources.temperature;
                 MessageBox.Show("Η θέρμανση στο χωλ έχει ανοίξει.");
                 temp_hol = true;
 
@@ -138,17 +149,19 @@ namespace Smart_Home
             else
             {
                 temp_hol = false;
+                pictureBox5.Image = Properties.Resources.temperature_cold;
                 button3.Text = "Άνοιγμα θέρμανσης";
                 MessageBox.Show("Η θέρμανση στο χωλ έχει κλείσει.");
             }
         }
 
-        // διαχείριση θέρμανσης στο χωλ
+        // διαχείριση θέρμανσης στο σαλόνι
         private void button4_Click(object sender, EventArgs e)
         {
             if (temp_living_room == false)
             {
                 button4.Text = "Κλέίσιμο θέρμανσης";
+                pictureBox2.Image = Properties.Resources.temperature;
                 MessageBox.Show("Η θέρμανση στο σαλόνι έχει ανοίξει.");
                 temp_living_room = true;
 
@@ -156,6 +169,7 @@ namespace Smart_Home
             else
             {
                 temp_living_room = false;
+                pictureBox2.Image = Properties.Resources.temperature_cold;
                 button4.Text = "Άνοιγμα θέρμανσης";
                 MessageBox.Show("Η θέρμανση στο σαλόνι έχει κλείσει.");
             }
@@ -185,6 +199,7 @@ namespace Smart_Home
             if (temp_bathroom == false)
             {
                 button9.Text = "Κλέίσιμο θέρμανσης";
+                pictureBox3.Image = Properties.Resources.temperature;
                 MessageBox.Show("Η θέρμανση στο μπάνιο έχει ανοίξει.");
                 temp_bathroom = true;
 
@@ -193,6 +208,7 @@ namespace Smart_Home
             {
                 temp_bathroom = false;
                 button9.Text = "Άνοιγμα θέρμανσης";
+                pictureBox3.Image = Properties.Resources.temperature_cold;
                 MessageBox.Show("Η θέρμανση στο μπάνιο έχει κλείσει.");
             }
         }
@@ -238,6 +254,7 @@ namespace Smart_Home
         {
             panel1.Visible = false;
             panel7.Visible = true;
+            pictureBox10.Image = pictureBox5.Image;
         }
 
         // επιστροφή στο κύριο μενού διαχείρισης του χωλ
@@ -315,10 +332,12 @@ namespace Smart_Home
             }
         }
 
+        // περισσότερες ρυθμίσεις για το δωμάτιο 'σαλόνι'
         private void label2_Click(object sender, EventArgs e)
         {
             panel8.Visible = true;
             panel2.Visible = false;
+            pictureBox16.Image = pictureBox2.Image;
         }
 
         // επιστροφή στο κύριο μενού διαχείρισης του σαλονιού
@@ -403,6 +422,8 @@ namespace Smart_Home
         {
             panel10.Visible = true;
             panel4.Visible = true;
+            panel10.Location = panel4.Location;
+            pictureBox21.Image = pictureBox3.Image;
         }
 
         // διαχείριση θερμοκρασίας στο μπάνιο

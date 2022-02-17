@@ -65,14 +65,6 @@ namespace Smart_Home
             this.kitchen_label = new System.Windows.Forms.Label();
             this.pictureBox20 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.button22 = new System.Windows.Forms.Button();
-            this.radioButton10 = new System.Windows.Forms.RadioButton();
-            this.radioButton11 = new System.Windows.Forms.RadioButton();
-            this.radioButton12 = new System.Windows.Forms.RadioButton();
-            this.button23 = new System.Windows.Forms.Button();
-            this.label10 = new System.Windows.Forms.Label();
-            this.pictureBox21 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.button9 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
@@ -97,6 +89,7 @@ namespace Smart_Home
             this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.pictureBox23 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
             this.button16 = new System.Windows.Forms.Button();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -107,17 +100,22 @@ namespace Smart_Home
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.button10 = new System.Windows.Forms.Button();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.button21 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.button22 = new System.Windows.Forms.Button();
+            this.radioButton10 = new System.Windows.Forms.RadioButton();
+            this.radioButton11 = new System.Windows.Forms.RadioButton();
+            this.radioButton12 = new System.Windows.Forms.RadioButton();
+            this.button23 = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.pictureBox21 = new System.Windows.Forms.PictureBox();
             this.pictureBox16 = new System.Windows.Forms.PictureBox();
-
-            this.label11 = new System.Windows.Forms.Label();
-
+            this.label7 = new System.Windows.Forms.Label();
+            this.button21 = new System.Windows.Forms.Button();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.button10 = new System.Windows.Forms.Button();
+            this.panel8 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.shoeCase)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
@@ -134,8 +132,6 @@ namespace Smart_Home
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
             this.panel4.SuspendLayout();
-            this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -150,8 +146,10 @@ namespace Smart_Home
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
-            this.panel8.SuspendLayout();
+            this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
+            this.panel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -192,7 +190,7 @@ namespace Smart_Home
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.Cursor = System.Windows.Forms.Cursors.No;
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Image = global::Smart_Home.Properties.Resources.lights_off;
             this.pictureBox6.Location = new System.Drawing.Point(3, 229);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(44, 32);
@@ -204,7 +202,7 @@ namespace Smart_Home
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Cursor = System.Windows.Forms.Cursors.No;
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Image = global::Smart_Home.Properties.Resources.temperature_cold;
             this.pictureBox5.Location = new System.Drawing.Point(3, 267);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(44, 32);
@@ -364,7 +362,7 @@ namespace Smart_Home
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.No;
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Image = global::Smart_Home.Properties.Resources.temperature_cold;
             this.pictureBox2.Location = new System.Drawing.Point(3, 267);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(44, 32);
@@ -376,7 +374,7 @@ namespace Smart_Home
             // 
             this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox7.Cursor = System.Windows.Forms.Cursors.No;
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Image = global::Smart_Home.Properties.Resources.lights_off;
             this.pictureBox7.Location = new System.Drawing.Point(3, 229);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(44, 32);
@@ -387,7 +385,7 @@ namespace Smart_Home
             // pictureBox17
             // 
             this.pictureBox17.Cursor = System.Windows.Forms.Cursors.No;
-            this.pictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox17.Image")));
+            this.pictureBox17.Image = global::Smart_Home.Properties.Resources.living_room_medium_light;
             this.pictureBox17.Location = new System.Drawing.Point(5, 23);
             this.pictureBox17.Name = "pictureBox17";
             this.pictureBox17.Size = new System.Drawing.Size(216, 200);
@@ -612,7 +610,6 @@ namespace Smart_Home
             // 
             this.panel4.BackColor = System.Drawing.Color.Transparent;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.panel10);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.button9);
             this.panel4.Controls.Add(this.button11);
@@ -624,112 +621,6 @@ namespace Smart_Home
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(230, 379);
             this.panel4.TabIndex = 57;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.Transparent;
-            this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel10.Controls.Add(this.button22);
-            this.panel10.Controls.Add(this.radioButton10);
-            this.panel10.Controls.Add(this.radioButton11);
-            this.panel10.Controls.Add(this.radioButton12);
-            this.panel10.Controls.Add(this.button23);
-            this.panel10.Controls.Add(this.label10);
-            this.panel10.Controls.Add(this.pictureBox21);
-            this.panel10.Location = new System.Drawing.Point(-1, -1);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(230, 379);
-            this.panel10.TabIndex = 58;
-            this.panel10.Visible = false;
-            // 
-            // button22
-            // 
-            this.button22.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.button22.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button22.Location = new System.Drawing.Point(143, 78);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(46, 29);
-            this.button22.TabIndex = 43;
-            this.button22.Text = "ΟΚ";
-            this.button22.UseVisualStyleBackColor = false;
-            this.button22.Click += new System.EventHandler(this.button22_Click);
-            // 
-            // radioButton10
-            // 
-            this.radioButton10.AutoSize = true;
-            this.radioButton10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton10.Location = new System.Drawing.Point(62, 90);
-            this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(58, 17);
-            this.radioButton10.TabIndex = 42;
-            this.radioButton10.TabStop = true;
-            this.radioButton10.Text = "Υψηλή";
-            this.radioButton10.UseVisualStyleBackColor = true;
-            // 
-            // radioButton11
-            // 
-            this.radioButton11.AutoSize = true;
-            this.radioButton11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton11.Location = new System.Drawing.Point(62, 65);
-            this.radioButton11.Name = "radioButton11";
-            this.radioButton11.Size = new System.Drawing.Size(61, 17);
-            this.radioButton11.TabIndex = 41;
-            this.radioButton11.TabStop = true;
-            this.radioButton11.Text = "Μέτρια";
-            this.radioButton11.UseVisualStyleBackColor = true;
-            // 
-            // radioButton12
-            // 
-            this.radioButton12.AutoSize = true;
-            this.radioButton12.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton12.Location = new System.Drawing.Point(62, 42);
-            this.radioButton12.Name = "radioButton12";
-            this.radioButton12.Size = new System.Drawing.Size(62, 17);
-            this.radioButton12.TabIndex = 40;
-            this.radioButton12.TabStop = true;
-            this.radioButton12.Text = "Χαμηλή";
-            this.radioButton12.UseVisualStyleBackColor = true;
-            // 
-            // button23
-            // 
-            this.button23.BackColor = System.Drawing.Color.Maroon;
-            this.button23.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.button23.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button23.Location = new System.Drawing.Point(7, 337);
-            this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(214, 31);
-            this.button23.TabIndex = 37;
-            this.button23.Text = "Πίσω";
-            this.button23.UseVisualStyleBackColor = false;
-            this.button23.Click += new System.EventHandler(this.button23_Click);
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label10.Location = new System.Drawing.Point(3, 13);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(169, 16);
-            this.label10.TabIndex = 26;
-            this.label10.Text = "Επιλογή θερμοκρασίας:";
-            // 
-            // pictureBox21
-            // 
-            this.pictureBox21.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox21.Cursor = System.Windows.Forms.Cursors.No;
-            this.pictureBox21.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox21.Image")));
-            this.pictureBox21.Location = new System.Drawing.Point(6, 42);
-            this.pictureBox21.Name = "pictureBox21";
-            this.pictureBox21.Size = new System.Drawing.Size(36, 31);
-            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox21.TabIndex = 13;
-            this.pictureBox21.TabStop = false;
             // 
             // label4
             // 
@@ -790,7 +681,7 @@ namespace Smart_Home
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.No;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Image = global::Smart_Home.Properties.Resources.temperature_cold;
             this.pictureBox3.Location = new System.Drawing.Point(3, 267);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(44, 32);
@@ -802,7 +693,7 @@ namespace Smart_Home
             // 
             this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox9.Cursor = System.Windows.Forms.Cursors.No;
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Image = global::Smart_Home.Properties.Resources.lights_off;
             this.pictureBox9.Location = new System.Drawing.Point(3, 229);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(44, 32);
@@ -813,7 +704,7 @@ namespace Smart_Home
             // pictureBox11
             // 
             this.pictureBox11.Cursor = System.Windows.Forms.Cursors.No;
-            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
+            this.pictureBox11.Image = global::Smart_Home.Properties.Resources.bathroom_dark_light;
             this.pictureBox11.Location = new System.Drawing.Point(5, 23);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(216, 200);
@@ -1046,11 +937,22 @@ namespace Smart_Home
             this.panel7.Controls.Add(this.label8);
             this.panel7.Controls.Add(this.pictureBox10);
             this.panel7.Controls.Add(this.pictureBox18);
-            this.panel7.Location = new System.Drawing.Point(9, 12);
+            this.panel7.Location = new System.Drawing.Point(9, 11);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(230, 379);
             this.panel7.TabIndex = 56;
             this.panel7.Visible = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label11.Location = new System.Drawing.Point(4, 157);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(185, 16);
+            this.label11.TabIndex = 44;
+            this.label11.Text = "Έλεγχος παπουτσοθήκης:";
             // 
             // button16
             // 
@@ -1184,73 +1086,134 @@ namespace Smart_Home
             this.pictureBox18.TabIndex = 10;
             this.pictureBox18.TabStop = false;
             // 
-            // panel8
+            // panel10
             // 
-            this.panel8.BackColor = System.Drawing.Color.Transparent;
-            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel8.Controls.Add(this.button10);
-            this.panel8.Controls.Add(this.radioButton4);
-            this.panel8.Controls.Add(this.radioButton5);
-            this.panel8.Controls.Add(this.radioButton6);
-            this.panel8.Controls.Add(this.button21);
-            this.panel8.Controls.Add(this.label7);
-            this.panel8.Controls.Add(this.pictureBox16);
-            this.panel8.Location = new System.Drawing.Point(265, 12);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(230, 379);
-            this.panel8.TabIndex = 57;
-            this.panel8.Visible = false;
+            this.panel10.BackColor = System.Drawing.Color.Transparent;
+            this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel10.Controls.Add(this.button22);
+            this.panel10.Controls.Add(this.radioButton10);
+            this.panel10.Controls.Add(this.radioButton11);
+            this.panel10.Controls.Add(this.radioButton12);
+            this.panel10.Controls.Add(this.button23);
+            this.panel10.Controls.Add(this.label10);
+            this.panel10.Controls.Add(this.pictureBox21);
+            this.panel10.Location = new System.Drawing.Point(9, 412);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(230, 379);
+            this.panel10.TabIndex = 59;
+            this.panel10.Visible = false;
             // 
-            // button10
+            // button22
             // 
-            this.button10.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.button10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button10.Location = new System.Drawing.Point(143, 78);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(46, 29);
-            this.button10.TabIndex = 43;
-            this.button10.Text = "ΟΚ";
-            this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.button22.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button22.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button22.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button22.Location = new System.Drawing.Point(143, 78);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(46, 29);
+            this.button22.TabIndex = 43;
+            this.button22.Text = "ΟΚ";
+            this.button22.UseVisualStyleBackColor = false;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
-            // radioButton4
+            // radioButton10
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton4.Location = new System.Drawing.Point(62, 90);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(58, 17);
-            this.radioButton4.TabIndex = 42;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Υψηλή";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButton10.AutoSize = true;
+            this.radioButton10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radioButton10.Location = new System.Drawing.Point(62, 90);
+            this.radioButton10.Name = "radioButton10";
+            this.radioButton10.Size = new System.Drawing.Size(58, 17);
+            this.radioButton10.TabIndex = 42;
+            this.radioButton10.TabStop = true;
+            this.radioButton10.Text = "Υψηλή";
+            this.radioButton10.UseVisualStyleBackColor = true;
             // 
-            // radioButton5
+            // radioButton11
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton5.Location = new System.Drawing.Point(62, 65);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(61, 17);
-            this.radioButton5.TabIndex = 41;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Μέτρια";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.radioButton11.AutoSize = true;
+            this.radioButton11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radioButton11.Location = new System.Drawing.Point(62, 65);
+            this.radioButton11.Name = "radioButton11";
+            this.radioButton11.Size = new System.Drawing.Size(61, 17);
+            this.radioButton11.TabIndex = 41;
+            this.radioButton11.TabStop = true;
+            this.radioButton11.Text = "Μέτρια";
+            this.radioButton11.UseVisualStyleBackColor = true;
             // 
-            // radioButton6
+            // radioButton12
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButton6.Location = new System.Drawing.Point(62, 42);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(62, 17);
-            this.radioButton6.TabIndex = 40;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Χαμηλή";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.radioButton12.AutoSize = true;
+            this.radioButton12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radioButton12.Location = new System.Drawing.Point(62, 42);
+            this.radioButton12.Name = "radioButton12";
+            this.radioButton12.Size = new System.Drawing.Size(62, 17);
+            this.radioButton12.TabIndex = 40;
+            this.radioButton12.TabStop = true;
+            this.radioButton12.Text = "Χαμηλή";
+            this.radioButton12.UseVisualStyleBackColor = true;
+            // 
+            // button23
+            // 
+            this.button23.BackColor = System.Drawing.Color.Maroon;
+            this.button23.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button23.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button23.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button23.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button23.Location = new System.Drawing.Point(7, 337);
+            this.button23.Name = "button23";
+            this.button23.Size = new System.Drawing.Size(214, 31);
+            this.button23.TabIndex = 37;
+            this.button23.Text = "Πίσω";
+            this.button23.UseVisualStyleBackColor = false;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label10.Location = new System.Drawing.Point(3, 13);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(169, 16);
+            this.label10.TabIndex = 26;
+            this.label10.Text = "Επιλογή θερμοκρασίας:";
+            // 
+            // pictureBox21
+            // 
+            this.pictureBox21.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox21.Cursor = System.Windows.Forms.Cursors.No;
+            this.pictureBox21.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox21.Image")));
+            this.pictureBox21.Location = new System.Drawing.Point(6, 42);
+            this.pictureBox21.Name = "pictureBox21";
+            this.pictureBox21.Size = new System.Drawing.Size(36, 31);
+            this.pictureBox21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox21.TabIndex = 13;
+            this.pictureBox21.TabStop = false;
+            // 
+            // pictureBox16
+            // 
+            this.pictureBox16.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox16.Cursor = System.Windows.Forms.Cursors.No;
+            this.pictureBox16.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox16.Image")));
+            this.pictureBox16.Location = new System.Drawing.Point(6, 42);
+            this.pictureBox16.Name = "pictureBox16";
+            this.pictureBox16.Size = new System.Drawing.Size(36, 31);
+            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox16.TabIndex = 13;
+            this.pictureBox16.TabStop = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label7.Location = new System.Drawing.Point(3, 13);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(169, 16);
+            this.label7.TabIndex = 26;
+            this.label7.Text = "Επιλογή θερμοκρασίας:";
             // 
             // button21
             // 
@@ -1267,42 +1230,74 @@ namespace Smart_Home
             this.button21.UseVisualStyleBackColor = false;
             this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
-            // label7
+            // radioButton6
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label7.Location = new System.Drawing.Point(3, 13);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(169, 16);
-            this.label7.TabIndex = 26;
-            this.label7.Text = "Επιλογή θερμοκρασίας:";
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radioButton6.Location = new System.Drawing.Point(62, 42);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(62, 17);
+            this.radioButton6.TabIndex = 40;
+            this.radioButton6.TabStop = true;
+            this.radioButton6.Text = "Χαμηλή";
+            this.radioButton6.UseVisualStyleBackColor = true;
             // 
-            // pictureBox16
+            // radioButton5
             // 
-            this.pictureBox16.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox16.Cursor = System.Windows.Forms.Cursors.No;
-            this.pictureBox16.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox16.Image")));
-            this.pictureBox16.Location = new System.Drawing.Point(6, 42);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(36, 31);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox16.TabIndex = 13;
-            this.pictureBox16.TabStop = false;
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radioButton5.Location = new System.Drawing.Point(62, 65);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(61, 17);
+            this.radioButton5.TabIndex = 41;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "Μέτρια";
+            this.radioButton5.UseVisualStyleBackColor = true;
             // 
-
-            // label11
+            // radioButton4
             // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label11.Location = new System.Drawing.Point(4, 157);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(185, 16);
-            this.label11.TabIndex = 44;
-            this.label11.Text = "Έλεγχος παπουτσοθήκης:";
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radioButton4.Location = new System.Drawing.Point(62, 90);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(58, 17);
+            this.radioButton4.TabIndex = 42;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "Υψηλή";
+            this.radioButton4.UseVisualStyleBackColor = true;
             // 
-
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button10.Location = new System.Drawing.Point(143, 78);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(46, 29);
+            this.button10.TabIndex = 43;
+            this.button10.Text = "ΟΚ";
+            this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.Transparent;
+            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel8.Controls.Add(this.button10);
+            this.panel8.Controls.Add(this.radioButton4);
+            this.panel8.Controls.Add(this.radioButton5);
+            this.panel8.Controls.Add(this.radioButton6);
+            this.panel8.Controls.Add(this.button21);
+            this.panel8.Controls.Add(this.label7);
+            this.panel8.Controls.Add(this.pictureBox16);
+            this.panel8.Location = new System.Drawing.Point(265, 11);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(230, 379);
+            this.panel8.TabIndex = 57;
+            this.panel8.Visible = false;
+            // 
             // Remote_Device_Control
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1311,6 +1306,7 @@ namespace Smart_Home
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(815, 585);
+            this.Controls.Add(this.panel10);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
@@ -1344,9 +1340,6 @@ namespace Smart_Home
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
@@ -1364,9 +1357,12 @@ namespace Smart_Home
             this.panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1434,14 +1430,6 @@ namespace Smart_Home
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.Button button21;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.PictureBox pictureBox16;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.RadioButton radioButton7;
@@ -1450,6 +1438,7 @@ namespace Smart_Home
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox19;
+        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.RadioButton radioButton10;
@@ -1458,6 +1447,13 @@ namespace Smart_Home
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pictureBox21;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.PictureBox pictureBox16;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button button21;
+        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Panel panel8;
     }
 }
