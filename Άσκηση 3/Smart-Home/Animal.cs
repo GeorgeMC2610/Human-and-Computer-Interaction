@@ -35,7 +35,18 @@ namespace Smart_Home
 
         public void ManageHunger()
         {
-            if (ActivityPercentage)
+            if (ActivityPercentage == 0)
+            {
+                if (random.Next(0, 2) == 0)
+                    HungerPercentage--;
+            }
+            else if (ActivityPercentage == 1)
+            {
+                if (random.Next(0, 6) <= 3)
+                    HungerPercentage--;
+            }
+            else
+                HungerPercentage--;
         }
     }
 }
