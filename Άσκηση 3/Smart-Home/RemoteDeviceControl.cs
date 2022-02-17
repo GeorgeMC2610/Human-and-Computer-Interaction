@@ -84,13 +84,15 @@ namespace Smart_Home
             if (light_kitchen)
             {
                 pictureBox20.Image = Properties.Resources.kitchen_dark_light;
-                light_kitchen = false;
                 pictureBox8.Image = Properties.Resources.lights_off;
+                button8.Text = "Άνοιγμα φωτός";
+                light_kitchen = false;    
             }
             else
             {
                 pictureBox20.Image = Properties.Resources.kitchen_medium_light;
                 pictureBox8.Image = Properties.Resources.lights_on;
+                button8.Text = "Κλείσιμο φωτός";
                 light_kitchen = true;
             }
         }
@@ -102,14 +104,14 @@ namespace Smart_Home
             {
                 pictureBox11.Image = Properties.Resources.bathroom_dark_light;
                 pictureBox9.Image = Properties.Resources.lights_off;
-                button11.Text = "Κλείσιμο φωτός";
+                button11.Text = "Άνοιγμα φωτός";
                 light_bathroom = false;
             }
             else
             {
                 pictureBox11.Image = Properties.Resources.bathroom_medium_light;
                 pictureBox9.Image = Properties.Resources.lights_on;
-                button11.Text = "Άνοιγμα φωτός";
+                button11.Text = "Κλείσιμο φωτός";
                 light_bathroom = true;
             }
         }
@@ -119,10 +121,16 @@ namespace Smart_Home
         {
             if (light_bedroom)
             {
+                pictureBox22.Image = Properties.Resources.bedroom_dark_light;
+                pictureBox13.Image = Properties.Resources.lights_off;
+                button17.Text = "Άνοιγμα φωτός";
                 light_bedroom = false;
             }
             else
             {
+                pictureBox22.Image = Properties.Resources.bedroom_medium_light;
+                pictureBox13.Image = Properties.Resources.lights_on;
+                button17.Text = "Κλείσιμο φωτός";
                 light_bedroom = true;
             }
         }
@@ -132,10 +140,14 @@ namespace Smart_Home
         {
             if (light_garage)
             {
+                pictureBox15.Image = Properties.Resources.lights_off;
+                button18.Text = "Άνοιγμα φωτός";
                 light_garage = false;
             }
             else
             {
+                pictureBox15.Image = Properties.Resources.lights_on;
+                button18.Text = "Κλείσιμο φωτός";
                 light_garage = true;
             }
         }
@@ -226,6 +238,7 @@ namespace Smart_Home
             if (temp_bedroom == false)
             {
                 button12.Text = "Κλέίσιμο θέρμανσης";
+                pictureBox12.Image = Properties.Resources.temperature;
                 MessageBox.Show("Η θέρμανση στο υπνοδωμάτιο έχει ανοίξει.");
                 temp_bedroom = true;
 
@@ -234,6 +247,7 @@ namespace Smart_Home
             {
                 temp_bedroom = false;
                 button12.Text = "Άνοιγμα θέρμανσης";
+                pictureBox12.Image = Properties.Resources.temperature_cold;
                 MessageBox.Show("Η θέρμανση στο υπνοδωμάτιο έχει κλείσει.");
             }
         }
@@ -244,6 +258,7 @@ namespace Smart_Home
             if (temp_garage == false)
             {
                 button13.Text = "Κλέίσιμο θέρμανσης";
+                pictureBox14.Image = Properties.Resources.temperature;
                 MessageBox.Show("Η θέρμανση στο γκαράζ έχει ανοίξει.");
                 temp_garage = true;
 
@@ -251,7 +266,8 @@ namespace Smart_Home
             else
             {
                 temp_garage = false;
-                button13.Text = "Άνοιγμα θέρμανσης";
+                button14.Text = "Άνοιγμα θέρμανσης";
+                pictureBox12.Image = Properties.Resources.temperature_cold;
                 MessageBox.Show("Η θέρμανση στο γκαράζ έχει κλείσει.");
             }
         }
@@ -505,6 +521,50 @@ namespace Smart_Home
                 MessageBox.Show("Ο καφές σας είναι έτοιμος, καλή απόλαυση!");
             else
                 MessageBox.Show("Η καφετιέρα είναι απενεργοποιημένη!");
+        }
+
+        // περισσότερες ρυθμίσεις για το δωμάτιο 'υπνοδωμάτιο'
+        private void label5_Click(object sender, EventArgs e)
+        {
+            panel11.Visible = true;
+            panel5.Visible = true;
+            panel11.Location = panel5.Location;
+            pictureBox26.Image = pictureBox12.Image;
+        }
+
+        // επιστροφή στο κεντρικό μενού διαχείρισης του υπνοδωματίου
+        private void button28_Click(object sender, EventArgs e)
+        {
+            panel11.Visible = false;
+            panel5.Visible = true;
+        }
+
+        // διαχείριση θερμοκρασία στο δωμάτιο 'υπνοδωμάτιο'
+        private void button27_Click(object sender, EventArgs e)
+        {
+            if (temp_bedroom) // έλεγχος για το εάν η θέρμανση είναι ενεργοποιημένη στο υπνοδωμάτιο
+            {
+                if (radioButton15.Checked == true)
+                {
+                    MessageBox.Show("Η θερμοκρασία στο υπνοδωμάτιο ορίστηκε σε: χαμηλή");
+                }
+                else if (radioButton14.Checked == true)
+                {
+                    MessageBox.Show("Η θερμοκρασία στο υπνοδωμάτιο ορίστηκε σε: μέτρια");
+                }
+                else if (radioButton13.Checked == true)
+                {
+                    MessageBox.Show("Η θερμοκρασία στο υπνοδωμάτιο ορίστηκε σε: υψηλή");
+                }
+                else
+                {
+                    MessageBox.Show("Παρακαλώ, ορίστε θερμοκρασία!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Η θέρμανση στο υπνοδωμάτιο δεν είναι ενεργοποιημένη!");
+            }
         }
     }
 }
