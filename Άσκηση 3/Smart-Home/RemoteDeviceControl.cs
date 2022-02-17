@@ -312,5 +312,88 @@ namespace Smart_Home
                 papoutsotiki = true;
             }
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            panel8.Visible = true;
+            panel2.Visible = false;
+        }
+
+        // επιστροφή στο κύριο μενού διαχείρισης του σαλονιού
+        private void button21_Click(object sender, EventArgs e)
+        {
+            panel8.Visible = false;
+            panel2.Visible = true;
+        }
+
+        // διαχείριση έντασης θερμοκρασίας στο σαλόνι
+        private void button10_Click(object sender, EventArgs e)
+        {
+            if (temp_living_room) // έλεγχος για το εάν η θέρμανση είναι ενεργοποιημένη στο σαλόνι
+            {
+                if (radioButton6.Checked == true)
+                {
+                    MessageBox.Show("Η θερμοκρασία στο σαλόνι ορίστηκε σε: χαμηλή");
+                }
+                else if (radioButton5.Checked == true)
+                {
+                    MessageBox.Show("Η θερμοκρασία στο σαλόνι ορίστηκε σε: μέτρια");
+                }
+                else if (radioButton4.Checked == true)
+                {
+                    MessageBox.Show("Η θερμοκρασία στο σαλόνι ορίστηκε σε: υψηλή");
+                }
+                else
+                {
+                    MessageBox.Show("Παρακαλώ, ορίστε θερμοκρασία!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Η θέρμανση στο σαλόνι δεν είναι ενεργοποιημένη!");
+            }
+        }
+
+        // περισσότερες ρυθμίσεις για το δωμάτιο 'κουζίνα'
+        private void label3_Click(object sender, EventArgs e)
+        {
+            panel9.Visible = true;
+            panel3.Visible = true;
+        }
+
+        // επιστροφή στο κύριο μενού διαχείρισης για το δωμάτιο 'κουζίνα'
+        private void button20_Click(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+            panel9.Visible = false;
+        }
+
+        // διαχείριση θερμοκρασίας στο δωμάτιο 'κουζίνα'
+        private void button19_Click(object sender, EventArgs e)
+        {
+            if (temp_kitchen) // έλεγχος για το εάν η θέρμανση είναι ενεργοποιημένη στην κουζίνα
+            {
+                if (radioButton9.Checked == true)
+                {
+                    MessageBox.Show("Η θερμοκρασία στην κουζίνα ορίστηκε σε: χαμηλή");
+                }
+                else if (radioButton8.Checked == true)
+                {
+                    MessageBox.Show("Η θερμοκρασία στην κουζίνα ορίστηκε σε: μέτρια");
+                }
+                else if (radioButton7.Checked == true)
+                {
+                    MessageBox.Show("Η θερμοκρασία στην κουζίνα ορίστηκε σε: υψηλή");
+                }
+                else
+                {
+                    MessageBox.Show("Παρακαλώ, ορίστε θερμοκρασία!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Η θέρμανση στην κουζίνα δεν είναι ενεργοποιημένη!");
+            }
+        }
     }
 }
