@@ -22,7 +22,7 @@ namespace Smart_Home
         bool light_bedroom = false;
 
         // οι μεταβλητές αυτές ορίζουν τους 'διακόπτες΄ για την θερμοκρασία του κάθε δωματίου
-        bool temp_hol = false;
+        bool  temp_hol = false;
         bool temp_living_room = false;
         bool temp_kitchen = false;
         bool temp_garage = false;
@@ -306,11 +306,6 @@ namespace Smart_Home
                 MessageBox.Show("Η παπουτσοθήκη έχει καθαριστεί!");
             else
                 MessageBox.Show("Η παπουτσοθήκη δεν έχει ενεργοποιηθεί!");
-        }
-
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-
         }
 
         // διαχείριση έντασης θερμοκρασίας στο χωλ
@@ -612,5 +607,12 @@ namespace Smart_Home
                 MessageBox.Show("Η θέρμανση στο γκαράζ δεν είναι ενεργοποιημένη!");
             }
         }
+
+        // ενέργειες που θα γίνουν αφού κλείσει η φόρμα
+        private void Remote_Device_Control_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            MessageBox.Show("Για λόγους ασφαλείας, οι ρυθμίσεις που αφορούν τον φωτισμό, την θέρμανση και την λειτουργεία των υπόλοιπων συσκευών θα μεταβούν σε κατάσταση απενεργοποίησης.");
+        }
+
     }
 }

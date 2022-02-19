@@ -87,7 +87,8 @@ namespace Smart_Home
             //όταν ο χρήστης κάνει λογκιν, κρύβουμε την φόρμα αυτή και ανοίγουμε την άλλη.
             Hide();
             Username = textBoxUsername.Text;
-            new FormMain().Show();
+            FormMain form_main = new FormMain();
+            form_main.Show();
         }
 
     }
