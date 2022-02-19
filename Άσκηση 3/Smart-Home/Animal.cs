@@ -16,7 +16,7 @@ namespace Smart_Home
 
         //Ποσοστά πείνας και δραστηριότητας
         protected int HungerPercentage;
-        protected int ThurstPercentage;
+        protected int ThirstPercentage;
         protected int ActivityPercentage;
 
         //Το όνομα του κατοικιδίου (θα είναι τυχαίο)
@@ -31,34 +31,45 @@ namespace Smart_Home
         }
 
         //Η μέθοδος που θα κάνει ένα ζώο να κοιμάται 
-        public void FallAsleep()
+        public virtual void FallAsleep()
         {
             ActivityPercentage = 0;
             Asleep = true;
         }
 
         //Η μέθοδος που θα «ζωηρεύει» ένα κατοικίδιο
-        public void Awaken()
+        public virtual void Awaken()
         {
             ActivityPercentage++;
             Asleep = false;
         }
 
         //Αυτή η μέθοδος θα χρησιμοποιείται σε ρολόι. Κάνει ένα ζώο να πεινάει, ανάλογα με το πόσο δραστήριο είναι
-        public void ManageHunger()
+        public virtual void ManageNeeds()
         {
             if (ActivityPercentage == 0)
             {
                 if (random.Next(0, 2) == 0)
+                {
                     HungerPercentage++;
+                    ThirstPercentage += 2;
+                }
             }
             else if (ActivityPercentage == 1)
             {
-                if (random.Next(0, 6) <= 3)
+                if (random.Next(0, 6) <= 4)
+                {
                     HungerPercentage++;
+                    ThirstPercentage += 2;
+                }
+                    
             }
             else
+            {
                 HungerPercentage++;
+                ThirstPercentage += 2;
+            }
+                
         }
     }
 }
