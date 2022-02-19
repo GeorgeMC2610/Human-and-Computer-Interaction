@@ -32,22 +32,25 @@ namespace Smart_Home
             labelWelcome.Location        = new Point(Width / 2 - labelWelcome.Width / 2, labelWelcome.Location.Y);
             label_choose_action.Location = new Point(Width / 2 - label_choose_action.Width / 2, label_choose_action.Location.Y);
 
-            for (int i = 0; i < random.Next(1, 4); i++)
-            {
-                Cat cat = new Cat();
-                Pets.Add(cat);
-            }
+            labelAnimalWarning.Visible = false;
 
+            //θα βάλουμε από 1-4 γάτες στα κατοικίδιάς μας.
             for (int i = 0; i < random.Next(1, 4); i++)
-            {
-                Dog dog = new Dog();
-                Pets.Add(dog);
-            }
+                Pets.Add(new Cat());
 
+            //το ίδιο ισχύει και για τους σκύλους.
+            for (int i = 0; i < random.Next(1, 4); i++)
+                Pets.Add(new Dog());
+
+            //debugging.
             foreach (Animal animal in Pets)
-            {
                 Console.WriteLine(animal.ToString());
-            }
+
+        }
+
+        private void timerAnimals_Tick(object sender, EventArgs e)
+        {
+
         }
 
         private void FormMain_Resize(object sender, EventArgs e)
@@ -86,5 +89,6 @@ namespace Smart_Home
             AnimalCare animal = new AnimalCare();
             animal.Show();
         }
+
     }
 }

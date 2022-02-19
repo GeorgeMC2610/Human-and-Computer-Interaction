@@ -42,6 +42,7 @@ namespace Smart_Home
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label_choose_action = new System.Windows.Forms.Label();
             this.timerAnimals = new System.Windows.Forms.Timer(this.components);
+            this.labelAnimalWarning = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -180,6 +181,19 @@ namespace Smart_Home
             // 
             this.timerAnimals.Enabled = true;
             this.timerAnimals.Interval = 1000;
+            this.timerAnimals.Tick += new System.EventHandler(this.timerAnimals_Tick);
+            // 
+            // labelAnimalWarning
+            // 
+            this.labelAnimalWarning.AutoSize = true;
+            this.labelAnimalWarning.BackColor = System.Drawing.Color.Transparent;
+            this.labelAnimalWarning.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAnimalWarning.ForeColor = System.Drawing.Color.IndianRed;
+            this.labelAnimalWarning.Location = new System.Drawing.Point(94, 328);
+            this.labelAnimalWarning.Name = "labelAnimalWarning";
+            this.labelAnimalWarning.Size = new System.Drawing.Size(210, 19);
+            this.labelAnimalWarning.TabIndex = 11;
+            this.labelAnimalWarning.Text = "Ρίξτε μία ματιά στις ανάγκες!";
             // 
             // FormMain
             // 
@@ -188,6 +202,7 @@ namespace Smart_Home
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(453, 502);
+            this.Controls.Add(this.labelAnimalWarning);
             this.Controls.Add(this.label_choose_action);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
@@ -229,5 +244,6 @@ namespace Smart_Home
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label_choose_action;
         private System.Windows.Forms.Timer timerAnimals;
+        private System.Windows.Forms.Label labelAnimalWarning;
     }
 }
