@@ -32,13 +32,13 @@ namespace Smart_Home
             labelWelcome.Location        = new Point(Width / 2 - labelWelcome.Width / 2, labelWelcome.Location.Y);
             label_choose_action.Location = new Point(Width / 2 - label_choose_action.Width / 2, label_choose_action.Location.Y);
 
-            for (int i = 0; i < random.Next(0, 4); i++)
+            for (int i = 0; i < random.Next(1, 4); i++)
             {
                 Cat cat = new Cat();
                 Pets.Add(cat);
             }
 
-            for (int i = 0; i < random.Next(0, 4); i++)
+            for (int i = 0; i < random.Next(1, 4); i++)
             {
                 Dog dog = new Dog();
                 Pets.Add(dog);
