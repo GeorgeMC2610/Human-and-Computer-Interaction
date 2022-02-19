@@ -12,6 +12,8 @@ namespace Smart_Home
 {
     public partial class FormMain : Form
     {
+        private static List<FragileFurniture> FragileFurniture;
+        private static List<Animal> Pets;
 
         public FormMain()
         {

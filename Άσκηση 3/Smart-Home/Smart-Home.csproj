@@ -53,6 +53,8 @@
     <Compile Include="AnimalCare.Designer.cs">
       <DependentUpon>AnimalCare.cs</DependentUpon>
     </Compile>
+    <Compile Include="Cat.cs" />
+    <Compile Include="Dog.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
