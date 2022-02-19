@@ -59,7 +59,7 @@ namespace Smart_Home
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(374, 60);
             this.button1.TabIndex = 1;
-            this.button1.Text = "ΠΡΟΣΘΗΚΗ ΣΥΓΚΕΚΡΙΜΕΝΗΣ ΠΟΣΟΤΗΤΑΣ";
+            this.button1.Text = "ΕΠΙΣΚΕΥΗ ΕΥΘΡΑΥΣΤΩΝ ΑΝΤΙΚΕΙΜΕΝΩΝ";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // AnimalCare

@@ -178,6 +178,7 @@ namespace Smart_Home
             // 
             // timerAnimals
             // 
+            this.timerAnimals.Enabled = true;
             this.timerAnimals.Interval = 1000;
             // 
             // FormMain
