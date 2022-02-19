@@ -29,6 +29,7 @@ namespace Smart_Home
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.labelWelcome = new System.Windows.Forms.Label();
             this.buttonRemoteControl = new System.Windows.Forms.Button();
@@ -40,6 +41,7 @@ namespace Smart_Home
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label_choose_action = new System.Windows.Forms.Label();
+            this.timerAnimals = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -174,6 +176,10 @@ namespace Smart_Home
             this.label_choose_action.Text = "choose_action";
             this.label_choose_action.Click += new System.EventHandler(this.label2_Click);
             // 
+            // timerAnimals
+            // 
+            this.timerAnimals.Interval = 1000;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -221,5 +227,6 @@ namespace Smart_Home
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label_choose_action;
+        private System.Windows.Forms.Timer timerAnimals;
     }
 }

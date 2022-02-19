@@ -29,11 +29,9 @@ namespace Smart_Home
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnimalCare));
             this.buttonRefill = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // buttonRefill
@@ -64,10 +62,6 @@ namespace Smart_Home
             this.button1.Text = "ΠΡΟΣΘΗΚΗ ΣΥΓΚΕΚΡΙΜΕΝΗΣ ΠΟΣΟΤΗΤΑΣ";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // timer1
-            // 
-            this.timer1.Interval = 1000;
-            // 
             // AnimalCare
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -89,6 +83,5 @@ namespace Smart_Home
 
         private System.Windows.Forms.Button buttonRefill;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Timer timer1;
     }
 }
