@@ -26,5 +26,10 @@ namespace Smart_Home
             if (random.Next(0, 2) == 0)
                 ActivityPercentage++;
         }
+
+        public override string ToString()
+        {
+            return "Name: " + this.Name + ", Type: Cat";
+        }
     }
 }

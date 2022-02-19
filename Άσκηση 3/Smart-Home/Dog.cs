@@ -28,5 +28,10 @@ namespace Smart_Home
             else
                 ActivityPercentage++;
         }
+
+        public override string ToString()
+        {
+            return "Name: " + this.Name + ", Type: Dog";
+        }
     }
 }

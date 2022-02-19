@@ -12,8 +12,10 @@ namespace Smart_Home
 {
     public partial class FormMain : Form
     {
-        private static List<FragileFurniture> FragileFurniture;
-        private static List<Animal> Pets;
+        private static List<FragileFurniture> FragileFurniture = new List<FragileFurniture>();
+        private static List<Animal> Pets = new List<Animal>();
+
+        private static Random random = new Random();
 
         public FormMain()
         {
@@ -27,8 +29,25 @@ namespace Smart_Home
             label_choose_action.Text = "Παρακαλώ, επιλέξτε μία ενέργεια: ";
 
             //φτιάχνουμε τα positions των labels της φόρμας
-            labelWelcome.Location = new Point(Width / 2 - labelWelcome.Width / 2, labelWelcome.Location.Y);
+            labelWelcome.Location        = new Point(Width / 2 - labelWelcome.Width / 2, labelWelcome.Location.Y);
             label_choose_action.Location = new Point(Width / 2 - label_choose_action.Width / 2, label_choose_action.Location.Y);
+
+            for (int i = 0; i < random.Next(0, 4); i++)
+            {
+                Cat cat = new Cat();
+                Pets.Add(cat);
+            }
+
+            for (int i = 0; i < random.Next(0, 4); i++)
+            {
+                Dog dog = new Dog();
+                Pets.Add(dog);
+            }
+
+            foreach (Animal animal in Pets)
+            {
+                Console.WriteLine(animal.ToString());
+            }
         }
 
         private void FormMain_Resize(object sender, EventArgs e)

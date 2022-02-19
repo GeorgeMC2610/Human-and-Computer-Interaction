@@ -26,7 +26,8 @@ namespace Smart_Home
         public Animal()
         {
             HungerPercentage   = 0;
-            ActivityPercentage = 0;
+            ThirstPercentage   = 0;
+            ActivityPercentage = 30;
            
         }
 
@@ -69,7 +70,6 @@ namespace Smart_Home
                 HungerPercentage++;
                 ThirstPercentage += 2;
             }
-                
         }
     }
 }
