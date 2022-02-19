@@ -1121,7 +1121,6 @@ namespace Smart_Home
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Χαμηλή";
             this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // button14
             // 
@@ -1634,7 +1633,7 @@ namespace Smart_Home
             this.AutoScroll = true;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(815, 585);
+            this.ClientSize = new System.Drawing.Size(804, 487);
             this.Controls.Add(this.panel12);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel10);
@@ -1647,9 +1646,11 @@ namespace Smart_Home
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(803, 747);
             this.Name = "Remote_Device_Control";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Απομακρυνσμένος Έλεγχος Συσκευών";
+            this.Load += new System.EventHandler(this.Remote_Device_Control_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.shoeCase)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();

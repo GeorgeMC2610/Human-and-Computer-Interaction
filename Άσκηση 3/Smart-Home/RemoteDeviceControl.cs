@@ -14,26 +14,26 @@ namespace Smart_Home
     public partial class Remote_Device_Control : Form
     {
         // οι μεταβλητές αυτές ορίζουν τους 'διακόπτες΄ των φωτών οροφής του κάθε δωματίου
-        bool light_hol = false;
-        bool light_living_room = false;
-        bool light_kitchen = false;
-        bool light_garage = false;
-        bool light_bathroom = false;
-        bool light_bedroom = false;
+        public bool light_hol = false;
+        public bool light_living_room = false;
+        public bool light_kitchen = false;
+        public bool light_garage = false;
+        public bool light_bathroom = false;
+        public bool light_bedroom = false;
 
         // οι μεταβλητές αυτές ορίζουν τους 'διακόπτες΄ για την θερμοκρασία του κάθε δωματίου
-        bool temp_hol = false;
-        bool temp_living_room = false;
-        bool temp_kitchen = false;
-        bool temp_garage = false;
-        bool temp_bathroom = false;
-        bool temp_bedroom = false;
+        public bool  temp_hol = false;
+        public bool temp_living_room = false;
+        public bool temp_kitchen = false;
+        public bool temp_garage = false;
+        public bool temp_bathroom = false;
+        public bool temp_bedroom = false;
 
         // διακόπτης που ρυθμίζει την κατάσταση λειτουργίας της παπουτσοθήκης
-        bool papoutsotiki = false;
+        public bool papoutsotiki = false;
 
         // διακόπτης που ρυθμίζει την κατάσταση λειτουργίας της καφετιέρας
-        bool kafetiera = false;
+        public bool kafetiera = false;
 
         public Remote_Device_Control()
         {
@@ -306,11 +306,6 @@ namespace Smart_Home
                 MessageBox.Show("Η παπουτσοθήκη έχει καθαριστεί!");
             else
                 MessageBox.Show("Η παπουτσοθήκη δεν έχει ενεργοποιηθεί!");
-        }
-
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-
         }
 
         // διαχείριση έντασης θερμοκρασίας στο χωλ
@@ -611,6 +606,17 @@ namespace Smart_Home
             {
                 MessageBox.Show("Η θέρμανση στο γκαράζ δεν είναι ενεργοποιημένη!");
             }
+        }
+
+        private void Remote_Device_Control_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        // ενέργειες που θα γίνουν αφού κλείσει η φόρμα
+        private void Remote_Device_Control_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            
         }
     }
 }

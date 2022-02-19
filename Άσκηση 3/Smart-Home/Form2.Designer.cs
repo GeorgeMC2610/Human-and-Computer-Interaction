@@ -175,7 +175,6 @@ namespace Smart_Home
             this.label_choose_action.Size = new System.Drawing.Size(110, 18);
             this.label_choose_action.TabIndex = 10;
             this.label_choose_action.Text = "choose_action";
-            this.label_choose_action.Click += new System.EventHandler(this.label2_Click);
             // 
             // timerAnimals
             // 
@@ -221,7 +220,6 @@ namespace Smart_Home
             this.Text = "Κύριο Μενού";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormMain_FormClosed);
             this.Load += new System.EventHandler(this.FormMain_Load);
-            this.Resize += new System.EventHandler(this.FormMain_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
