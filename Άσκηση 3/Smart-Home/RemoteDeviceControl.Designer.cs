@@ -1650,7 +1650,7 @@ namespace Smart_Home
             this.Name = "Remote_Device_Control";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Απομακρυνσμένος Έλεγχος Συσκευών";
-            this.Load += new System.EventHandler(this.Remote_Device_Control_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Remote_Device_Control_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.shoeCase)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();

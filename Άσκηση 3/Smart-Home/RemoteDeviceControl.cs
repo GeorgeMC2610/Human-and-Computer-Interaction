@@ -14,26 +14,26 @@ namespace Smart_Home
     public partial class Remote_Device_Control : Form
     {
         // οι μεταβλητές αυτές ορίζουν τους 'διακόπτες΄ των φωτών οροφής του κάθε δωματίου
-        public bool light_hol = false;
-        public bool light_living_room = false;
-        public bool light_kitchen = false;
-        public bool light_garage = false;
-        public bool light_bathroom = false;
-        public bool light_bedroom = false;
+        bool light_hol = false;
+        bool light_living_room = false;
+        bool light_kitchen = false;
+        bool light_garage = false;
+        bool light_bathroom = false;
+        bool light_bedroom = false;
 
         // οι μεταβλητές αυτές ορίζουν τους 'διακόπτες΄ για την θερμοκρασία του κάθε δωματίου
-        public bool  temp_hol = false;
-        public bool temp_living_room = false;
-        public bool temp_kitchen = false;
-        public bool temp_garage = false;
-        public bool temp_bathroom = false;
-        public bool temp_bedroom = false;
+        bool  temp_hol = false;
+        bool temp_living_room = false;
+        bool temp_kitchen = false;
+        bool temp_garage = false;
+        bool temp_bathroom = false;
+        bool temp_bedroom = false;
 
         // διακόπτης που ρυθμίζει την κατάσταση λειτουργίας της παπουτσοθήκης
-        public bool papoutsotiki = false;
+        bool papoutsotiki = false;
 
         // διακόπτης που ρυθμίζει την κατάσταση λειτουργίας της καφετιέρας
-        public bool kafetiera = false;
+        bool kafetiera = false;
 
         public Remote_Device_Control()
         {
@@ -608,15 +608,11 @@ namespace Smart_Home
             }
         }
 
-        private void Remote_Device_Control_Load(object sender, EventArgs e)
-        {
-
-        }
-
         // ενέργειες που θα γίνουν αφού κλείσει η φόρμα
-        private void Remote_Device_Control_FormClosed(object sender, FormClosedEventArgs e)
+        private void Remote_Device_Control_FormClosing(object sender, FormClosingEventArgs e)
         {
-            
+            MessageBox.Show("Για λόγους ασφαλείας, οι ρυθμίσεις που αφορούν τον φωτισμό, την θέρμανση και την λειτουργεία των υπόλοιπων συσκευών θα μεταβούν σε κατάσταση απενεργοποίησης.");
         }
+
     }
 }

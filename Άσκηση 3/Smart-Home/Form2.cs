@@ -19,28 +19,6 @@ namespace Smart_Home
         // - Πρέπει να βρω φωτογραφίες για τα ζώα, άδειο και γεμάτο μπωλ
         // - Πρέπει τα ζώα να τρώνε και να πίνουν νερό, και να τα γεμίζει ο χρήστης.
 
-        // οι μεταβλητές αυτές ορίζουν τους 'διακόπτες΄ των φωτών οροφής του κάθε δωματίου
-        private bool light_hol = false;
-        private bool light_living_room = false;
-        private bool light_kitchen = false;
-        private bool light_garage = false;
-        private bool light_bathroom = false;
-        private bool light_bedroom = false;
-
-        // οι μεταβλητές αυτές ορίζουν τους 'διακόπτες΄ για την θερμοκρασία του κάθε δωματίου
-        private bool temp_hol = false;
-        private bool temp_living_room = false;
-        private bool temp_kitchen = false;
-        private bool temp_garage = false;
-        private bool temp_bathroom = false;
-        private bool temp_bedroom = false;
-
-        // διακόπτης που ρυθμίζει την κατάσταση λειτουργίας της παπουτσοθήκης
-        private bool papoutsotiki = false;
-
-        // διακόπτης που ρυθμίζει την κατάσταση λειτουργίας της καφετιέρας
-        private bool kafetiera = false;
-
         private static List<FragileFurniture> FragileFurniture = new List<FragileFurniture>();
         private static List<Animal> Pets = new List<Animal>();
 
@@ -94,23 +72,6 @@ namespace Smart_Home
             // άνοιγμα φόρμα διαχείρισης συσκευών.
             Remote_Device_Control rmctrl = new Remote_Device_Control();
             rmctrl.Show();
-
-            // "περνάμε" όλες τις μεταβλητές σχετικά με την κατάσταση των δωματίων (φωτισμός,θερμότητα, καφετιέρα και παπουτσοθήκη)
-            // στην φόρμα που διαχειρίζεται τις συσκευές του σπιτιού.
-            rmctrl.light_bathroom = light_bathroom;
-            rmctrl.light_bedroom = light_bedroom;
-            rmctrl.light_garage = light_garage;
-            rmctrl.light_hol = light_hol;
-            rmctrl.light_kitchen = light_kitchen;
-            rmctrl.light_living_room = light_living_room;
-            rmctrl.kafetiera = kafetiera;
-            rmctrl.temp_bathroom = temp_bathroom;
-            rmctrl.temp_bedroom = temp_bedroom;
-            rmctrl.temp_garage = temp_garage;
-            rmctrl.temp_hol = temp_hol;
-            rmctrl.temp_kitchen = temp_kitchen;
-            rmctrl.temp_living_room = temp_living_room;
-            rmctrl.papoutsotiki = papoutsotiki;
         }
 
         private void buttonTimeSchedule_Click(object sender, EventArgs e)
