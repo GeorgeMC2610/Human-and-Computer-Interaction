@@ -20,6 +20,7 @@ namespace Smart_Home
         // - Πρέπει τα ζώα να τρώνε και να πίνουν νερό, και να τα γεμίζει ο χρήστης.
 
 
+
         private static List<FragileFurniture> FragileFurniture = new List<FragileFurniture>();
         private static List<Animal> Pets = new List<Animal>();
 
