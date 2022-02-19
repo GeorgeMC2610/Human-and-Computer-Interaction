@@ -12,10 +12,19 @@ namespace Smart_Home
 {
     public partial class FormMain : Form
     {
+        //TODO: 
+        // - Πρέπει να γίνουν τα picture boxes σωστά στην AnimalCare
+        // - Πρέπει να κάνω τα ζώα να πεινάνε, να διψάνε και να σπάνε αντικείμενα
+        // - Πρέπει να βάλω μπωλ
+        // - Πρέπει να βρω φωτογραφίες για τα ζώα, άδειο και γεμάτο μπωλ
+        // - Πρέπει τα ζώα να τρώνε και να πίνουν νερό, και να τα γεμίζει ο χρήστης.
+
+
         private static List<FragileFurniture> FragileFurniture = new List<FragileFurniture>();
         private static List<Animal> Pets = new List<Animal>();
 
         private static Random random = new Random();
+        public static bool isHome = true;
 
         public FormMain()
         {
