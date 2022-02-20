@@ -33,7 +33,7 @@ namespace Smart_Home
         /// Ο σκύλος μπορεί να τρώει παραπάνω από τη γάτα, και χορταίνει πιο δύσκολα.
         /// </summary>
         /// <param name="bowl">Το μπωλ το οποίο θέλουμε να πάρουμε και να του αφαιρέσουμε φαγητό.</param>
-        /// <returns></returns>
+        /// <returns>Το μεταχειρισμένο μπωλ, επιστρέφεται ώστε να αποθηκεύονται οι αλλαγές.</returns>
         public override Bowl Eat(Bowl bowl)
         {
             if (!bowl.Containing.Equals("food"))
@@ -51,7 +51,7 @@ namespace Smart_Home
         /// Συγκριτικά με τη γάτα, ο σκύλος πίνει πιο πολύ νερό και χορταίνει πιο δύσκολα.
         /// </summary>
         /// <param name="bowl">Το μπωλ το οποίο θέλουμε να πάρουμε και να του αφαιρέσουμε νερό.</param>
-        /// <returns></returns>
+        /// <returns>Το μεταχειρισμένο μπωλ, επιστρέφεται ώστε να αποθηκεύονται οι αλλαγές.</returns>
         public override Bowl Drink(Bowl bowl)
         {
             if (!bowl.Containing.Equals("water"))

@@ -27,6 +27,32 @@ namespace Smart_Home
                 ActivityPercentage++;
         }
 
+        public override Bowl Eat(Bowl bowl)
+        {
+            if (!bowl.Containing.Equals("food"))
+                throw new Exception("Eat() method can only be called on Bowls containing food");
+            else
+            {
+                bowl.Capacity--;
+                HungerPercentage--;
+            }
+
+            return bowl;
+        }
+
+        public override Bowl Drink(Bowl bowl)
+        {
+            if (!bowl.Containing.Equals("water"))
+                throw new Exception("Drink() method can only be called on Bowls containing water");
+            else
+            {
+                bowl.Capacity--;
+                ThirstPercentage--;
+            }
+
+            return bowl;
+        }
+
         public override string ToString()
         {
             return "Name: " + this.Name + ", Type: Cat";
