@@ -25,9 +25,13 @@ namespace Smart_Home
         private static Random random = new Random();
         public static bool isHome = true;
 
+        // αντικείμενο φόρμας διαχέρισης συσκευών
+        Remote_Device_Control rmctrl;
+
         public FormMain()
         {
             InitializeComponent();
+            rmctrl = new Remote_Device_Control();
         }
 
         private void FormMain_Load(object sender, EventArgs e)
@@ -70,7 +74,6 @@ namespace Smart_Home
         private void buttonThermansi_Click(object sender, EventArgs e)
         {
             // άνοιγμα φόρμα διαχείρισης συσκευών.
-            Remote_Device_Control rmctrl = new Remote_Device_Control();
             rmctrl.Show();
         }
 

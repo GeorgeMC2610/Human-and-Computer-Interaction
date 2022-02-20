@@ -14,26 +14,26 @@ namespace Smart_Home
     public partial class Remote_Device_Control : Form
     {
         // οι μεταβλητές αυτές ορίζουν τους 'διακόπτες΄ των φωτών οροφής του κάθε δωματίου
-        bool light_hol = false;
-        bool light_living_room = false;
-        bool light_kitchen = false;
-        bool light_garage = false;
-        bool light_bathroom = false;
-        bool light_bedroom = false;
+        private bool light_hol = false;
+        private bool light_living_room = false;
+        private bool light_kitchen = false;
+        private bool light_garage = false;
+        private bool light_bathroom = false;
+        private bool light_bedroom = false;
 
         // οι μεταβλητές αυτές ορίζουν τους 'διακόπτες΄ για την θερμοκρασία του κάθε δωματίου
-        bool  temp_hol = false;
-        bool temp_living_room = false;
-        bool temp_kitchen = false;
-        bool temp_garage = false;
-        bool temp_bathroom = false;
-        bool temp_bedroom = false;
+        private bool  temp_hol = false;
+        private bool temp_living_room = false;
+        private bool temp_kitchen = false;
+        private bool temp_garage = false;
+        private bool temp_bathroom = false;
+        private bool temp_bedroom = false;
 
         // διακόπτης που ρυθμίζει την κατάσταση λειτουργίας της παπουτσοθήκης
-        bool papoutsotiki = false;
+        private bool papoutsotiki = false;
 
         // διακόπτης που ρυθμίζει την κατάσταση λειτουργίας της καφετιέρας
-        bool kafetiera = false;
+        private bool kafetiera = false;
 
         public Remote_Device_Control()
         {
@@ -611,7 +611,9 @@ namespace Smart_Home
         // ενέργειες που θα γίνουν αφού κλείσει η φόρμα
         private void Remote_Device_Control_FormClosing(object sender, FormClosingEventArgs e)
         {
-            MessageBox.Show("Για λόγους ασφαλείας, οι ρυθμίσεις που αφορούν τον φωτισμό, την θέρμανση και την λειτουργεία των υπόλοιπων συσκευών θα μεταβούν σε κατάσταση απενεργοποίησης.");
+            // η φόρμα κρύβεται όταν ο χρήστης πατήσει το X. Με αυτόν τον τρόπο, οι αλλαγές που κάνει στην φόρμα δεν χάνονται άπαξ και την ξαναανοίξει (ενόσω εκτελείται το πρόγραμμα φυσικά)
+            this.Hide();
+            e.Cancel = true;
         }
 
     }
