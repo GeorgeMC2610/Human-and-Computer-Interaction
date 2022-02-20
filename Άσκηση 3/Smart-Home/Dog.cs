@@ -29,6 +29,42 @@ namespace Smart_Home
                 ActivityPercentage++;
         }
 
+        /// <summary>
+        /// Ο σκύλος μπορεί να τρώει παραπάνω από τη γάτα, και χορταίνει πιο δύσκολα.
+        /// </summary>
+        /// <param name="bowl">Το μπωλ το οποίο θέλουμε να πάρουμε και να του αφαιρέσουμε φαγητό.</param>
+        /// <returns></returns>
+        public override Bowl Eat(Bowl bowl)
+        {
+            if (!bowl.Containing.Equals("food"))
+                throw new Exception("Eat() method can only be called on Bowls containing food");
+            else
+            {
+                bowl.Capacity -= 2;
+                HungerPercentage--;
+            }
+
+            return bowl;
+        }
+
+        /// <summary>
+        /// Συγκριτικά με τη γάτα, ο σκύλος πίνει πιο πολύ νερό και χορταίνει πιο δύσκολα.
+        /// </summary>
+        /// <param name="bowl">Το μπωλ το οποίο θέλουμε να πάρουμε και να του αφαιρέσουμε νερό.</param>
+        /// <returns></returns>
+        public override Bowl Drink(Bowl bowl)
+        {
+            if (!bowl.Containing.Equals("water"))
+                throw new Exception("Drink() method can only be called on Bowls containing water");
+            else
+            {
+                bowl.Capacity -= 2;
+                ThirstPercentage--;
+            }
+
+            return bowl;
+        }
+
         public override string ToString()
         {
             return "Name: " + this.Name + ", Type: Dog";

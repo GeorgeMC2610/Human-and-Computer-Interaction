@@ -18,9 +18,9 @@ namespace Smart_Home
             Capacity = 100;
 
             if (type == 0)
-                Containing = "Water";
+                Containing = "water";
             else
-                Containing = "Food";
+                Containing = "food";
         }
 
         public Bowl(int Capacity, int type)
@@ -28,9 +28,9 @@ namespace Smart_Home
             this.Capacity = Capacity;
 
             if (type == 0)
-                Containing = "Water";
+                Containing = "water";
             else
-                Containing = "Food";
+                Containing = "food";
         }
     }
 }

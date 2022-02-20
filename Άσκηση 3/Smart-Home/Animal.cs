@@ -73,9 +73,7 @@ namespace Smart_Home
             }
         }
 
-        public virtual void Eat()
-        {
-
-        }
+        public abstract Bowl Eat(Bowl bowl);
+        public abstract Bowl Drink(Bowl bowl);
     }
 }
