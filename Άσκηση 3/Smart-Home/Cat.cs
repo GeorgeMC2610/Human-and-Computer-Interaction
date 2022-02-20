@@ -27,6 +27,11 @@ namespace Smart_Home
                 ActivityPercentage++;
         }
 
+        /// <summary>
+        /// Η γάτα τρώει κανονικά το φαγητό της με κανονικό ρυθμό.
+        /// </summary>
+        /// <param name="bowl">Το μπωλ το οποίο θέλουμε να πάρουμε και να του αφαιρέσουμε φαγητό.</param>
+        /// <returns>Το μεταχειρισμένο μπωλ, επιστρέφεται ώστε να αποθηκεύονται οι αλλαγές.</returns>
         public override Bowl Eat(Bowl bowl)
         {
             if (!bowl.Containing.Equals("food"))
@@ -40,6 +45,11 @@ namespace Smart_Home
             return bowl;
         }
 
+        /// <summary>
+        /// Η γάτα πίνει κανονικά νερό.
+        /// </summary>
+        /// <param name="bowl">Το μπωλ το οποίο θέλουμε να πάρουμε και να του αφαιρέσουμε φαγητό.</param>
+        /// <returns>Το μεταχειρισμένο μπωλ, επιστρέφεται ώστε να αποθηκεύονται οι αλλαγές.</returns>
         public override Bowl Drink(Bowl bowl)
         {
             if (!bowl.Containing.Equals("water"))
