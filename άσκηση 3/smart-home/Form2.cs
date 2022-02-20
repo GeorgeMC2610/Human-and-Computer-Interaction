@@ -25,9 +25,13 @@ namespace Smart_Home
         private static Random random = new Random();
         public static bool isHome = true;
 
+        // αντικείμενο φόρμας διαχέρισης συσκευών
+        Remote_Device_Control rmctrl;
+
         public FormMain()
         {
             InitializeComponent();
+            rmctrl = new Remote_Device_Control();
         }
 
         private void FormMain_Load(object sender, EventArgs e)
@@ -50,15 +54,25 @@ namespace Smart_Home
             for (int i = 0; i < random.Next(1, 4); i++)
                 Pets.Add(new Dog());
 
+            for (int i = 0; i < random.Next(10, 20); i++)
+                FragileFurniture.Add(new FragileFurniture());
+
             //debugging.
             foreach (Animal animal in Pets)
                 Console.WriteLine(animal.ToString());
+
+            foreach (FragileFurniture furnitures in FragileFurniture)
+                Console.WriteLine(furnitures.ToString());
 
         }
 
         private void timerAnimals_Tick(object sender, EventArgs e)
         {
+            //Αν ο Χρήστης είναι σπίτι, τότε τα ζώα έχουνε μικρή πιθανότητα να σπάσουν κάτι ή να είναι ζωηρά.
+            if (isHome)
+            {
 
+            }
         }
 
         private void FormMain_FormClosed(object sender, FormClosedEventArgs e)
@@ -70,7 +84,6 @@ namespace Smart_Home
         private void buttonThermansi_Click(object sender, EventArgs e)
         {
             // άνοιγμα φόρμα διαχείρισης συσκευών.
-            Remote_Device_Control rmctrl = new Remote_Device_Control();
             rmctrl.Show();
         }
 

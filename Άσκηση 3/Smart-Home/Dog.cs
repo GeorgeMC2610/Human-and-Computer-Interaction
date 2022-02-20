@@ -22,7 +22,7 @@ namespace Smart_Home
         /// </summary>
         public override void Awaken()
         {
-            Asleep = false;
+            isAsleep = false;
             if (random.Next(0, 2) == 0)
                 ActivityPercentage += 2;
             else

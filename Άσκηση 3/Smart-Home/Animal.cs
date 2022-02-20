@@ -12,7 +12,8 @@ namespace Smart_Home
         protected static Random random = new Random();
 
         //καθορίζει το αν κοιμάται ένα ζώο (TRUE = ΚΟΙΜΑΤΑΙ).
-        protected bool Asleep { get; set; }
+        protected bool isAsleep { get; set; }
+        protected bool isEating { get; set; }
 
         //Ποσοστά πείνας και δραστηριότητας
         protected int HungerPercentage;
@@ -35,14 +36,14 @@ namespace Smart_Home
         public virtual void FallAsleep()
         {
             ActivityPercentage = 0;
-            Asleep = true;
+            isAsleep = true;
         }
 
         //Η μέθοδος που θα «ζωηρεύει» ένα κατοικίδιο
         public virtual void Awaken()
         {
             ActivityPercentage++;
-            Asleep = false;
+            isAsleep = false;
         }
 
         //Αυτή η μέθοδος θα χρησιμοποιείται σε ρολόι. Κάνει ένα ζώο να πεινάει, ανάλογα με το πόσο δραστήριο είναι
@@ -70,6 +71,11 @@ namespace Smart_Home
                 HungerPercentage++;
                 ThirstPercentage += 2;
             }
+        }
+
+        public virtual void Eat()
+        {
+
         }
     }
 }
