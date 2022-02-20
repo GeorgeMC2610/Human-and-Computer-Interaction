@@ -43,6 +43,7 @@ namespace Smart_Home
             this.label_choose_action = new System.Windows.Forms.Label();
             this.timerAnimals = new System.Windows.Forms.Timer(this.components);
             this.labelAnimalWarning = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -112,8 +113,9 @@ namespace Smart_Home
             this.buttonHelp.Name = "buttonHelp";
             this.buttonHelp.Size = new System.Drawing.Size(350, 44);
             this.buttonHelp.TabIndex = 4;
-            this.buttonHelp.Text = "Bοήθεια";
+            this.buttonHelp.Text = "Online βοήθεια";
             this.buttonHelp.UseVisualStyleBackColor = false;
+            this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
             // 
             // pictureBox1
             // 
@@ -194,6 +196,18 @@ namespace Smart_Home
             this.labelAnimalWarning.TabIndex = 11;
             this.labelAnimalWarning.Text = "Ρίξτε μία ματιά στις ανάγκες!";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(94, 463);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(313, 15);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Ανατρέξτε στην online βοήθεια του προσωπικού βοηθού";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -201,6 +215,7 @@ namespace Smart_Home
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(453, 502);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.labelAnimalWarning);
             this.Controls.Add(this.label_choose_action);
             this.Controls.Add(this.pictureBox4);
@@ -243,5 +258,6 @@ namespace Smart_Home
         private System.Windows.Forms.Label label_choose_action;
         private System.Windows.Forms.Timer timerAnimals;
         private System.Windows.Forms.Label labelAnimalWarning;
+        private System.Windows.Forms.Label label1;
     }
 }
