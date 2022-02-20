@@ -52,7 +52,7 @@ namespace Smart_Home
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label8.Location = new System.Drawing.Point(321, 11);
+            this.label8.Location = new System.Drawing.Point(256, 11);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(154, 16);
             this.label8.TabIndex = 27;
@@ -65,7 +65,7 @@ namespace Smart_Home
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button5.Location = new System.Drawing.Point(321, 47);
+            this.button5.Location = new System.Drawing.Point(256, 47);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(191, 46);
             this.button5.TabIndex = 38;
@@ -79,7 +79,7 @@ namespace Smart_Home
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(321, 183);
+            this.button1.Location = new System.Drawing.Point(256, 183);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(191, 31);
             this.button1.TabIndex = 39;
@@ -93,7 +93,7 @@ namespace Smart_Home
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(321, 236);
+            this.button2.Location = new System.Drawing.Point(256, 236);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(191, 50);
             this.button2.TabIndex = 40;
@@ -107,7 +107,7 @@ namespace Smart_Home
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(548, 47);
+            this.button3.Location = new System.Drawing.Point(256, 442);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(191, 45);
             this.button3.TabIndex = 41;
@@ -121,7 +121,7 @@ namespace Smart_Home
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Location = new System.Drawing.Point(321, 304);
+            this.button4.Location = new System.Drawing.Point(256, 306);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(191, 45);
             this.button4.TabIndex = 42;
@@ -135,7 +135,7 @@ namespace Smart_Home
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button7.Location = new System.Drawing.Point(321, 115);
+            this.button7.Location = new System.Drawing.Point(256, 115);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(191, 45);
             this.button7.TabIndex = 44;
@@ -149,7 +149,7 @@ namespace Smart_Home
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button6.Location = new System.Drawing.Point(321, 370);
+            this.button6.Location = new System.Drawing.Point(256, 370);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(191, 50);
             this.button6.TabIndex = 45;
@@ -163,7 +163,7 @@ namespace Smart_Home
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button8.Location = new System.Drawing.Point(548, 115);
+            this.button8.Location = new System.Drawing.Point(256, 509);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(191, 45);
             this.button8.TabIndex = 46;
@@ -177,7 +177,7 @@ namespace Smart_Home
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button9.Location = new System.Drawing.Point(548, 183);
+            this.button9.Location = new System.Drawing.Point(256, 573);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(191, 45);
             this.button9.TabIndex = 47;
@@ -255,8 +255,9 @@ namespace Smart_Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.BackgroundImage = global::Smart_Home.Properties.Resources.background_2;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 403);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button11);
