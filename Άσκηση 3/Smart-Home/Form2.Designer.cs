@@ -114,6 +114,7 @@ namespace Smart_Home
             this.buttonHelp.TabIndex = 4;
             this.buttonHelp.Text = "Bοήθεια";
             this.buttonHelp.UseVisualStyleBackColor = false;
+            this.buttonHelp.Click += new System.EventHandler(this.buttonHelp_Click);
             // 
             // pictureBox1
             // 
