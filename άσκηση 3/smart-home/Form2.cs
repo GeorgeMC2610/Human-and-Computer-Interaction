@@ -81,6 +81,7 @@ namespace Smart_Home
             Application.OpenForms[0].Close();
         }
 
+        // κουμπί μενού: Διαχείριση Συσκευών
         private void buttonThermansi_Click(object sender, EventArgs e)
         {
             // άνοιγμα φόρμα διαχείρισης συσκευών.
@@ -94,6 +95,7 @@ namespace Smart_Home
             schedule.Show();
         }
 
+        // κουμπί μενού: Φροντίδα κατοικιδίου
         private void buttonAnimalCare_Click(object sender, EventArgs e)
         {
             //open form
@@ -101,5 +103,12 @@ namespace Smart_Home
             animal.Show();
         }
 
+        // κουμπί 'βοήθεια'
+        private void buttonHelp_Click(object sender, EventArgs e)
+        {
+            // εμφάνιση φόρμα βοήθειας
+            Help help = new Help();
+            help.Show();
+        }
     }
 }
