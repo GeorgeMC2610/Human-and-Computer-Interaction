@@ -76,7 +76,7 @@ namespace Smart_Home
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(12, 102);
+            this.pictureBox2.Location = new System.Drawing.Point(13, 102);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(100, 83);
             this.pictureBox2.TabIndex = 3;

@@ -54,15 +54,25 @@ namespace Smart_Home
             for (int i = 0; i < random.Next(1, 4); i++)
                 Pets.Add(new Dog());
 
+            for (int i = 0; i < random.Next(10, 20); i++)
+                FragileFurniture.Add(new FragileFurniture());
+
             //debugging.
             foreach (Animal animal in Pets)
                 Console.WriteLine(animal.ToString());
+
+            foreach (FragileFurniture furnitures in FragileFurniture)
+                Console.WriteLine(furnitures.ToString());
 
         }
 
         private void timerAnimals_Tick(object sender, EventArgs e)
         {
+            //Αν ο Χρήστης είναι σπίτι, τότε τα ζώα έχουνε μικρή πιθανότητα να σπάσουν κάτι ή να είναι ζωηρά.
+            if (isHome)
+            {
 
+            }
         }
 
         private void FormMain_FormClosed(object sender, FormClosedEventArgs e)
