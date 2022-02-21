@@ -22,8 +22,6 @@ namespace Smart_Home
         /// </summary>
         public override void Awaken()
         {
-            isAsleep = false;
-
             if (ActivityPercentage >= 100)
             {
                 ActivityPercentage = 100;
@@ -35,6 +33,8 @@ namespace Smart_Home
                 ActivityPercentage += 2;
             else
                 ActivityPercentage++;
+
+            base.Awaken();
         }
 
         /// <summary>
@@ -42,8 +42,8 @@ namespace Smart_Home
         /// </summary>
         public override void Calm()
         {
-            base.Calm();
             ActivityPercentage--;
+            base.Calm();
         }
 
         /// <summary>
@@ -104,6 +104,8 @@ namespace Smart_Home
                 ThirstPercentage += 40;
                 HungerPercentage += 44;
             }
+
+            base.ManageNeeds();
         }
 
         public override string ToString()

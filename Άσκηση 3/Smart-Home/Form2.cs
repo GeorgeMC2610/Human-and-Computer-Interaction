@@ -100,6 +100,8 @@ namespace Smart_Home
 
                 Pets.ForEach(pet => pet.ManageNeeds());
             }
+
+            Pets.ForEach(pet => pet.Debug());
         }
 
         private void FormMain_FormClosed(object sender, FormClosedEventArgs e)

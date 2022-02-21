@@ -22,9 +22,10 @@ namespace Smart_Home
         /// </summary>
         public override void Awaken()
         {
-            isAsleep = false;
             if (random.Next(0, 2) == 0)
                 ActivityPercentage++;
+
+            base.Awaken();
         }
 
         /// <summary>
@@ -32,8 +33,8 @@ namespace Smart_Home
         /// </summary>
         public override void Calm()
         {
-            base.Calm();
             ActivityPercentage = (random.Next(0, 2) == 0) ? ActivityPercentage - 1 : ActivityPercentage - 2;
+            base.Calm();
         }
 
         /// <summary>
@@ -76,6 +77,8 @@ namespace Smart_Home
                 ThirstPercentage += 22;
                 HungerPercentage += 26;
             }
+
+            base.ManageNeeds();
         }
 
         /// <summary>
