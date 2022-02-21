@@ -18,43 +18,42 @@ namespace Smart_Home
         }
 
         /// <summary>
-        /// Ο σκύλος, έχει περισσότερες πιθανότητες να κάνει ζημιά σε σχέση με μία γάτα. Οπότε, ο σκύλος έχει 50% πιθανότητα να του ανέβει η δραστηριότητα κάτα 2 μονάδες και 50% να του ανεβεί κατά μία μονάδα.
+        /// Κάνει έναν σκύλο να πάρει ποσοστό δραστηριότητας. Σε σχέση με μία γάτα, ο σκύλος ανακτά πιο πολλή δραστηριότητα.
+        /// <br></br>
+        /// <br></br>
+        /// <b>ΑΝΑΛΥΤΙΚΑ ΟΙ ΠΙΘΑΝΟΤΗΤΕΣ:</b>
+        /// <list type="bullet">
+        ///     <item><b>Με πείνα ή δίψα λιγότερη του 70%</b>, υπάρχει 50% πιθανότητα να ανακτηθεί 1% δραστηριότητα και 50% πιθανότητα να δραστηριότητα 2%.</item>
+        ///     <item><b>Με πείνα ή δίψα μεγαλύτερη του 70%</b>, υπάρχει 70% πιθανότητα να ανακτηθεί 1% δραστηριότητα και 30% να μείνει η ίδια.</item>
+        /// </list>
         /// </summary>
         public override void Awaken()
         {
-            //αν το ζώο πεινάει ή διψάει, τότε θα σταματήσει να είναι δραστήριο.
             if (HungerPercentage > 70 || ThirstPercentage > 70)
-            {
-                if (random.Next(0, 10) < 3)
-                    ActivityPercentage++;
-            }
-            //αλλιώς είναι αρκετά δραστήριο.
+                ActivityPercentage = (random.Next(0, 10) < 3) ? ActivityPercentage + 1 : ActivityPercentage;
             else
-            {
-                if (random.Next(0, 2) == 0)
-                    ActivityPercentage += 2;
-                else
-                    ActivityPercentage++;
-            }
+                ActivityPercentage = (random.Next(0, 2) == 0) ? ActivityPercentage + 2 : ActivityPercentage + 1;
 
             base.Awaken();
         }
 
         /// <summary>
-        /// O σκύλος γίνεται λιγότερο χαλαρός σε σχέση με τη γάτα. Η μείωση της δραστηριότητας του, γίνεται πάντα κατά 1% μόνο.
+        /// Κάνει έναν σκύλο να χάσει ποσοστό δραστηριότητας. Σε σχέση με μία γάτα, ο σκύλος χάνει λιγότερη δραστηριότητα.
+        /// <br></br>
+        /// <br></br>
+        /// <b>ΑΝΑΛΥΤΙΚΑ ΟΙ ΠΙΘΑΝΟΤΗΤΕΣ:</b>
+        /// <list type="bullet">
+        ///     <item><b>Με πείνα ή δίψα λιγότερη του 70%</b>, χάνεται 1% δραστηριότητας.</item>
+        ///     <item><b>Με πείνα ή δίψα μεγαλύτερη του 70%</b>, υπάρχει 70% πιθανότητα να ανακτηθεί 8% δραστηριότητα και 30% να μείνει η ίδια.</item>
+        /// </list>
         /// </summary>
         public override void Calm()
         {
-            //Αν το ζώο πεινάει, τότε υπάρχει μεγάλη πιθανότητα να ελαττώσουμε αρκετά την δραστηριότητα.
             if (HungerPercentage > 70 || ThirstPercentage > 70)
-            {
-                if (random.Next(0, 10) > 3)
-                    ActivityPercentage -= 8;
-            }
+                ActivityPercentage = (random.Next(0, 10) > 3) ? ActivityPercentage - 8 : ActivityPercentage;
             else
                 ActivityPercentage--;
 
-            ActivityPercentage--;
             base.Calm();
         }
 
