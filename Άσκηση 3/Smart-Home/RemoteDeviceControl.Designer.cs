@@ -500,7 +500,7 @@ namespace Smart_Home
             this.button26.Name = "button26";
             this.button26.Size = new System.Drawing.Size(159, 31);
             this.button26.TabIndex = 45;
-            this.button26.Text = "Παρασκευή καφέ";
+            this.button26.Text = "Παρασκευή Καφέ";
             this.button26.UseVisualStyleBackColor = false;
             this.button26.Click += new System.EventHandler(this.button26_Click);
             // 
@@ -1633,7 +1633,7 @@ namespace Smart_Home
             this.AutoScroll = true;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(804, 487);
+            this.ClientSize = new System.Drawing.Size(787, 487);
             this.Controls.Add(this.panel12);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel10);

@@ -45,6 +45,7 @@ namespace Smart_Home
             this.button13 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button12 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label8
@@ -86,6 +87,7 @@ namespace Smart_Home
             this.button1.TabIndex = 39;
             this.button1.Text = "Ρύθμιση Θεμοκρασίας";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -100,6 +102,7 @@ namespace Smart_Home
             this.button2.TabIndex = 40;
             this.button2.Text = "Άνοιγμα και Κλείσιμο καφετιέρας";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -108,7 +111,7 @@ namespace Smart_Home
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(256, 442);
+            this.button3.Location = new System.Drawing.Point(256, 508);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(191, 45);
             this.button3.TabIndex = 41;
@@ -128,6 +131,7 @@ namespace Smart_Home
             this.button4.TabIndex = 42;
             this.button4.Text = "Πως να παράξετε καφέ;";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button7
             // 
@@ -142,6 +146,7 @@ namespace Smart_Home
             this.button7.TabIndex = 44;
             this.button7.Text = "Άνοιγμα και κλείσιμο θέρμανσης";
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
@@ -150,7 +155,7 @@ namespace Smart_Home
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button6.Location = new System.Drawing.Point(256, 370);
+            this.button6.Location = new System.Drawing.Point(256, 436);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(191, 50);
             this.button6.TabIndex = 45;
@@ -164,7 +169,7 @@ namespace Smart_Home
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button8.Location = new System.Drawing.Point(256, 509);
+            this.button8.Location = new System.Drawing.Point(256, 575);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(191, 45);
             this.button8.TabIndex = 46;
@@ -178,7 +183,7 @@ namespace Smart_Home
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button9.Location = new System.Drawing.Point(256, 573);
+            this.button9.Location = new System.Drawing.Point(256, 639);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(191, 45);
             this.button9.TabIndex = 47;
@@ -256,6 +261,21 @@ namespace Smart_Home
             this.button12.UseVisualStyleBackColor = false;
             this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
+            // button14
+            // 
+            this.button14.BackColor = System.Drawing.Color.Tomato;
+            this.button14.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button14.Location = new System.Drawing.Point(256, 371);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(191, 45);
+            this.button14.TabIndex = 54;
+            this.button14.Text = "Αυτοκαθαρισμός Καφετιέρας";
+            this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
             // Help
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -263,6 +283,7 @@ namespace Smart_Home
             this.AutoScroll = true;
             this.BackgroundImage = global::Smart_Home.Properties.Resources.background_2;
             this.ClientSize = new System.Drawing.Size(800, 403);
+            this.Controls.Add(this.button14);
             this.Controls.Add(this.button12);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button11);
@@ -283,7 +304,6 @@ namespace Smart_Home
             this.Name = "Help";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Help Center";
-            this.Load += new System.EventHandler(this.Help_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -306,5 +326,6 @@ namespace Smart_Home
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button14;
     }
 }
