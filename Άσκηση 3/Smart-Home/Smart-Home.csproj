@@ -256,5 +256,14 @@
   <ItemGroup>
     <None Include="Resources\garage_dark_light.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cat1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cat2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cat3.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -20,13 +20,15 @@ namespace Smart_Home
 
         private void AnimalCare_Load(object sender, EventArgs e)
         {
+            //ξεχωρίζουμε τις γάτες από τους σκύλους.
             Animal[] cats = (from pet in FormMain.Pets where pet is Cat select pet).ToArray();
             Animal[] dogs = (from pet in FormMain.Pets where pet is Dog select pet).ToArray();
 
+            //εφ' όσον υπάρχει τουλάχιστον μία γάτα και τουλάχιστον ένας σκύλος, θέτουμε κατ' ευθείαν τα ονόματά τους.
             labelCat1.Text = cats[0].Name;
             labelDog1.Text = dogs[0].Name;
 
-            //φτιάχνουμε τα ονόματα για τις γάτες
+            //φτιάχνουμε τα ονόματα για τις γάτες, εκεί που υπάρχουν. Αλλιώς σβήνουμε το πίξουρ μποξ και το λέημπελ.
             if (cats.Length >= 2)
                 labelCat2.Text = cats[1].Name;
             else
@@ -37,7 +39,7 @@ namespace Smart_Home
             else
                 labelCat3.Visible = pictureBoxCat3.Visible = false;
 
-            //φτιάχνουμε τα ονόματα για τους σκύλους
+            //το ίδιο κάνουμε και για τους σκύλους.
             if (dogs.Length >= 2)
                 labelDog2.Text = dogs[1].Name;
             else
