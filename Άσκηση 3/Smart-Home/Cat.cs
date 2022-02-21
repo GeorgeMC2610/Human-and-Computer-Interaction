@@ -28,6 +28,15 @@ namespace Smart_Home
         }
 
         /// <summary>
+        /// Η γάτα έχει 50% πιθανότητα να χάσει 1% δραστηριότητα και 50% να χάσει 2% δραστηριότητα.
+        /// </summary>
+        public override void Calm()
+        {
+            base.Calm();
+            ActivityPercentage = (random.Next(0, 2) == 0) ? ActivityPercentage - 1 : ActivityPercentage - 2;
+        }
+
+        /// <summary>
         /// Η γάτα τρώει κανονικά το φαγητό της με κανονικό ρυθμό.
         /// </summary>
         /// <param name="bowl">Το μπωλ το οποίο θέλουμε να πάρουμε και να του αφαιρέσουμε φαγητό.</param>
@@ -43,6 +52,30 @@ namespace Smart_Home
             }
 
             return bowl;
+        }
+
+        public override void ManageNeeds()
+        {
+            if (ActivityPercentage < 15)
+            {
+                ThirstPercentage += 1;
+                HungerPercentage += 2;
+            }
+            else if (ActivityPercentage < 40)
+            {
+                ThirstPercentage += 5;
+                HungerPercentage += 7;
+            }
+            else if (ActivityPercentage < 70)
+            {
+                ThirstPercentage += 14;
+                HungerPercentage += 15;
+            }
+            else
+            {
+                ThirstPercentage += 22;
+                HungerPercentage += 26;
+            }
         }
 
         /// <summary>

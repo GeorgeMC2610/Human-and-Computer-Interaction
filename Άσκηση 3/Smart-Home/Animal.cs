@@ -40,14 +40,19 @@ namespace Smart_Home
         }
 
         //Η μέθοδος που θα «ζωηρεύει» ένα κατοικίδιο
-        public virtual void Awaken()
-        {
-            ActivityPercentage++;
-            isAsleep = false;
-        }
+        public abstract void Awaken();
 
         //Αυτή η μέθοδος θα χρησιμοποιείται σε ρολόι. Κάνει ένα ζώο να πεινάει, ανάλογα με το πόσο δραστήριο είναι
         public abstract void ManageNeeds();
+
+        public virtual void Calm()
+        {
+            if (ActivityPercentage <= 0)
+            {
+                FallAsleep();
+                return;
+            }
+        }
 
         public abstract Bowl Eat(Bowl bowl);
         public abstract Bowl Drink(Bowl bowl);

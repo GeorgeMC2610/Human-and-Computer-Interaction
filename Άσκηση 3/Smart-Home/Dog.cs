@@ -23,10 +23,27 @@ namespace Smart_Home
         public override void Awaken()
         {
             isAsleep = false;
+
+            if (ActivityPercentage >= 100)
+            {
+                ActivityPercentage = 100;
+                Console.WriteLine(Name + " reached maximum Activity Level!");
+                return;
+            }
+
             if (random.Next(0, 2) == 0)
                 ActivityPercentage += 2;
             else
                 ActivityPercentage++;
+        }
+
+        /// <summary>
+        /// O σκύλος γίνεται λιγότερο χαλαρός σε σχέση με τη γάτα. Η μείωση της δραστηριότητας του, γίνεται πάντα κατά 1% μόνο.
+        /// </summary>
+        public override void Calm()
+        {
+            base.Calm();
+            ActivityPercentage--;
         }
 
         /// <summary>
