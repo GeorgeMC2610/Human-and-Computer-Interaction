@@ -49,11 +49,23 @@ namespace Smart_Home
 
             //θα βάλουμε από 1-4 γάτες στα κατοικίδιάς μας.
             for (int i = 0; i < random.Next(1, 4); i++)
-                Pets.Add(new Cat());
+            {
+                Cat potential_cat = new Cat();
+
+                //εδώ σιγουρευόμαστε ότι δεν θα υπάρξει γάτα που θα 'χει ίδιο όνομα με άλλη γάτα.
+                if (!(from pet in Pets where pet.Name == potential_cat.Name select pet).Any())
+                    Pets.Add(potential_cat);
+            }
 
             //το ίδιο ισχύει και για τους σκύλους.
             for (int i = 0; i < random.Next(1, 4); i++)
-                Pets.Add(new Dog());
+            {
+                Dog potential_dog = new Dog();
+
+                //εδώ σιγουρευόμαστε ότι δεν θα υπάρξει σκύλος που θα 'χει ίδιο όνομα με κάποιον άλλο σκύλο.
+                if (!(from pet in Pets where pet.Name == potential_dog.Name select pet).Any())
+                    Pets.Add(potential_dog);
+            }
 
             for (int i = 0; i < random.Next(10, 20); i++)
                 FragileFurniture.Add(new FragileFurniture());
