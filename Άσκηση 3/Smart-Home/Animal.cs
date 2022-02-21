@@ -47,31 +47,7 @@ namespace Smart_Home
         }
 
         //Αυτή η μέθοδος θα χρησιμοποιείται σε ρολόι. Κάνει ένα ζώο να πεινάει, ανάλογα με το πόσο δραστήριο είναι
-        public virtual void ManageNeeds()
-        {
-            if (ActivityPercentage == 0)
-            {
-                if (random.Next(0, 2) == 0)
-                {
-                    HungerPercentage++;
-                    ThirstPercentage += 2;
-                }
-            }
-            else if (ActivityPercentage == 1)
-            {
-                if (random.Next(0, 6) <= 4)
-                {
-                    HungerPercentage++;
-                    ThirstPercentage += 2;
-                }
-                    
-            }
-            else
-            {
-                HungerPercentage++;
-                ThirstPercentage += 2;
-            }
-        }
+        public abstract void ManageNeeds();
 
         public abstract Bowl Eat(Bowl bowl);
         public abstract Bowl Drink(Bowl bowl);

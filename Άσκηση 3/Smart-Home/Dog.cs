@@ -65,6 +65,30 @@ namespace Smart_Home
             return bowl;
         }
 
+        public override void ManageNeeds()
+        {
+            if (ActivityPercentage < 15)
+            {
+                ThirstPercentage += 2;
+                HungerPercentage += 3;
+            }
+            else if (ActivityPercentage < 40)
+            {
+                ThirstPercentage += 10;
+                HungerPercentage += 13;
+            }
+            else if (ActivityPercentage < 70)
+            {
+                ThirstPercentage += 26;
+                HungerPercentage += 30;
+            }
+            else
+            {
+                ThirstPercentage += 40;
+                HungerPercentage += 44;
+            }
+        }
+
         public override string ToString()
         {
             return "Name: " + this.Name + ", Type: Dog";
