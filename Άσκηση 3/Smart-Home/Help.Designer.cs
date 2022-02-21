@@ -117,6 +117,7 @@ namespace Smart_Home
             this.button3.TabIndex = 41;
             this.button3.Text = "Πως λειτουργεί η παπουτσοθήκη;";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -161,6 +162,7 @@ namespace Smart_Home
             this.button6.TabIndex = 45;
             this.button6.Text = "Άνοιγμα και Κλείσιμο παπουτσοθήκης";
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button8
             // 
@@ -175,6 +177,7 @@ namespace Smart_Home
             this.button8.TabIndex = 46;
             this.button8.Text = "Πλύσιμο παπουτσιών στην παπουτσοθήκη";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
@@ -189,6 +192,7 @@ namespace Smart_Home
             this.button9.TabIndex = 47;
             this.button9.Text = "Αυτοκαθαρισμός παπουτσοθήκης";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button10
             // 
