@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Smart_Home
 {
-    class FragileFurniture
+    public class FragileFurniture
     {
         public bool Broken { get; set; }
         private string type;

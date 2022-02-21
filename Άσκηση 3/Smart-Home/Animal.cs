@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Smart_Home
 {
-    abstract class Animal
+    public abstract class Animal
     {
         //μεταβλητή τυχαιότητας για να προσομοιώσουμε πράγματα όπως πείνα και ύπνο.
         protected static Random random = new Random();

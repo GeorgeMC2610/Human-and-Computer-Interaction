@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Smart_Home
 {
-    class Dog : Animal
+    public class Dog : Animal
     {
         //Ο σκύλος και η γάτα θα έχουν ορισμένα ονόματα, τα οποία θα επιλέγουμε τυχαία.
         private static string[] Names = { "Charlie", "Bella", "Max", "Buddy", "Luna", "Coco", "Ruby", "Milo", "Archie" };

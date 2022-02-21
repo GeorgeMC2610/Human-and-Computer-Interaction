@@ -15,12 +15,13 @@ namespace Smart_Home
         //TODO: 
         // - Πρέπει να γίνουν τα picture boxes σωστά στην AnimalCare
         // - Πρέπει να κάνω τα ζώα να πεινάνε, να διψάνε και να σπάνε αντικείμενα
-        // - Πρέπει να βάλω μπωλ
         // - Πρέπει να βρω φωτογραφίες για τα ζώα, άδειο και γεμάτο μπωλ
         // - Πρέπει τα ζώα να τρώνε και να πίνουν νερό, και να τα γεμίζει ο χρήστης.
 
         private static List<FragileFurniture> FragileFurniture = new List<FragileFurniture>();
         private static List<Animal> Pets = new List<Animal>();
+
+        public static Bowl[] Bowls = new Bowl[4];
 
         private static Random random = new Random();
         public static bool isHome = true;
@@ -57,6 +58,11 @@ namespace Smart_Home
             for (int i = 0; i < random.Next(10, 20); i++)
                 FragileFurniture.Add(new FragileFurniture());
 
+            Bowls[0] = new Bowl(true);
+            Bowls[1] = new Bowl(true);
+            Bowls[2] = new Bowl(false);
+            Bowls[3] = new Bowl(false);
+
             //debugging.
             foreach (Animal animal in Pets)
                 Console.WriteLine(animal.ToString());
@@ -68,8 +74,18 @@ namespace Smart_Home
 
         private void timerAnimals_Tick(object sender, EventArgs e)
         {
+            if ((from bowl in Bowls where bowl.Capacity < 20 select bowl.Capacity).Any())
+            {
+                labelAnimalWarning.Text = "Ίσως χρειαστεί να γεμίσετε κάποιο μπωλ.";
+                labelAnimalWarning.Visible = true;
+            }
+            
             //Αν ο Χρήστης είναι σπίτι, τότε τα ζώα έχουνε μικρή πιθανότητα να σπάσουν κάτι ή να είναι ζωηρά.
             if (isHome)
+            {
+                
+            }
+            else
             {
 
             }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Smart_Home
 {
-    class Cat : Animal
+    public class Cat : Animal
     {
         //Τυχαία ονόματα γάτας.
         private static string[] Names = { "Jack", "Loki", "Jasper", "Garfield", "Simba", "Soozie", "Ellie", "Raymond", "Lucy", "Kitty"};
