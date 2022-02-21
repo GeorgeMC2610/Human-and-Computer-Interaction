@@ -157,6 +157,7 @@ namespace Smart_Home
             // 
             // pictureBoxDogBowlFood
             // 
+            this.pictureBoxDogBowlFood.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxDogBowlFood.Location = new System.Drawing.Point(631, 169);
             this.pictureBoxDogBowlFood.Name = "pictureBoxDogBowlFood";
             this.pictureBoxDogBowlFood.Size = new System.Drawing.Size(100, 83);
@@ -165,6 +166,7 @@ namespace Smart_Home
             // 
             // pictureBoxDogBowlWater
             // 
+            this.pictureBoxDogBowlWater.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxDogBowlWater.Location = new System.Drawing.Point(525, 169);
             this.pictureBoxDogBowlWater.Name = "pictureBoxDogBowlWater";
             this.pictureBoxDogBowlWater.Size = new System.Drawing.Size(100, 83);
@@ -176,7 +178,7 @@ namespace Smart_Home
             this.labelCat1.AutoSize = true;
             this.labelCat1.BackColor = System.Drawing.Color.Transparent;
             this.labelCat1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCat1.Location = new System.Drawing.Point(45, 100);
+            this.labelCat1.Location = new System.Drawing.Point(43, 100);
             this.labelCat1.Name = "labelCat1";
             this.labelCat1.Size = new System.Drawing.Size(39, 17);
             this.labelCat1.TabIndex = 12;
@@ -206,6 +208,7 @@ namespace Smart_Home
             // 
             // labelDog1
             // 
+            this.labelDog1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelDog1.AutoSize = true;
             this.labelDog1.BackColor = System.Drawing.Color.Transparent;
             this.labelDog1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -217,6 +220,7 @@ namespace Smart_Home
             // 
             // labelDog2
             // 
+            this.labelDog2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelDog2.AutoSize = true;
             this.labelDog2.BackColor = System.Drawing.Color.Transparent;
             this.labelDog2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -228,6 +232,7 @@ namespace Smart_Home
             // 
             // labelDog3
             // 
+            this.labelDog3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.labelDog3.AutoSize = true;
             this.labelDog3.BackColor = System.Drawing.Color.Transparent;
             this.labelDog3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
