@@ -71,6 +71,7 @@ namespace Smart_Home
             this.button5.TabIndex = 38;
             this.button5.Text = "Άνοιγμα και Κλείσιμο φωτισμού οροφής";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button1
             // 
@@ -197,6 +198,7 @@ namespace Smart_Home
             this.button10.TabIndex = 52;
             this.button10.Text = "Επιλογή \"Εισαγωγή προγράμματος\"";
             this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button11
             // 
@@ -211,6 +213,7 @@ namespace Smart_Home
             this.button11.TabIndex = 51;
             this.button11.Text = "Επιλογή \"Online βοήθεια\"";
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button13
             // 
@@ -225,6 +228,7 @@ namespace Smart_Home
             this.button13.TabIndex = 49;
             this.button13.Text = "Επιλογή \"έλεγχος συσκευών\"";
             this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // label1
             // 
@@ -250,6 +254,7 @@ namespace Smart_Home
             this.button12.TabIndex = 53;
             this.button12.Text = "Επιλογή \"Φροντίδα κατοικιδίου\"";
             this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // Help
             // 
