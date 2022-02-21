@@ -18,12 +18,12 @@ namespace Smart_Home
         // - Πρέπει να βρω φωτογραφίες για τα ζώα, άδειο και γεμάτο μπωλ
         // - Πρέπει τα ζώα να τρώνε και να πίνουν νερό, και να τα γεμίζει ο χρήστης.
 
-        private static List<FragileFurniture> FragileFurniture = new List<FragileFurniture>();
-        private static List<Animal> Pets = new List<Animal>();
+        public static List<FragileFurniture> FragileFurniture = new List<FragileFurniture>();
+        public static List<Animal> Pets = new List<Animal>();
 
         public static Bowl[] Bowls = new Bowl[4];
 
-        private static Random random = new Random();
+        private static readonly Random random = new Random();
         public static bool isHome = true;
 
         // αντικείμενο φόρμας διαχέρισης συσκευών
@@ -47,13 +47,25 @@ namespace Smart_Home
 
             labelAnimalWarning.Visible = false;
 
-            //θα βάλουμε από 1-4 γάτες στα κατοικίδιάς μας.
+            //θα βάλουμε από 1-3 γάτες στα κατοικίδιάς μας.
             for (int i = 0; i < random.Next(1, 4); i++)
-                Pets.Add(new Cat());
+            {
+                Cat potential_cat = new Cat();
+
+                //εδώ σιγουρευόμαστε ότι δεν θα υπάρξει γάτα που θα 'χει ίδιο όνομα με άλλη γάτα.
+                if (!(from pet in Pets where pet.Name == potential_cat.Name select pet).Any())
+                    Pets.Add(potential_cat);
+            }
 
             //το ίδιο ισχύει και για τους σκύλους.
             for (int i = 0; i < random.Next(1, 4); i++)
-                Pets.Add(new Dog());
+            {
+                Dog potential_dog = new Dog();
+
+                //εδώ σιγουρευόμαστε ότι δεν θα υπάρξει σκύλος που θα 'χει ίδιο όνομα με κάποιον άλλο σκύλο.
+                if (!(from pet in Pets where pet.Name == potential_dog.Name select pet).Any())
+                    Pets.Add(potential_dog);
+            }
 
             for (int i = 0; i < random.Next(10, 20); i++)
                 FragileFurniture.Add(new FragileFurniture());
