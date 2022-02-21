@@ -26,7 +26,7 @@ namespace Smart_Home
         private static int[] DogImages = { 0, 1, 2 };
 
         private static readonly Random random = new Random();
-        public static bool isHome = true;
+        public static bool isHome = false;
 
         // αντικείμενο φόρμας διαχέρισης συσκευών
         Remote_Device_Control rmctrl;

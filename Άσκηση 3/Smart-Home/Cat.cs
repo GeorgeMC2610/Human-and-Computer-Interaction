@@ -22,18 +22,27 @@ namespace Smart_Home
         /// </summary>
         public override void Awaken()
         {
-            if (random.Next(0, 2) == 0)
+            if (HungerPercentage > 70 || ThirstPercentage > 70)
+            {
+                if (random.Next(0, 10) < 8)
+                    ActivityPercentage++;
+            }
+            else if (random.Next(0, 2) == 0)
                 ActivityPercentage++;
 
             base.Awaken();
         }
 
         /// <summary>
-        /// Η γάτα έχει 50% πιθανότητα να χάσει 1% δραστηριότητα και 50% να χάσει 2% δραστηριότητα.
+        /// 
         /// </summary>
         public override void Calm()
         {
-            ActivityPercentage = (random.Next(0, 2) == 0) ? ActivityPercentage - 1 : ActivityPercentage - 2;
+            if (HungerPercentage > 70 || ThirstPercentage > 70)
+                ActivityPercentage = (random.Next(0, 10) < 8) ? ActivityPercentage - 10 : ActivityPercentage;
+            else
+                ActivityPercentage = (random.Next(0, 2) == 0) ? ActivityPercentage - 1 : ActivityPercentage - 2;
+
             base.Calm();
         }
 
@@ -42,18 +51,6 @@ namespace Smart_Home
         /// </summary>
         /// <param name="bowl">Το μπωλ το οποίο θέλουμε να πάρουμε και να του αφαιρέσουμε φαγητό.</param>
         /// <returns>Το μεταχειρισμένο μπωλ, επιστρέφεται ώστε να αποθηκεύονται οι αλλαγές.</returns>
-        public override Bowl Eat(Bowl bowl)
-        {
-            if (!bowl.Containing.Equals("food"))
-                throw new Exception("Eat() method can only be called on Bowls containing food");
-            else
-            {
-                bowl.Capacity--;
-                HungerPercentage--;
-            }
-
-            return bowl;
-        }
 
         public override void ManageNeeds()
         {
@@ -94,6 +91,19 @@ namespace Smart_Home
             {
                 bowl.Capacity--;
                 ThirstPercentage--;
+            }
+
+            return bowl;
+        }
+
+        public override Bowl Eat(Bowl bowl)
+        {
+            if (!bowl.Containing.Equals("food"))
+                throw new Exception("Eat() method can only be called on Bowls containing food");
+            else
+            {
+                bowl.Capacity--;
+                HungerPercentage--;
             }
 
             return bowl;

@@ -22,17 +22,20 @@ namespace Smart_Home
         /// </summary>
         public override void Awaken()
         {
-            if (ActivityPercentage >= 100)
+            //αν το ζώο πεινάει ή διψάει, τότε θα σταματήσει να είναι δραστήριο.
+            if (HungerPercentage > 70 || ThirstPercentage > 70)
             {
-                ActivityPercentage = 100;
-                Console.WriteLine(Name + " reached maximum Activity Level!");
-                return;
+                if (random.Next(0, 10) < 3)
+                    ActivityPercentage++;
             }
-
-            if (random.Next(0, 2) == 0)
-                ActivityPercentage += 2;
+            //αλλιώς είναι αρκετά δραστήριο.
             else
-                ActivityPercentage++;
+            {
+                if (random.Next(0, 2) == 0)
+                    ActivityPercentage += 2;
+                else
+                    ActivityPercentage++;
+            }
 
             base.Awaken();
         }
@@ -42,6 +45,15 @@ namespace Smart_Home
         /// </summary>
         public override void Calm()
         {
+            //Αν το ζώο πεινάει, τότε υπάρχει μεγάλη πιθανότητα να ελαττώσουμε αρκετά την δραστηριότητα.
+            if (HungerPercentage > 70 || ThirstPercentage > 70)
+            {
+                if (random.Next(0, 10) > 3)
+                    ActivityPercentage -= 8;
+            }
+            else
+                ActivityPercentage--;
+
             ActivityPercentage--;
             base.Calm();
         }
