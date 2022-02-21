@@ -157,8 +157,8 @@
   <data name="hole-medium-light" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hole-medium-light1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="calendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\calendar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bathroom-dark-light" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bathroom-dark-light1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="coffee_machine_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\coffee_machine_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,29 +166,29 @@
   <data name="katospi_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\katospi_4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="garage_dark_light" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\garage_dark_light.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="remote-control" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\remote-control1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="shoe_case11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\shoe_case11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="coffee_machine_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\coffee_machine_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="shoe_case21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shoe_case21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hole" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hole1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bedroom-dark-light" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bedroom-dark-light1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bathroom-dark-light" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bathroom-dark-light1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="garage_dark_light" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\garage_dark_light.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pawprint" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pawprint1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="temperature_hot" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\temperature_hot1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cat2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cat2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="garage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\garage1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -202,8 +202,11 @@
   <data name="coffee_machine_41" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\coffee_machine_41.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bedroom-dark-light" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bedroom-dark-light1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hole" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hole1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cat3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cat3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="temperature" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\temperature1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -213,6 +216,9 @@
   </data>
   <data name="coffee" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\coffee1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="calendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\calendar1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="coffee_machine_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\coffee_machine_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -232,8 +238,8 @@
   <data name="lights-on" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lights-on1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="shoe_case21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\shoe_case21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="coffee_machine_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\coffee_machine_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="shoe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\shoe1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -247,10 +253,13 @@
   <data name="cat1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cat1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cat2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cat2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="dog1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dog1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cat3" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cat3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="dog2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dog2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dog3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dog3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
