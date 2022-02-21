@@ -176,7 +176,7 @@ namespace Smart_Home
             this.labelCat1.AutoSize = true;
             this.labelCat1.BackColor = System.Drawing.Color.Transparent;
             this.labelCat1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCat1.Location = new System.Drawing.Point(45, 99);
+            this.labelCat1.Location = new System.Drawing.Point(45, 100);
             this.labelCat1.Name = "labelCat1";
             this.labelCat1.Size = new System.Drawing.Size(39, 17);
             this.labelCat1.TabIndex = 12;
@@ -187,7 +187,7 @@ namespace Smart_Home
             this.labelCat2.AutoSize = true;
             this.labelCat2.BackColor = System.Drawing.Color.Transparent;
             this.labelCat2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCat2.Location = new System.Drawing.Point(149, 99);
+            this.labelCat2.Location = new System.Drawing.Point(149, 100);
             this.labelCat2.Name = "labelCat2";
             this.labelCat2.Size = new System.Drawing.Size(39, 17);
             this.labelCat2.TabIndex = 13;
@@ -198,7 +198,7 @@ namespace Smart_Home
             this.labelCat3.AutoSize = true;
             this.labelCat3.BackColor = System.Drawing.Color.Transparent;
             this.labelCat3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCat3.Location = new System.Drawing.Point(252, 99);
+            this.labelCat3.Location = new System.Drawing.Point(252, 100);
             this.labelCat3.Name = "labelCat3";
             this.labelCat3.Size = new System.Drawing.Size(39, 17);
             this.labelCat3.TabIndex = 14;
@@ -209,7 +209,7 @@ namespace Smart_Home
             this.labelDog1.AutoSize = true;
             this.labelDog1.BackColor = System.Drawing.Color.Transparent;
             this.labelDog1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDog1.Location = new System.Drawing.Point(718, 99);
+            this.labelDog1.Location = new System.Drawing.Point(718, 100);
             this.labelDog1.Name = "labelDog1";
             this.labelDog1.Size = new System.Drawing.Size(45, 17);
             this.labelDog1.TabIndex = 15;
@@ -220,7 +220,7 @@ namespace Smart_Home
             this.labelDog2.AutoSize = true;
             this.labelDog2.BackColor = System.Drawing.Color.Transparent;
             this.labelDog2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDog2.Location = new System.Drawing.Point(615, 99);
+            this.labelDog2.Location = new System.Drawing.Point(615, 100);
             this.labelDog2.Name = "labelDog2";
             this.labelDog2.Size = new System.Drawing.Size(45, 17);
             this.labelDog2.TabIndex = 16;
@@ -231,7 +231,7 @@ namespace Smart_Home
             this.labelDog3.AutoSize = true;
             this.labelDog3.BackColor = System.Drawing.Color.Transparent;
             this.labelDog3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDog3.Location = new System.Drawing.Point(507, 99);
+            this.labelDog3.Location = new System.Drawing.Point(507, 100);
             this.labelDog3.Name = "labelDog3";
             this.labelDog3.Size = new System.Drawing.Size(45, 17);
             this.labelDog3.TabIndex = 17;
