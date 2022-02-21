@@ -123,7 +123,16 @@ namespace Smart_Home
             }
 
             if (random.Next(0, 10) == 5)
-                Pets.ForEach(pet => pet.ManageNeeds());
+                if (random.Next(0, 2) == 0)
+                    Pets.ForEach(pet => pet.ManageNeeds());
+                else
+                {
+                    (from pet in Pets where pet is Cat select pet).ToList().ForEach(cat => cat.Drink(Bowls[0]));
+                    (from pet in Pets where pet is Cat select pet).ToList().ForEach(cat => cat.Eat(Bowls[2]));
+
+                    (from pet in Pets where pet is Dog select pet).ToList().ForEach(dog => dog.Drink(Bowls[1]));
+                    (from pet in Pets where pet is Dog select pet).ToList().ForEach(dog => dog.Eat(Bowls[3]));
+                }
 
             Pets.ForEach(pet => pet.Debug());
         }

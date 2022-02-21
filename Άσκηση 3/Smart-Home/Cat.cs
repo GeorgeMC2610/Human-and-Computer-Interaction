@@ -103,8 +103,8 @@ namespace Smart_Home
                 throw new Exception("Drink() method can only be called on Bowls containing water");
             else
             {
-                bowl.Capacity--;
-                ThirstPercentage--;
+                bowl.Capacity    = (bowl.Capacity <= 0)    ? 0    : bowl.Capacity - 1;
+                ThirstPercentage = (ThirstPercentage <= 0) ? 0    : ThirstPercentage - 1;
             }
 
             return bowl;
@@ -116,8 +116,8 @@ namespace Smart_Home
                 throw new Exception("Eat() method can only be called on Bowls containing food");
             else
             {
-                bowl.Capacity--;
-                HungerPercentage--;
+                bowl.Capacity    = (bowl.Capacity <= 0)?     0 : bowl.Capacity - 1;
+                HungerPercentage = (HungerPercentage <= 0) ? 0 : HungerPercentage - 1 ;
             }
 
             return bowl;
