@@ -126,7 +126,6 @@ namespace Smart_Home
             // 
             this.pictureBoxCat3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxCat3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxCat3.Image = global::Smart_Home.Properties.Resources.cat1;
             this.pictureBoxCat3.Location = new System.Drawing.Point(225, 13);
             this.pictureBoxCat3.Name = "pictureBoxCat3";
             this.pictureBoxCat3.Size = new System.Drawing.Size(100, 100);
@@ -177,7 +176,7 @@ namespace Smart_Home
             // pictureBoxDogBowlFood
             // 
             this.pictureBoxDogBowlFood.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBoxDogBowlFood.Location = new System.Drawing.Point(631, 169);
+            this.pictureBoxDogBowlFood.Location = new System.Drawing.Point(631, 190);
             this.pictureBoxDogBowlFood.Name = "pictureBoxDogBowlFood";
             this.pictureBoxDogBowlFood.Size = new System.Drawing.Size(100, 83);
             this.pictureBoxDogBowlFood.TabIndex = 10;
@@ -186,7 +185,7 @@ namespace Smart_Home
             // pictureBoxDogBowlWater
             // 
             this.pictureBoxDogBowlWater.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBoxDogBowlWater.Location = new System.Drawing.Point(525, 169);
+            this.pictureBoxDogBowlWater.Location = new System.Drawing.Point(525, 190);
             this.pictureBoxDogBowlWater.Name = "pictureBoxDogBowlWater";
             this.pictureBoxDogBowlWater.Size = new System.Drawing.Size(100, 83);
             this.pictureBoxDogBowlWater.TabIndex = 11;

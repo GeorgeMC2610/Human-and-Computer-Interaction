@@ -22,6 +22,9 @@ namespace Smart_Home
 
         public static Bowl[] Bowls = new Bowl[4];
 
+        private static int[] CatImages = { 0, 1, 2 };
+        private static int[] DogImages = { 0, 1, 2 };
+
         private static readonly Random random = new Random();
         public static bool isHome = true;
 
@@ -74,12 +77,23 @@ namespace Smart_Home
             Bowls[2] = new Bowl(false);
             Bowls[3] = new Bowl(false);
 
-            //debugging.
-            foreach (Animal animal in Pets)
-                Console.WriteLine(animal.ToString());
+            CatImages = Shuffle(CatImages);
+            DogImages = Shuffle(DogImages);
+        }
 
-            foreach (FragileFurniture furnitures in FragileFurniture)
-                Console.WriteLine(furnitures.ToString());
+        public int[] Shuffle(int[] array)
+        {
+            int n = array.Length;
+            while (n > 1)
+            {
+                n--;
+                int k = random.Next(n + 1);
+                int value = array[k];
+                array[k] = array[n];
+                array[n] = value;
+            }
+
+            return array;
         }
 
 
@@ -138,7 +152,7 @@ namespace Smart_Home
         private void buttonAnimalCare_Click(object sender, EventArgs e)
         {
             //open form
-            AnimalCare animal = new AnimalCare();
+            AnimalCare animal = new AnimalCare(CatImages, DogImages);
             animal.Show();
         }
 
