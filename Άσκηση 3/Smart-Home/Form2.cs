@@ -63,8 +63,6 @@ namespace Smart_Home
             Bowls[2] = new Bowl(false);
             Bowls[3] = new Bowl(false);
 
-            Bowls[0].Capacity = 0;
-
             //debugging.
             foreach (Animal animal in Pets)
                 Console.WriteLine(animal.ToString());
