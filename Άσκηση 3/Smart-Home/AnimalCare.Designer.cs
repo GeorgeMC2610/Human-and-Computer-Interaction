@@ -38,12 +38,20 @@ namespace Smart_Home
             this.pictureBoxCat3 = new System.Windows.Forms.PictureBox();
             this.pictureBoxDog2 = new System.Windows.Forms.PictureBox();
             this.pictureBoxDog3 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxCatBowlWater = new System.Windows.Forms.PictureBox();
+            this.pictureBoxCatBowlFood = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDogBowlFood = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDogBowlWater = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCat1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDog1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCat2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCat3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDog2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDog3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCatBowlWater)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCatBowlFood)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDogBowlFood)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDogBowlWater)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonRefill
@@ -84,7 +92,8 @@ namespace Smart_Home
             // 
             // pictureBoxDog1
             // 
-            this.pictureBoxDog1.Location = new System.Drawing.Point(13, 102);
+            this.pictureBoxDog1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBoxDog1.Location = new System.Drawing.Point(688, 13);
             this.pictureBoxDog1.Name = "pictureBoxDog1";
             this.pictureBoxDog1.Size = new System.Drawing.Size(100, 83);
             this.pictureBoxDog1.TabIndex = 3;
@@ -108,7 +117,8 @@ namespace Smart_Home
             // 
             // pictureBoxDog2
             // 
-            this.pictureBoxDog2.Location = new System.Drawing.Point(119, 102);
+            this.pictureBoxDog2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBoxDog2.Location = new System.Drawing.Point(582, 13);
             this.pictureBoxDog2.Name = "pictureBoxDog2";
             this.pictureBoxDog2.Size = new System.Drawing.Size(100, 83);
             this.pictureBoxDog2.TabIndex = 6;
@@ -116,11 +126,44 @@ namespace Smart_Home
             // 
             // pictureBoxDog3
             // 
-            this.pictureBoxDog3.Location = new System.Drawing.Point(225, 102);
+            this.pictureBoxDog3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBoxDog3.Location = new System.Drawing.Point(476, 13);
             this.pictureBoxDog3.Name = "pictureBoxDog3";
             this.pictureBoxDog3.Size = new System.Drawing.Size(100, 83);
             this.pictureBoxDog3.TabIndex = 7;
             this.pictureBoxDog3.TabStop = false;
+            // 
+            // pictureBoxCatBowlWater
+            // 
+            this.pictureBoxCatBowlWater.Location = new System.Drawing.Point(67, 169);
+            this.pictureBoxCatBowlWater.Name = "pictureBoxCatBowlWater";
+            this.pictureBoxCatBowlWater.Size = new System.Drawing.Size(100, 83);
+            this.pictureBoxCatBowlWater.TabIndex = 8;
+            this.pictureBoxCatBowlWater.TabStop = false;
+            // 
+            // pictureBoxCatBowlFood
+            // 
+            this.pictureBoxCatBowlFood.Location = new System.Drawing.Point(173, 169);
+            this.pictureBoxCatBowlFood.Name = "pictureBoxCatBowlFood";
+            this.pictureBoxCatBowlFood.Size = new System.Drawing.Size(100, 83);
+            this.pictureBoxCatBowlFood.TabIndex = 9;
+            this.pictureBoxCatBowlFood.TabStop = false;
+            // 
+            // pictureBoxDogBowlFood
+            // 
+            this.pictureBoxDogBowlFood.Location = new System.Drawing.Point(631, 169);
+            this.pictureBoxDogBowlFood.Name = "pictureBoxDogBowlFood";
+            this.pictureBoxDogBowlFood.Size = new System.Drawing.Size(100, 83);
+            this.pictureBoxDogBowlFood.TabIndex = 10;
+            this.pictureBoxDogBowlFood.TabStop = false;
+            // 
+            // pictureBoxDogBowlWater
+            // 
+            this.pictureBoxDogBowlWater.Location = new System.Drawing.Point(525, 169);
+            this.pictureBoxDogBowlWater.Name = "pictureBoxDogBowlWater";
+            this.pictureBoxDogBowlWater.Size = new System.Drawing.Size(100, 83);
+            this.pictureBoxDogBowlWater.TabIndex = 11;
+            this.pictureBoxDogBowlWater.TabStop = false;
             // 
             // AnimalCare
             // 
@@ -129,6 +172,10 @@ namespace Smart_Home
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.pictureBoxDogBowlWater);
+            this.Controls.Add(this.pictureBoxDogBowlFood);
+            this.Controls.Add(this.pictureBoxCatBowlFood);
+            this.Controls.Add(this.pictureBoxCatBowlWater);
             this.Controls.Add(this.pictureBoxDog3);
             this.Controls.Add(this.pictureBoxDog2);
             this.Controls.Add(this.pictureBoxCat3);
@@ -147,6 +194,10 @@ namespace Smart_Home
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCat3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDog2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDog3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCatBowlWater)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCatBowlFood)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDogBowlFood)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDogBowlWater)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -161,5 +212,9 @@ namespace Smart_Home
         private System.Windows.Forms.PictureBox pictureBoxCat3;
         private System.Windows.Forms.PictureBox pictureBoxDog2;
         private System.Windows.Forms.PictureBox pictureBoxDog3;
+        private System.Windows.Forms.PictureBox pictureBoxCatBowlWater;
+        private System.Windows.Forms.PictureBox pictureBoxCatBowlFood;
+        private System.Windows.Forms.PictureBox pictureBoxDogBowlFood;
+        private System.Windows.Forms.PictureBox pictureBoxDogBowlWater;
     }
 }

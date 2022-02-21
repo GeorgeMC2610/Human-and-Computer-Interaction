@@ -72,6 +72,7 @@ namespace Smart_Home
 
         }
 
+
         private void timerAnimals_Tick(object sender, EventArgs e)
         {
             if ((from bowl in Bowls where bowl.Capacity < 20 select bowl.Capacity).Any())
@@ -79,15 +80,25 @@ namespace Smart_Home
                 labelAnimalWarning.Text = "Ίσως χρειαστεί να γεμίσετε κάποιο μπωλ.";
                 labelAnimalWarning.Visible = true;
             }
-            
+
             //Αν ο Χρήστης είναι σπίτι, τότε τα ζώα έχουνε μικρή πιθανότητα να σπάσουν κάτι ή να είναι ζωηρά.
             if (isHome)
             {
-                
+                if (random.Next(0, 10) < 6)
+                    Pets.ForEach(pet => pet.Calm());
+                else
+                    Pets.ForEach(pet => pet.Awaken());
+
+                Pets.ForEach(pet => pet.ManageNeeds());
             }
             else
             {
+                if (random.Next(0, 10) < 6)
+                    Pets.ForEach(pet => pet.Awaken());
+                else
+                    Pets.ForEach(pet => pet.Calm());
 
+                Pets.ForEach(pet => pet.ManageNeeds());
             }
         }
 
