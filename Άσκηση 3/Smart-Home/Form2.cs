@@ -81,15 +81,24 @@ namespace Smart_Home
                 labelAnimalWarning.Visible = true;
             }
 
-
             //Αν ο Χρήστης είναι σπίτι, τότε τα ζώα έχουνε μικρή πιθανότητα να σπάσουν κάτι ή να είναι ζωηρά.
             if (isHome)
             {
-                
+                if (random.Next(0, 10) < 6)
+                    Pets.ForEach(pet => pet.Calm());
+                else
+                    Pets.ForEach(pet => pet.Awaken());
+
+                Pets.ForEach(pet => pet.ManageNeeds());
             }
             else
             {
+                if (random.Next(0, 10) < 6)
+                    Pets.ForEach(pet => pet.Awaken());
+                else
+                    Pets.ForEach(pet => pet.Calm());
 
+                Pets.ForEach(pet => pet.ManageNeeds());
             }
         }
 

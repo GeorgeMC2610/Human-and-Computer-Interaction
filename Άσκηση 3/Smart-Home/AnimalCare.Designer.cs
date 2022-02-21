@@ -32,10 +32,18 @@ namespace Smart_Home
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnimalCare));
             this.buttonRefill = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.pictureBoxCat1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDog1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxCat2 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxCat3 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDog2 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDog3 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCat1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDog1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCat2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCat3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDog2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDog3)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonRefill
@@ -66,21 +74,53 @@ namespace Smart_Home
             this.button1.Text = "ΕΠΙΣΚΕΥΗ ΕΥΘΡΑΥΣΤΩΝ ΑΝΤΙΚΕΙΜΕΝΩΝ";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // pictureBox1
+            // pictureBoxCat1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(13, 13);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 83);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.pictureBoxCat1.Location = new System.Drawing.Point(13, 13);
+            this.pictureBoxCat1.Name = "pictureBoxCat1";
+            this.pictureBoxCat1.Size = new System.Drawing.Size(100, 83);
+            this.pictureBoxCat1.TabIndex = 2;
+            this.pictureBoxCat1.TabStop = false;
             // 
-            // pictureBox2
+            // pictureBoxDog1
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(13, 102);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(100, 83);
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
+            this.pictureBoxDog1.Location = new System.Drawing.Point(13, 102);
+            this.pictureBoxDog1.Name = "pictureBoxDog1";
+            this.pictureBoxDog1.Size = new System.Drawing.Size(100, 83);
+            this.pictureBoxDog1.TabIndex = 3;
+            this.pictureBoxDog1.TabStop = false;
+            // 
+            // pictureBoxCat2
+            // 
+            this.pictureBoxCat2.Location = new System.Drawing.Point(119, 13);
+            this.pictureBoxCat2.Name = "pictureBoxCat2";
+            this.pictureBoxCat2.Size = new System.Drawing.Size(100, 83);
+            this.pictureBoxCat2.TabIndex = 4;
+            this.pictureBoxCat2.TabStop = false;
+            // 
+            // pictureBoxCat3
+            // 
+            this.pictureBoxCat3.Location = new System.Drawing.Point(225, 13);
+            this.pictureBoxCat3.Name = "pictureBoxCat3";
+            this.pictureBoxCat3.Size = new System.Drawing.Size(100, 83);
+            this.pictureBoxCat3.TabIndex = 5;
+            this.pictureBoxCat3.TabStop = false;
+            // 
+            // pictureBoxDog2
+            // 
+            this.pictureBoxDog2.Location = new System.Drawing.Point(119, 102);
+            this.pictureBoxDog2.Name = "pictureBoxDog2";
+            this.pictureBoxDog2.Size = new System.Drawing.Size(100, 83);
+            this.pictureBoxDog2.TabIndex = 6;
+            this.pictureBoxDog2.TabStop = false;
+            // 
+            // pictureBoxDog3
+            // 
+            this.pictureBoxDog3.Location = new System.Drawing.Point(225, 102);
+            this.pictureBoxDog3.Name = "pictureBoxDog3";
+            this.pictureBoxDog3.Size = new System.Drawing.Size(100, 83);
+            this.pictureBoxDog3.TabIndex = 7;
+            this.pictureBoxDog3.TabStop = false;
             // 
             // AnimalCare
             // 
@@ -89,16 +129,24 @@ namespace Smart_Home
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBoxDog3);
+            this.Controls.Add(this.pictureBoxDog2);
+            this.Controls.Add(this.pictureBoxCat3);
+            this.Controls.Add(this.pictureBoxCat2);
+            this.Controls.Add(this.pictureBoxDog1);
+            this.Controls.Add(this.pictureBoxCat1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonRefill);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AnimalCare";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Φροντίδα Κατοικιδίων";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCat1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDog1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCat2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCat3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDog2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDog3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -107,7 +155,11 @@ namespace Smart_Home
 
         private System.Windows.Forms.Button buttonRefill;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBoxCat1;
+        private System.Windows.Forms.PictureBox pictureBoxDog1;
+        private System.Windows.Forms.PictureBox pictureBoxCat2;
+        private System.Windows.Forms.PictureBox pictureBoxCat3;
+        private System.Windows.Forms.PictureBox pictureBoxDog2;
+        private System.Windows.Forms.PictureBox pictureBoxDog3;
     }
 }
