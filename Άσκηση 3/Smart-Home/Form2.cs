@@ -47,7 +47,7 @@ namespace Smart_Home
 
             labelAnimalWarning.Visible = false;
 
-            //θα βάλουμε από 1-4 γάτες στα κατοικίδιάς μας.
+            //θα βάλουμε από 1-3 γάτες στα κατοικίδιάς μας.
             for (int i = 0; i < random.Next(1, 4); i++)
             {
                 Cat potential_cat = new Cat();
