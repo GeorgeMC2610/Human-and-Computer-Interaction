@@ -17,5 +17,14 @@ namespace Smart_Home
         {
             InitializeComponent();
         }
+
+        private void AnimalCare_Load(object sender, EventArgs e)
+        {
+            Animal[] cats = (from pet in FormMain.Pets where pet is Cat select pet).ToArray();
+            Animal[] dogs = (from pet in FormMain.Pets where pet is Dog select pet).ToArray();
+
+            labelCat1.Text = cats[0].Name;
+            labelDog1.Text = dogs[0].Name;
+        }
     }
 }

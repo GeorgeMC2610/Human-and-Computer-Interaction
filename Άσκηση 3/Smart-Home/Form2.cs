@@ -18,12 +18,12 @@ namespace Smart_Home
         // - Πρέπει να βρω φωτογραφίες για τα ζώα, άδειο και γεμάτο μπωλ
         // - Πρέπει τα ζώα να τρώνε και να πίνουν νερό, και να τα γεμίζει ο χρήστης.
 
-        private static List<FragileFurniture> FragileFurniture = new List<FragileFurniture>();
-        private static List<Animal> Pets = new List<Animal>();
+        public static List<FragileFurniture> FragileFurniture = new List<FragileFurniture>();
+        public static List<Animal> Pets = new List<Animal>();
 
         public static Bowl[] Bowls = new Bowl[4];
 
-        private static Random random = new Random();
+        private static readonly Random random = new Random();
         public static bool isHome = true;
 
         // αντικείμενο φόρμας διαχέρισης συσκευών
