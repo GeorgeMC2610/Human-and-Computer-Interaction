@@ -69,7 +69,6 @@ namespace Smart_Home
 
             foreach (FragileFurniture furnitures in FragileFurniture)
                 Console.WriteLine(furnitures.ToString());
-
         }
 
 
@@ -89,7 +88,6 @@ namespace Smart_Home
                 else
                     Pets.ForEach(pet => pet.Awaken());
 
-                Pets.ForEach(pet => pet.ManageNeeds());
             }
             else
             {
@@ -97,9 +95,12 @@ namespace Smart_Home
                     Pets.ForEach(pet => pet.Awaken());
                 else
                     Pets.ForEach(pet => pet.Calm());
-
-                Pets.ForEach(pet => pet.ManageNeeds());
             }
+
+            if (random.Next(0, 10) == 5)
+                Pets.ForEach(pet => pet.ManageNeeds());
+
+            Pets.ForEach(pet => pet.Debug());
         }
 
         private void FormMain_FormClosed(object sender, FormClosedEventArgs e)
