@@ -22,6 +22,7 @@ namespace Smart_Home
         {
             InitializeComponent();
 
+            //παίρνουμε τις τιμές για τυχαίες εικόνες
             Bitmap[] cat_pics = { Properties.Resources.cat1, Properties.Resources.cat2, Properties.Resources.cat3 };
             Bitmap[] dog_pics = { Properties.Resources.dog1, Properties.Resources.dog2, Properties.Resources.dog3 };
 
@@ -32,7 +33,6 @@ namespace Smart_Home
             pictureBoxDog1.Image = dog_pics[dog[0]];
             pictureBoxDog2.Image = dog_pics[dog[1]];
             pictureBoxDog3.Image = dog_pics[dog[2]];
-            
         }
 
         private void AnimalCare_Load(object sender, EventArgs e)
