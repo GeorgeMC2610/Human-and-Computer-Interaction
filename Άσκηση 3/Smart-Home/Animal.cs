@@ -51,7 +51,7 @@ namespace Smart_Home
         public virtual void ManageNeeds()
         {
             ThirstPercentage = (ThirstPercentage > 100) ? 100 : ThirstPercentage;
-            HungerPercentage = (HungerPercentage > 100) ? 100 : ThirstPercentage;
+            HungerPercentage = (HungerPercentage > 100) ? 100 : HungerPercentage;
         }
 
         public virtual void Calm()
