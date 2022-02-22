@@ -14,8 +14,7 @@ namespace Smart_Home
     {
         //TODO: 
         // - Πρέπει να κάνω τα ζώα να σπάνε αντικείμενα
-        // - Πρέπει να βρω φωτογραφίες για τα ζώα, άδειο και γεμάτο μπωλ
-        // - Πρέπει τα ζώα να τρώνε και να πίνουν νερό, και να τα γεμίζει ο χρήστης.
+        // - Πρέπει να βρω φωτογραφίες για τα ζώα, άδειο και γεμάτο μπωλs
 
         public static List<FragileFurniture> FragileFurniture = new List<FragileFurniture>();
         public static List<Animal> Pets = new List<Animal>();
@@ -26,7 +25,7 @@ namespace Smart_Home
         private static int[] DogImages = { 0, 1, 2 };
 
         private static readonly Random random = new Random();
-        public static bool isHome = false;
+        public static bool isHome = true;
 
         // αντικείμενο φόρμας διαχέρισης συσκευών
         Remote_Device_Control rmctrl;
@@ -122,14 +121,18 @@ namespace Smart_Home
                     Pets.ForEach(pet => pet.Calm());
             }
 
+            //έχουμε 10% πιθανότητα να πεινάσει/διψάσει κάποιο ζώο.
+            if (random.Next(0, 10) == 0)
+                Pets.ForEach(pet => pet.ManageNeeds());
+
             foreach (Animal pet in Pets)
             {
                 //βλέπουμε κλιμακωτά την πείνα και βλέπουμε αν ένα ζώο πρέπει να φάει ή όχι.
-                if (pet.hungerPercentage < 20)
+                if (pet.hungerPercentage < 10)
+                    continue;
+                else if (pet.hungerPercentage < 20)
                 {
-                    if (random.Next(0, 10) < 7)
-                        pet.ManageNeeds();
-                    else
+                    if (random.Next(0, 10) < 3)
                     {
                         Bowls[2] = (pet is Cat) ? pet.Eat(Bowls[2]) : Bowls[2];
                         Bowls[3] = (pet is Dog) ? pet.Eat(Bowls[3]) : Bowls[3];
@@ -138,8 +141,6 @@ namespace Smart_Home
                 else if (pet.hungerPercentage < 50)
                 {
                     if (random.Next(0, 10) < 5)
-                        pet.ManageNeeds();
-                    else
                     {
                         Bowls[2] = (pet is Cat) ? pet.Eat(Bowls[2]) : Bowls[2];
                         Bowls[3] = (pet is Dog) ? pet.Eat(Bowls[3]) : Bowls[3];
@@ -147,9 +148,7 @@ namespace Smart_Home
                 }
                 else if (pet.hungerPercentage < 70)
                 {
-                    if (random.Next(0, 10) < 2)
-                        pet.ManageNeeds();
-                    else
+                    if (random.Next(0, 10) < 8)
                     {
                         Bowls[2] = (pet is Cat) ? pet.Eat(Bowls[2]) : Bowls[2];
                         Bowls[3] = (pet is Dog) ? pet.Eat(Bowls[3]) : Bowls[3];
@@ -164,9 +163,7 @@ namespace Smart_Home
                 //το ίδιο κάνουμε και για την δίψα.
                 if (pet.thirstPercentage < 20)
                 {
-                    if (random.Next(0, 10) < 7)
-                        pet.ManageNeeds();
-                    else
+                    if (random.Next(0, 10) < 3)
                     {
                         Bowls[0] = (pet is Cat) ? pet.Drink(Bowls[0]) : Bowls[0];
                         Bowls[1] = (pet is Dog) ? pet.Drink(Bowls[1]) : Bowls[1];
@@ -175,8 +172,6 @@ namespace Smart_Home
                 else if (pet.thirstPercentage < 50)
                 {
                     if (random.Next(0, 10) < 5)
-                        pet.ManageNeeds();
-                    else
                     {
                         Bowls[0] = (pet is Cat) ? pet.Drink(Bowls[0]) : Bowls[0];
                         Bowls[1] = (pet is Dog) ? pet.Drink(Bowls[1]) : Bowls[1];
@@ -184,9 +179,7 @@ namespace Smart_Home
                 }
                 else if (pet.thirstPercentage < 70)
                 {
-                    if (random.Next(0, 10) < 2)
-                        pet.ManageNeeds();
-                    else
+                    if (random.Next(0, 10) < 8)
                     {
                         Bowls[0] = (pet is Cat) ? pet.Drink(Bowls[0]) : Bowls[0];
                         Bowls[1] = (pet is Dog) ? pet.Drink(Bowls[1]) : Bowls[1];

@@ -58,10 +58,10 @@ namespace Smart_Home
         }
 
         /// <summary>
-        /// Συγκριτικά με τη γάτα, ο σκύλος πίνει πιο πολύ νερό και χορταίνει πιο δύσκολα.
+        /// Μέθοδος στην οποία ο σκύλος πίνει νερό. Για κάθε μονάδα που αφαιρείται στο μπωλ, ο σκύλος αναπληρώνει 5% της δίψας του.
         /// </summary>
         /// <param name="bowl">Το μπωλ το οποίο θέλουμε να πάρουμε και να του αφαιρέσουμε νερό.</param>
-        /// <returns>Το μεταχειρισμένο μπωλ, επιστρέφεται ώστε να αποθηκεύονται οι αλλαγές.</returns>
+        /// <returns>Το μεταχειρισμένο μπωλ, ώστε να αποθηκεύονται οι αλλαγές.</returns>
         public override Bowl Drink(Bowl bowl)
         {
             if (bowl.Capacity == 0)
@@ -70,17 +70,17 @@ namespace Smart_Home
                 return bowl;
             }
 
-            ThirstPercentage--;
-            bowl.Capacity -= 2;
+            ThirstPercentage -= 5;
+            bowl.Capacity--;
 
             return base.Drink(bowl);
         }
 
         /// <summary>
-        /// Ο σκύλος μπορεί να τρώει παραπάνω από τη γάτα, και χορταίνει πιο δύσκολα.
+        /// Μέθοδος στην οποία ο σκύλος τρώει. Για κάθε μονάδα που αφαιρείται στο μπωλ, ο σκύλος αναπληρώνει 4% της πείνας του.
         /// </summary>
         /// <param name="bowl">Το μπωλ το οποίο θέλουμε να πάρουμε και να του αφαιρέσουμε φαγητό.</param>
-        /// <returns>Το μεταχειρισμένο μπωλ, επιστρέφεται ώστε να αποθηκεύονται οι αλλαγές.</returns>
+        /// <returns>Το μεταχειρισμένο μπωλ, ώστε να αποθηκεύονται οι αλλαγές.</returns>
         public override Bowl Eat(Bowl bowl)
         {
             if (bowl.Capacity == 0)
@@ -89,8 +89,8 @@ namespace Smart_Home
                 return bowl;
             }
 
-            HungerPercentage--;
-            bowl.Capacity -= 2;
+            HungerPercentage -= 4;
+            bowl.Capacity--;
 
             return base.Eat(bowl);
         }

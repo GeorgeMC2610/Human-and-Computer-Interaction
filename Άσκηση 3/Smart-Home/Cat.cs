@@ -93,10 +93,10 @@ namespace Smart_Home
         }
 
         /// <summary>
-        /// Η γάτα πίνει κανονικά νερό.
+        /// Μέθοδος στην οποία η γάτα πίνει νερό. Για κάθε μονάδα που αφαιρείται από το μπωλ, η γάτα αναπληρώνει 7% της δίψας της.
         /// </summary>
         /// <param name="bowl">Το μπωλ το οποίο θέλουμε να πάρουμε και να του αφαιρέσουμε φαγητό.</param>
-        /// <returns>Το μεταχειρισμένο μπωλ, επιστρέφεται ώστε να αποθηκεύονται οι αλλαγές.</returns>
+        /// <returns>Το μεταχειρισμένο μπωλ, ώστε να αποθηκεύονται οι αλλαγές.</returns>
         public override Bowl Drink(Bowl bowl)
         {
             if (bowl.Capacity == 0)
@@ -105,12 +105,17 @@ namespace Smart_Home
                 return bowl;
             }
 
-            ThirstPercentage--;
+            ThirstPercentage -= 7;
             bowl.Capacity--;
     
             return base.Drink(bowl);
         }
 
+        /// <summary>
+        /// Μέθοδος στην οποία η γάτα τρώει. Για κάθε μονάδα που αφαιρείται από το μπωλ, η γάτα αναπληρώνει 6% της πείνας της.
+        /// </summary>
+        /// <param name="bowl"></param>
+        /// <returns>Το μεταχειρισμένο μπωλ, ώστε να αποθηκεύονται οι αλλαγές.</returns>
         public override Bowl Eat(Bowl bowl)
         {
             if (bowl.Capacity == 0)
@@ -119,7 +124,7 @@ namespace Smart_Home
                 return bowl;
             }
 
-            HungerPercentage--;
+            HungerPercentage -= 6;
             bowl.Capacity--;
 
             return base.Eat(bowl);
