@@ -20,6 +20,10 @@ namespace Smart_Home
         protected int ThirstPercentage;
         protected int ActivityPercentage;
 
+        public int hungerPercentage { get { return HungerPercentage; } }
+        public int thirstPercentage { get { return ThirstPercentage; } }
+        public int activityPercentage { get { return activityPercentage; } }
+
         //Το όνομα του κατοικιδίου (θα είναι τυχαίο)
         public string Name { get { return name; } }
         protected string name;
@@ -70,7 +74,26 @@ namespace Smart_Home
             Console.WriteLine(Name + " is " + ActivityPercentage.ToString() + "% active, " + HungerPercentage.ToString() + "% hungry and " + ThirstPercentage.ToString() + "% thirsty.");
         }
 
-        public abstract Bowl Eat(Bowl bowl);
-        public abstract Bowl Drink(Bowl bowl);
+        public virtual Bowl Eat(Bowl bowl)
+        {
+            if (!bowl.Containing.Equals("food"))
+                throw new Exception("Eat() method can only be called on Bowls containing food");
+
+            bowl.Capacity = (bowl.Capacity <= 0) ? 0 : bowl.Capacity;
+            HungerPercentage = (HungerPercentage <= 0) ? 0 : HungerPercentage;
+
+            return bowl;
+        }
+
+        public virtual Bowl Drink(Bowl bowl)
+        {
+            if (!bowl.Containing.Equals("water"))
+                throw new Exception("Water() method can only be called on Bowls containing water");
+
+            bowl.Capacity = (bowl.Capacity <= 0) ? 0 : bowl.Capacity;
+            ThirstPercentage = (ThirstPercentage <= 0) ? 0 : ThirstPercentage;
+
+            return bowl;
+        }
     }
 }

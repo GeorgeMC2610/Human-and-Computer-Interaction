@@ -99,28 +99,30 @@ namespace Smart_Home
         /// <returns>Το μεταχειρισμένο μπωλ, επιστρέφεται ώστε να αποθηκεύονται οι αλλαγές.</returns>
         public override Bowl Drink(Bowl bowl)
         {
-            if (!bowl.Containing.Equals("water"))
-                throw new Exception("Drink() method can only be called on Bowls containing water");
-            else
+            if (bowl.Capacity == 0)
             {
-                bowl.Capacity    = (bowl.Capacity <= 0)    ? 0    : bowl.Capacity - 1;
-                ThirstPercentage = (ThirstPercentage <= 0) ? 0    : ThirstPercentage - 1;
+                Console.WriteLine("Bowl is empty!");
+                return bowl;
             }
 
-            return bowl;
+            ThirstPercentage--;
+            bowl.Capacity--;
+    
+            return base.Drink(bowl);
         }
 
         public override Bowl Eat(Bowl bowl)
         {
-            if (!bowl.Containing.Equals("food"))
-                throw new Exception("Eat() method can only be called on Bowls containing food");
-            else
+            if (bowl.Capacity == 0)
             {
-                bowl.Capacity    = (bowl.Capacity <= 0)?     0 : bowl.Capacity - 1;
-                HungerPercentage = (HungerPercentage <= 0) ? 0 : HungerPercentage - 1 ;
+                Console.WriteLine("Bowl is empty!");
+                return bowl;
             }
 
-            return bowl;
+            HungerPercentage--;
+            bowl.Capacity--;
+
+            return base.Eat(bowl);
         }
 
         public override string ToString()

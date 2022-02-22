@@ -122,17 +122,83 @@ namespace Smart_Home
                     Pets.ForEach(pet => pet.Calm());
             }
 
-            if (random.Next(0, 10) == 5)
-                if (random.Next(0, 2) == 0)
-                    Pets.ForEach(pet => pet.ManageNeeds());
+            foreach (Animal pet in Pets)
+            {
+                //βλέπουμε κλιμακωτά την πείνα και βλέπουμε αν ένα ζώο πρέπει να φάει ή όχι.
+                if (pet.hungerPercentage < 20)
+                {
+                    if (random.Next(0, 10) < 7)
+                        pet.ManageNeeds();
+                    else
+                    {
+                        Bowls[2] = (pet is Cat) ? pet.Eat(Bowls[2]) : Bowls[2];
+                        Bowls[3] = (pet is Dog) ? pet.Eat(Bowls[3]) : Bowls[3];
+                    }
+                }
+                else if (pet.hungerPercentage < 50)
+                {
+                    if (random.Next(0, 10) < 5)
+                        pet.ManageNeeds();
+                    else
+                    {
+                        Bowls[2] = (pet is Cat) ? pet.Eat(Bowls[2]) : Bowls[2];
+                        Bowls[3] = (pet is Dog) ? pet.Eat(Bowls[3]) : Bowls[3];
+                    }
+                }
+                else if (pet.hungerPercentage < 70)
+                {
+                    if (random.Next(0, 10) < 2)
+                        pet.ManageNeeds();
+                    else
+                    {
+                        Bowls[2] = (pet is Cat) ? pet.Eat(Bowls[2]) : Bowls[2];
+                        Bowls[3] = (pet is Dog) ? pet.Eat(Bowls[3]) : Bowls[3];
+                    }
+                }
                 else
                 {
-                    (from pet in Pets where pet is Cat select pet).ToList().ForEach(cat => cat.Drink(Bowls[0]));
-                    (from pet in Pets where pet is Cat select pet).ToList().ForEach(cat => cat.Eat(Bowls[2]));
-
-                    (from pet in Pets where pet is Dog select pet).ToList().ForEach(dog => dog.Drink(Bowls[1]));
-                    (from pet in Pets where pet is Dog select pet).ToList().ForEach(dog => dog.Eat(Bowls[3]));
+                    Bowls[2] = (pet is Cat) ? pet.Eat(Bowls[2]) : Bowls[2];
+                    Bowls[3] = (pet is Dog) ? pet.Eat(Bowls[3]) : Bowls[3];
                 }
+
+                //το ίδιο κάνουμε και για την δίψα.
+                if (pet.thirstPercentage < 20)
+                {
+                    if (random.Next(0, 10) < 7)
+                        pet.ManageNeeds();
+                    else
+                    {
+                        Bowls[0] = (pet is Cat) ? pet.Drink(Bowls[0]) : Bowls[0];
+                        Bowls[1] = (pet is Dog) ? pet.Drink(Bowls[1]) : Bowls[1];
+                    }
+                }
+                else if (pet.thirstPercentage < 50)
+                {
+                    if (random.Next(0, 10) < 5)
+                        pet.ManageNeeds();
+                    else
+                    {
+                        Bowls[0] = (pet is Cat) ? pet.Drink(Bowls[0]) : Bowls[0];
+                        Bowls[1] = (pet is Dog) ? pet.Drink(Bowls[1]) : Bowls[1];
+                    }
+                }
+                else if (pet.thirstPercentage < 70)
+                {
+                    if (random.Next(0, 10) < 2)
+                        pet.ManageNeeds();
+                    else
+                    {
+                        Bowls[0] = (pet is Cat) ? pet.Drink(Bowls[0]) : Bowls[0];
+                        Bowls[1] = (pet is Dog) ? pet.Drink(Bowls[1]) : Bowls[1];
+                    }
+                }
+                else
+                {
+                    Bowls[0] = (pet is Cat) ? pet.Drink(Bowls[0]) : Bowls[0];
+                    Bowls[1] = (pet is Dog) ? pet.Drink(Bowls[1]) : Bowls[1];
+                }
+
+            }
 
             Pets.ForEach(pet => pet.Debug());
         }

@@ -58,39 +58,41 @@ namespace Smart_Home
         }
 
         /// <summary>
-        /// Ο σκύλος μπορεί να τρώει παραπάνω από τη γάτα, και χορταίνει πιο δύσκολα.
-        /// </summary>
-        /// <param name="bowl">Το μπωλ το οποίο θέλουμε να πάρουμε και να του αφαιρέσουμε φαγητό.</param>
-        /// <returns>Το μεταχειρισμένο μπωλ, επιστρέφεται ώστε να αποθηκεύονται οι αλλαγές.</returns>
-        public override Bowl Eat(Bowl bowl)
-        {
-            if (!bowl.Containing.Equals("food"))
-                throw new Exception("Eat() method can only be called on Bowls containing food");
-            else
-            {
-                bowl.Capacity = (bowl.Capacity <= 0) ? 0 : bowl.Capacity - 2;
-                HungerPercentage = (HungerPercentage <= 0) ? 0 : HungerPercentage - 1;
-            }
-
-            return bowl;
-        }
-
-        /// <summary>
         /// Συγκριτικά με τη γάτα, ο σκύλος πίνει πιο πολύ νερό και χορταίνει πιο δύσκολα.
         /// </summary>
         /// <param name="bowl">Το μπωλ το οποίο θέλουμε να πάρουμε και να του αφαιρέσουμε νερό.</param>
         /// <returns>Το μεταχειρισμένο μπωλ, επιστρέφεται ώστε να αποθηκεύονται οι αλλαγές.</returns>
         public override Bowl Drink(Bowl bowl)
         {
-            if (!bowl.Containing.Equals("water"))
-                throw new Exception("Drink() method can only be called on Bowls containing water");
-            else
+            if (bowl.Capacity == 0)
             {
-                bowl.Capacity = (bowl.Capacity <= 0)? 0 : bowl.Capacity - 2;
-                ThirstPercentage = (ThirstPercentage <= 0) ? 0 : ThirstPercentage - 1;
+                Console.WriteLine("Bowl is empty!");
+                return bowl;
             }
 
-            return bowl;
+            ThirstPercentage--;
+            bowl.Capacity -= 2;
+
+            return base.Drink(bowl);
+        }
+
+        /// <summary>
+        /// Ο σκύλος μπορεί να τρώει παραπάνω από τη γάτα, και χορταίνει πιο δύσκολα.
+        /// </summary>
+        /// <param name="bowl">Το μπωλ το οποίο θέλουμε να πάρουμε και να του αφαιρέσουμε φαγητό.</param>
+        /// <returns>Το μεταχειρισμένο μπωλ, επιστρέφεται ώστε να αποθηκεύονται οι αλλαγές.</returns>
+        public override Bowl Eat(Bowl bowl)
+        {
+            if (bowl.Capacity == 0)
+            {
+                Console.WriteLine("Bowl is empty!");
+                return bowl;
+            }
+
+            HungerPercentage--;
+            bowl.Capacity -= 2;
+
+            return base.Eat(bowl);
         }
 
         public override void ManageNeeds()

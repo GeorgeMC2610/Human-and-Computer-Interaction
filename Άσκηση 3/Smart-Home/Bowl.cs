@@ -36,5 +36,10 @@ namespace Smart_Home
             else
                 Containing = "food";
         }
+
+        public override string ToString()
+        {
+            return "Bowl containing " + Containing + ". Capacity: " + Capacity.ToString() + "%.";
+        }
     }
 }
