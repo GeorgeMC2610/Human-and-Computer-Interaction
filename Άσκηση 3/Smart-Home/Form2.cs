@@ -30,10 +30,14 @@ namespace Smart_Home
         // αντικείμενο φόρμας διαχέρισης συσκευών
         Remote_Device_Control rmctrl;
 
+        // αντικείμενο φόρμας διαχείρισης προγράμματος ημέρας
+        TimeSchedule schedule;
+
         public FormMain()
         {
             InitializeComponent();
             rmctrl = new Remote_Device_Control();
+            schedule = new TimeSchedule();
         }
 
         private void FormMain_Load(object sender, EventArgs e)
@@ -209,10 +213,10 @@ namespace Smart_Home
             rmctrl.Show();
         }
 
+        // κουμπί μενού: Εισαγωγή Προγράμματος
         private void buttonTimeSchedule_Click(object sender, EventArgs e)
         {
             //open form
-            TimeSchedule schedule = new TimeSchedule();
             schedule.Show();
         }
 

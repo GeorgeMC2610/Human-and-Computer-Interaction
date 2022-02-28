@@ -19,21 +19,14 @@ namespace Smart_Home
         // η λίστα αυτή εμπεριέχει παπούτσια που υπάρχουν μέσα στην παπουτσοθήκη (επιλέγονται κάθε φορά τυχαία)
         List<String> shoes = new List<string>();
 
-        bool T; // διακόπτης
+        bool T = true; // διακόπτης
 
         public TimeSchedule()
         {
             InitializeComponent();
-            T = true; 
-        }
 
-        // ο χρήστης πατώντας αυτό το κουμπί, μπορεί να δει τα διαθέσιμα παπούτσια που βρίσκονται
-        // στην παπουτσοθήκη αυτή τη στιγμή
-        private void button20_Click(object sender, EventArgs e)
-        {
             if (T)
             {
-                MessageBox.Show("in");
                 // προσθήκη τυχαίων παπουτσιών στη λίστα shoes (γίνεταί μία φορά, ενόσω εκτελείται το πρόγραμμα)
 
                 Random rnd = new Random(); // τυχαία επιλογή επαναλήψεων for loop
@@ -47,8 +40,14 @@ namespace Smart_Home
 
                 T = false;
             }
+        }
 
-                if (shoes.Count() == 0)
+        // ο χρήστης πατώντας αυτό το κουμπί, μπορεί να δει τα διαθέσιμα παπούτσια που βρίσκονται
+        // στην παπουτσοθήκη αυτή τη στιγμή
+        private void button20_Click(object sender, EventArgs e)
+        {
+            
+            if (shoes.Count() == 0)
             {
                 MessageBox.Show("Η παπουτσοθήκη σας είναι άδεια αυτή τη στιγμή.");
             }
