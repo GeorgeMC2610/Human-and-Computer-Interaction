@@ -748,7 +748,6 @@ namespace Smart_Home
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Διαχείριση Χρονοπρογράμματος";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TimeSchedule_FormClosing);
-            this.Load += new System.EventHandler(this.TimeSchedule_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
