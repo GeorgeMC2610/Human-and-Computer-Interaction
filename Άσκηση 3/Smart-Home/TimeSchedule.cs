@@ -99,5 +99,10 @@ namespace Smart_Home
             this.Hide();
             e.Cancel = true;
         }
+
+        private void TimeSchedule_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
