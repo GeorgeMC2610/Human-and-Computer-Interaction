@@ -75,8 +75,23 @@ namespace Smart_Home
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label22 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.button9 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // button20
@@ -725,12 +740,13 @@ namespace Smart_Home
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.button9);
             this.panel1.Controls.Add(this.label24);
             this.panel1.Controls.Add(this.label23);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label22);
-            this.panel1.Location = new System.Drawing.Point(656, 80);
+            this.panel1.Location = new System.Drawing.Point(671, 190);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(255, 275);
             this.panel1.TabIndex = 106;
@@ -767,7 +783,7 @@ namespace Smart_Home
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(161, 223);
+            this.button2.Location = new System.Drawing.Point(14, 227);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(76, 30);
             this.button2.TabIndex = 107;
@@ -813,6 +829,207 @@ namespace Smart_Home
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.button8);
+            this.panel2.Controls.Add(this.button7);
+            this.panel2.Controls.Add(this.button6);
+            this.panel2.Controls.Add(this.button5);
+            this.panel2.Controls.Add(this.button3);
+            this.panel2.Controls.Add(this.label31);
+            this.panel2.Controls.Add(this.label30);
+            this.panel2.Controls.Add(this.label29);
+            this.panel2.Controls.Add(this.label28);
+            this.panel2.Controls.Add(this.label25);
+            this.panel2.Controls.Add(this.label26);
+            this.panel2.Controls.Add(this.label27);
+            this.panel2.Location = new System.Drawing.Point(647, 190);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(297, 275);
+            this.panel2.TabIndex = 112;
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.DarkGreen;
+            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button8.Location = new System.Drawing.Point(148, 230);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(76, 30);
+            this.button8.TabIndex = 120;
+            this.button8.Text = "Αγορά";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Visible = false;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.DarkGreen;
+            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button7.Location = new System.Drawing.Point(148, 189);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(76, 30);
+            this.button7.TabIndex = 119;
+            this.button7.Text = "Αγορά";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Visible = false;
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.DarkGreen;
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button6.Location = new System.Drawing.Point(148, 145);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(76, 30);
+            this.button6.TabIndex = 118;
+            this.button6.Text = "Αγορά";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Visible = false;
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.DarkGreen;
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button5.Location = new System.Drawing.Point(148, 99);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(76, 30);
+            this.button5.TabIndex = 117;
+            this.button5.Text = "Αγορά";
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Visible = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.DarkGreen;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button3.Location = new System.Drawing.Point(148, 57);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(76, 30);
+            this.button3.TabIndex = 112;
+            this.button3.Text = "Αγορά";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Visible = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.BackColor = System.Drawing.Color.Transparent;
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label31.ForeColor = System.Drawing.Color.Black;
+            this.label31.Location = new System.Drawing.Point(47, 238);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(78, 16);
+            this.label31.TabIndex = 116;
+            this.label31.Text = "Sneakers:";
+            this.label31.Visible = false;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.BackColor = System.Drawing.Color.Transparent;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label30.ForeColor = System.Drawing.Color.Black;
+            this.label30.Location = new System.Drawing.Point(47, 196);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(80, 16);
+            this.label30.TabIndex = 115;
+            this.label30.Text = "Σκαρπίνια:";
+            this.label30.Visible = false;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.BackColor = System.Drawing.Color.Transparent;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label29.ForeColor = System.Drawing.Color.Black;
+            this.label29.Location = new System.Drawing.Point(47, 106);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(91, 16);
+            this.label29.TabIndex = 114;
+            this.label29.Text = "Παντόφλες:";
+            this.label29.Visible = false;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.BackColor = System.Drawing.Color.Transparent;
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label28.ForeColor = System.Drawing.Color.Black;
+            this.label28.Location = new System.Drawing.Point(47, 152);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(75, 16);
+            this.label28.TabIndex = 113;
+            this.label28.Text = "Αθλητικά:";
+            this.label28.Visible = false;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.BackColor = System.Drawing.Color.Transparent;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label25.ForeColor = System.Drawing.Color.Black;
+            this.label25.Location = new System.Drawing.Point(47, 64);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(82, 16);
+            this.label25.TabIndex = 112;
+            this.label25.Text = "Μοκασίνια:";
+            this.label25.Visible = false;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.BackColor = System.Drawing.Color.Transparent;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label26.ForeColor = System.Drawing.Color.Maroon;
+            this.label26.Location = new System.Drawing.Point(3, 26);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(250, 16);
+            this.label26.TabIndex = 110;
+            this.label26.Text = "που χρειάζεται να αγοράσετε είναι:";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.BackColor = System.Drawing.Color.Transparent;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label27.ForeColor = System.Drawing.Color.Maroon;
+            this.label27.Location = new System.Drawing.Point(3, 10);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(295, 16);
+            this.label27.TabIndex = 107;
+            this.label27.Text = "Με βάση το πρόγραμμά σας, τα παπούτσια";
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.IndianRed;
+            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button9.Location = new System.Drawing.Point(161, 227);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(76, 30);
+            this.button9.TabIndex = 112;
+            this.button9.Text = "Κλείσιμο";
+            this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
             // TimeSchedule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -820,7 +1037,8 @@ namespace Smart_Home
             this.AutoScroll = true;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(965, 448);
+            this.ClientSize = new System.Drawing.Size(1030, 495);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.comboBox15);
@@ -869,6 +1087,8 @@ namespace Smart_Home
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -920,5 +1140,19 @@ namespace Smart_Home
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Button button9;
     }
 }

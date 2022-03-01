@@ -28,7 +28,8 @@ namespace Smart_Home
         List<string> required_shoes = new List<string>();
 
         bool T = true; // διακόπτης
-        bool clicked = false;
+
+        string current_shoe;
 
         public TimeSchedule()
         {
@@ -137,7 +138,47 @@ namespace Smart_Home
         private void button2_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Αγοράσατε καινούριο ζευγάρι παπουτσιών");
-            clicked = true;
+            
+            if (current_shoe.Equals("Μοκασίνια"))
+            {
+                button3.Visible = false;
+                label25.Visible = false;
+                panel1.Visible = false;
+                panel2.Visible = true;
+                shoes.Add(current_shoe);
+            }
+            else if (current_shoe.Equals("Παντόφλες"))
+            {
+                button5.Visible = false;
+                label29.Visible = false;
+                panel2.Visible = true;
+                panel1.Visible = false;
+                shoes.Add(current_shoe);
+            }
+            else if (current_shoe.Equals("Sneakers"))
+            {
+                button8.Visible = false;
+                label31.Visible = false;
+                panel2.Visible = true;
+                panel1.Visible = false;
+                shoes.Add(current_shoe);
+            }
+            else if (current_shoe.Equals("Αθλητικά"))
+            {
+                button6.Visible = false;
+                label28.Visible = false;
+                panel2.Visible = true;
+                panel1.Visible = false;
+                shoes.Add(current_shoe);
+            }
+            else if (current_shoe.Equals("Σκαρπίνια"))
+            {
+                button7.Visible = false;
+                label30.Visible = false;
+                panel2.Visible = true;
+                panel1.Visible = false;
+                shoes.Add(current_shoe);
+            }
         }
 
         // η μέθοδος αυτή αναλύει το πρόγραμμα του χρήστη και ελέγχει εάν έχει (ή όχι) στην 
@@ -148,46 +189,76 @@ namespace Smart_Home
             for (int k = 0; k < schedule.Count(); k++)
             {
                 // βρίσκουμε τα απαραίτητα παπούτσια που χρειάζονται ανάλογα το πρόγραμμα ημέρας
-                if (schedule.Contains("Αθλήματα") || schedule.Contains("Περπάτημα") || schedule.Contains("Γυμναστική") || schedule.Contains("Τρέξιμο"))
+                if (schedule[k].Equals("Αθλήματα") || schedule[k].Equals("Περπάτημα") || schedule[k].Equals("Γυμναστική") || schedule[k].Equals("Τρέξιμο"))
                 {
                     required_shoes.Add("Αθλητικά");
                 }
-                else if (schedule.Contains("Βόλτα") || schedule.Contains("Ψώνια") || schedule.Contains("Διάβασμα"))
+                else if (schedule[k].Equals("Βόλτα") || schedule[k].Equals("Ψώνια") || schedule[k].Equals("Διάβασμα"))
                 {
                     required_shoes.Add("Sneakers");
                 }
-                else if (schedule.Contains("Δουλειά"))
+                else if (schedule[k].Equals("Δουλειά"))
                 {
                     required_shoes.Add("Μοκασίνια");
                 }
-                else if (schedule.Contains("Συνέντευξη"))
+                else if (schedule[k].Equals("Συνέντευξη"))
                 {
                     required_shoes.Add("Σκαρπίνια");
                 }
-                else if (schedule.Contains("Μαγείρεμα") || schedule.Contains("Χαλάρωση στο σπίτι"))
+                else if (schedule[k].Equals("Μαγείρεμα") || schedule[k].Equals("Χαλάρωση στο σπίτι"))
                 {
                     required_shoes.Add("Παντόφλες");
                 }
             }
+            
+            for (int i = 0; i < required_shoes.Count(); i++)
+            {
+                MessageBox.Show(required_shoes[i]);
+            }
+            MessageBox.Show("Έγινε αποθήκευση του προγράμματός σας!");
 
             // συγκρίνουμε την λίστα με τα απαραίτητα παπούτσια (required_shoes) με την λίστα shoes (παπούτσια
             // που ο χρήστης έχει ήδη στην κατοχή του).
-           
-            foreach (var item in required_shoes)
+            
+            foreach (string item in required_shoes)
             {
                 if (!shoes.Contains(item))
                 {
-                    clicked = false;
-
-                    //while (!clicked)
-                    //{
-                        agora_papoutsiou(item);
-                    //}
+                    if (item.Equals("Μοκασίνια"))
+                    {
+                        button3.Visible = true;
+                        label25.Visible = true;
+                    }
+                    else if (item.Equals("Αθλητικά"))
+                    {
+                        button6.Visible = true;
+                        label28.Visible = true;
+                    }
+                    else if (item.Equals("Παντόφλες"))
+                    {
+                        button5.Visible = true;
+                        label29.Visible = true;
+                    }
+                    else if (item.Equals("Σκαρπίνια"))
+                    {
+                        button7.Visible = true;
+                        label30.Visible = true;
+                    }
+                    else if (item.Equals("Sneakers"))
+                    {
+                        button8.Visible = true;
+                        label31.Visible = true;
+                    }
                     
                 }
             }
-            //panel1.Visible = false;
-            MessageBox.Show("Το πρόγραμμά σας αποθηκεύτηκε με επιτυχία!");
+
+            if (button3.Visible == false && button8.Visible == false && button7.Visible == false && button5.Visible == false && button6.Visible == false)
+            {
+                MessageBox.Show("Με βάση το πρόγραμμά σας, δεν χρειάζεται να αγοράσετε νέα παπούτσια!");
+                panel2.Visible = false;
+            }
+            
         }
 
         private void agora_papoutsiou(string item)
@@ -246,7 +317,32 @@ namespace Smart_Home
             required_shoes.Clear();
             schedule.Clear();
 
+            // επαναφορά των τιμών όλων των comboboxes
+            for (int i = 1; i < 15; i++)
+            {
+                var my_comboBox = this.Controls["comboBox" + i.ToString()];
+
+                my_comboBox.Text = "Τί θα κάνετε αυτή την ώρα;";
+            }
+
             MessageBox.Show("Το πρόγραμμα ημέρας σας διαγράφηκε με επιτυχία!");
+        }
+
+        // αγορά μοκασινιών
+        private void button3_Click(object sender, EventArgs e)
+        {
+            panel2.Visible = false;
+            panel1.Visible = true;
+            label23.Text = "μοκασίνια";
+            pictureBox1.Image = Properties.Resources.mokasinia1;
+            current_shoe = "Μοκασίνια";
+        }
+
+        // κουμπί "κλείσιμο eshop"
+        private void button9_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = false;
+            panel2.Visible = true;
         }
     }
 }
