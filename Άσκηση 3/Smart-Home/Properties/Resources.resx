@@ -121,14 +121,20 @@
   <data name="living_room-medium-light" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\living_room-medium-light1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cold_temperatutre" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cold_temperatutre1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="skarpinia1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\skarpinia1.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dog2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dog2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="katopsi_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\katopsi_3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="shoe_case2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\shoe_case2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="athlitika2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\athlitika2.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="lights-off" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lights-off1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,6 +154,9 @@
   <data name="living_room-dark-light" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\living_room-dark-light1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="skarpinia2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\skarpinia2.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="temperature-cold" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\temperature-cold1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -162,6 +171,12 @@
   </data>
   <data name="coffee_machine_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\coffee_machine_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sneakers1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sneakers1.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mokasinia2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mokasinia2.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="katospi_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\katospi_4.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,6 +211,9 @@
   <data name="coffee_machine_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\coffee_machine_21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="power_button_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\power_button_11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="coffee_machine_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\coffee_machine_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -211,6 +229,9 @@
   <data name="temperature" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\temperature1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="sneakers2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sneakers2.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="hole-dark-light" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hole-dark-light1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -222,6 +243,9 @@
   </data>
   <data name="coffee_machine_4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\coffee_machine_4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mokasinia1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mokasinia1.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="kitchen-dark-light" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kitchen-dark-light1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -247,19 +271,22 @@
   <data name="kitchen-medium-light" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kitchen-medium-light1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="power_button_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\power_button_11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cat1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cat1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cold_temperatutre" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cold_temperatutre1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="dog1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dog1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="dog2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\dog2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cat1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cat1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="dog3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dog3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="athlitika1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\athlitika1.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="padofles" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\padofles.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

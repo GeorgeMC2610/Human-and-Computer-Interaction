@@ -134,12 +134,6 @@
     <None Include="Resources\coffee_machine_1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\coffee_machine_2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\coffee_machine_4.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\katopsi_2.png" />
   </ItemGroup>
   <ItemGroup>
@@ -174,15 +168,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\coffee1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\coffee_machine_11.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\coffee_machine_21.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\coffee_machine_41.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cold_temperatutre1.jpg" />
@@ -273,6 +258,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\dog3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\athlitika1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mokasinia1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skarpinia1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sneakers1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padofles.jpeg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
