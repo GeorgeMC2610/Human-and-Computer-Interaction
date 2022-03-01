@@ -19,6 +19,9 @@ namespace Smart_Home
         // η λίστα αυτή εμπεριέχει παπούτσια που υπάρχουν μέσα στην παπουτσοθήκη (επιλέγονται κάθε φορά τυχαία)
         List<String> shoes = new List<string>();
 
+        // λίστα που εμπεριέχει το πρόγραμμα του χρήστη (15 εγγραφές)
+        List<string> schedule = new List<string>();
+
         bool T = true; // διακόπτης
 
         public TimeSchedule()
@@ -98,6 +101,25 @@ namespace Smart_Home
             // η φόρμα κρύβεται όταν ο χρήστης πατήσει το X. Με αυτόν τον τρόπο, οι αλλαγές που κάνει στην φόρμα δεν χάνονται άπαξ και την ξαναανοίξει (ενόσω εκτελείται το πρόγραμμα φυσικά)
             this.Hide();
             e.Cancel = true;
+        }
+
+        // κουμπί "Αποθήκευση Προγράμματος" ημέρας χρήστη
+        private void button1_Click(object sender, EventArgs e)
+        {
+            // προσθήκη γεγονότων όλων των comboboxes σε μία λίστα
+            for (int i = 1; i < 15; i++)
+            {
+                var my_comboBox = this.Controls["comboBox" + i.ToString()];
+
+                if (my_comboBox.Text == "Τί θα κάνετε αυτή την ώρα;")
+                {
+                    continue;
+                }
+                else
+                {
+                    schedule.Add(my_comboBox.Text);
+                }   
+            }
         }
     }
 }
