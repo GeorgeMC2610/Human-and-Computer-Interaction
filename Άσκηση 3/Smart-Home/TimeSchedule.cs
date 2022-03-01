@@ -11,11 +11,7 @@ using System.Windows.Forms;
 namespace Smart_Home
 {
     public partial class TimeSchedule : Form
-    {
-
-        // παπούτσια που μπορεί να έχει ένας άνδρας και μία γυναίκα (δύο ξεχωριστοί πίνακες)
-        string[] shoes_gen = {"Αθλητικά", "Μοκασίνια", "Sneakers", "Παντόφλες", "Σκαρπίνια"};
-        
+    {   
         // η λίστα αυτή εμπεριέχει παπούτσια που υπάρχουν μέσα στην παπουτσοθήκη (επιλέγονται κάθε φορά τυχαία)
         List<String> shoes = new List<string>();
 
@@ -27,36 +23,17 @@ namespace Smart_Home
         // τότε ο αυτόματος βοηθός προτείνει από e-shop την αγορά κατάλληλου ζευγαριού παπουτσιών
         List<string> required_shoes = new List<string>();
 
-        bool T = true; // διακόπτης
-
         string current_shoe;
 
         public TimeSchedule()
         {
             InitializeComponent();
-
-            if (T)
-            {
-                // προσθήκη τυχαίων παπουτσιών στη λίστα shoes (γίνεταί μία φορά, ενόσω εκτελείται το πρόγραμμα)
-
-                Random rnd = new Random(); // τυχαία επιλογή επαναλήψεων for loop
-                Random random_shoe = new Random(); // τυχαία επιλογή παπουτσιού από τον πίνακα shoes_gen (επιτρέπονται και διπλότυπα)
-
-                int j = rnd.Next(5);
-                for (int i = 0; i < j; i++)
-                {
-                    shoes.Add(shoes_gen[random_shoe.Next(5)]);
-                }
-
-                T = false;
-            }
         }
 
         // ο χρήστης πατώντας αυτό το κουμπί, μπορεί να δει τα διαθέσιμα παπούτσια που βρίσκονται
         // στην παπουτσοθήκη αυτή τη στιγμή
         private void button20_Click(object sender, EventArgs e)
         {
-            
             if (shoes.Count() == 0)
             {
                 MessageBox.Show("Η παπουτσοθήκη σας είναι άδεια αυτή τη στιγμή.");
@@ -72,7 +49,7 @@ namespace Smart_Home
 
                 for (int i = 0; i < shoes.Count(); i++)
                 {
-                    if (shoes[i].Equals("Aθλητικά"))
+                    if (shoes[i].Equals("Αθλητικά"))
                     {
                         count_athlitika += 1;
                     }
@@ -117,9 +94,9 @@ namespace Smart_Home
             button4.Enabled = true;
 
             // προσθήκη γεγονότων όλων των comboboxes σε μία λίστα
-            for (int i = 1; i < 15; i++)
+            for (int i = 1; i <= 15; i++)
             {
-                var my_comboBox = this.Controls["comboBox" + i.ToString()];
+                var my_comboBox = panel3.Controls["comboBox" + i.ToString()];
 
                 if (my_comboBox.Text == "Τί θα κάνετε αυτή την ώρα;")
                 {
@@ -137,7 +114,7 @@ namespace Smart_Home
         // αγορά παπουτσιού
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Αγοράσατε καινούριο ζευγάρι παπουτσιών");
+            MessageBox.Show("Αγοράσατε καινούριο ζευγάρι παπουτσιών!");
             
             if (current_shoe.Equals("Μοκασίνια"))
             {
@@ -179,6 +156,8 @@ namespace Smart_Home
                 panel1.Visible = false;
                 shoes.Add(current_shoe);
             }
+
+            check_finish();
         }
 
         // η μέθοδος αυτή αναλύει το πρόγραμμα του χρήστη και ελέγχει εάν έχει (ή όχι) στην 
@@ -211,15 +190,24 @@ namespace Smart_Home
                 }
             }
             
-            for (int i = 0; i < required_shoes.Count(); i++)
-            {
-                MessageBox.Show(required_shoes[i]);
-            }
             MessageBox.Show("Έγινε αποθήκευση του προγράμματός σας!");
+
+            button3.Visible = false;
+            label25.Visible = false;
+            button6.Visible = false;
+            label28.Visible = false;
+            button8.Visible = false;
+            label31.Visible = false;
+            button5.Visible = false;
+            label29.Visible = false;
+            button7.Visible = false;
+            label30.Visible = false;
+            label32.Visible = true;
+            panel2.Visible = true;
 
             // συγκρίνουμε την λίστα με τα απαραίτητα παπούτσια (required_shoes) με την λίστα shoes (παπούτσια
             // που ο χρήστης έχει ήδη στην κατοχή του).
-            
+
             foreach (string item in required_shoes)
             {
                 if (!shoes.Contains(item))
@@ -248,17 +236,11 @@ namespace Smart_Home
                     {
                         button8.Visible = true;
                         label31.Visible = true;
-                    }
-                    
+                    }   
                 }
             }
 
-            if (button3.Visible == false && button8.Visible == false && button7.Visible == false && button5.Visible == false && button6.Visible == false)
-            {
-                MessageBox.Show("Με βάση το πρόγραμμά σας, δεν χρειάζεται να αγοράσετε νέα παπούτσια!");
-                panel2.Visible = false;
-            }
-            
+            check_finish();
         }
 
         // διαγραφή προγράμματος ημέρας
@@ -267,14 +249,17 @@ namespace Smart_Home
             button1.Enabled = true;
             button4.Enabled = false;
 
+            label32.Visible = false;
+            panel2.Visible = false;
+
             // καθαρισμός όλων των λιστών
             required_shoes.Clear();
             schedule.Clear();
 
             // επαναφορά των τιμών όλων των comboboxes
-            for (int i = 1; i < 15; i++)
+            for (int i = 1; i <= 15; i++)
             {
-                var my_comboBox = this.Controls["comboBox" + i.ToString()];
+                var my_comboBox = panel3.Controls["comboBox" + i.ToString()];
 
                 my_comboBox.Text = "Τί θα κάνετε αυτή την ώρα;";
             }
@@ -337,6 +322,17 @@ namespace Smart_Home
             label23.Text = "sneakers";
             pictureBox1.Image = Properties.Resources.sneakers1;
             current_shoe = "Sneakers";
+        }
+
+        // έλεγχος για το εάν ο χρήστης ΔΕΝ χρειάζεται άλλα παπούτσια να αγοράσει
+        private void check_finish()
+        {
+            if (button3.Visible == false && button8.Visible == false && button7.Visible == false && button5.Visible == false && button6.Visible == false)
+            {
+                panel2.Visible = false;
+                label32.Visible = false;
+                MessageBox.Show("Με βάση το πρόγραμμά σας, δεν χρειάζεται να αγοράσετε νέα παπούτσια!");
+            }
         }
     }
 }

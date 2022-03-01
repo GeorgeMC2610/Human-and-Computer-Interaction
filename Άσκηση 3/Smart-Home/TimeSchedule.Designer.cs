@@ -52,7 +52,6 @@ namespace Smart_Home
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
@@ -89,9 +88,15 @@ namespace Smart_Home
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // button20
@@ -101,9 +106,9 @@ namespace Smart_Home
             this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button20.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button20.Location = new System.Drawing.Point(647, 116);
+            this.button20.Location = new System.Drawing.Point(6, 3);
             this.button20.Name = "button20";
-            this.button20.Size = new System.Drawing.Size(214, 53);
+            this.button20.Size = new System.Drawing.Size(103, 85);
             this.button20.TabIndex = 38;
             this.button20.Text = "Δειτε τα διαθέσιμα παπούτσια σας";
             this.button20.UseVisualStyleBackColor = false;
@@ -115,7 +120,7 @@ namespace Smart_Home
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(14, 119);
+            this.label1.Location = new System.Drawing.Point(4, 75);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 16);
             this.label1.TabIndex = 40;
@@ -127,7 +132,7 @@ namespace Smart_Home
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label3.ForeColor = System.Drawing.Color.Maroon;
-            this.label3.Location = new System.Drawing.Point(14, 229);
+            this.label3.Location = new System.Drawing.Point(4, 185);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 16);
             this.label3.TabIndex = 42;
@@ -139,7 +144,7 @@ namespace Smart_Home
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label4.ForeColor = System.Drawing.Color.Maroon;
-            this.label4.Location = new System.Drawing.Point(14, 193);
+            this.label4.Location = new System.Drawing.Point(4, 149);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(52, 16);
             this.label4.TabIndex = 43;
@@ -151,7 +156,7 @@ namespace Smart_Home
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label5.ForeColor = System.Drawing.Color.Maroon;
-            this.label5.Location = new System.Drawing.Point(14, 156);
+            this.label5.Location = new System.Drawing.Point(4, 112);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 16);
             this.label5.TabIndex = 44;
@@ -163,7 +168,7 @@ namespace Smart_Home
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label6.ForeColor = System.Drawing.Color.Maroon;
-            this.label6.Location = new System.Drawing.Point(14, 268);
+            this.label6.Location = new System.Drawing.Point(4, 224);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(52, 16);
             this.label6.TabIndex = 45;
@@ -175,7 +180,7 @@ namespace Smart_Home
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label7.ForeColor = System.Drawing.Color.Maroon;
-            this.label7.Location = new System.Drawing.Point(14, 304);
+            this.label7.Location = new System.Drawing.Point(4, 260);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(52, 16);
             this.label7.TabIndex = 46;
@@ -187,7 +192,7 @@ namespace Smart_Home
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label10.ForeColor = System.Drawing.Color.Maroon;
-            this.label10.Location = new System.Drawing.Point(14, 339);
+            this.label10.Location = new System.Drawing.Point(4, 295);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(52, 16);
             this.label10.TabIndex = 49;
@@ -199,7 +204,7 @@ namespace Smart_Home
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label11.ForeColor = System.Drawing.Color.Maroon;
-            this.label11.Location = new System.Drawing.Point(14, 376);
+            this.label11.Location = new System.Drawing.Point(4, 332);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(52, 16);
             this.label11.TabIndex = 48;
@@ -211,7 +216,7 @@ namespace Smart_Home
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label2.ForeColor = System.Drawing.Color.Maroon;
-            this.label2.Location = new System.Drawing.Point(12, 80);
+            this.label2.Location = new System.Drawing.Point(2, 36);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 16);
             this.label2.TabIndex = 54;
@@ -223,7 +228,7 @@ namespace Smart_Home
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label13.ForeColor = System.Drawing.Color.Maroon;
-            this.label13.Location = new System.Drawing.Point(86, 80);
+            this.label13.Location = new System.Drawing.Point(76, 36);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(135, 16);
             this.label13.TabIndex = 55;
@@ -247,7 +252,7 @@ namespace Smart_Home
             "Ύπνος",
             "Χαλάρωση στο σπίτι",
             "Ψώνια"});
-            this.comboBox1.Location = new System.Drawing.Point(66, 116);
+            this.comboBox1.Location = new System.Drawing.Point(56, 72);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(170, 23);
             this.comboBox1.TabIndex = 58;
@@ -259,7 +264,7 @@ namespace Smart_Home
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label16.ForeColor = System.Drawing.Color.Maroon;
-            this.label16.Location = new System.Drawing.Point(309, 339);
+            this.label16.Location = new System.Drawing.Point(299, 295);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(52, 16);
             this.label16.TabIndex = 79;
@@ -271,7 +276,7 @@ namespace Smart_Home
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label17.ForeColor = System.Drawing.Color.Maroon;
-            this.label17.Location = new System.Drawing.Point(309, 304);
+            this.label17.Location = new System.Drawing.Point(299, 260);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(52, 16);
             this.label17.TabIndex = 78;
@@ -283,7 +288,7 @@ namespace Smart_Home
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label14.ForeColor = System.Drawing.Color.Maroon;
-            this.label14.Location = new System.Drawing.Point(309, 268);
+            this.label14.Location = new System.Drawing.Point(299, 224);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(52, 16);
             this.label14.TabIndex = 77;
@@ -295,7 +300,7 @@ namespace Smart_Home
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label15.ForeColor = System.Drawing.Color.Maroon;
-            this.label15.Location = new System.Drawing.Point(309, 229);
+            this.label15.Location = new System.Drawing.Point(299, 185);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(52, 16);
             this.label15.TabIndex = 76;
@@ -307,7 +312,7 @@ namespace Smart_Home
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label8.ForeColor = System.Drawing.Color.Maroon;
-            this.label8.Location = new System.Drawing.Point(309, 193);
+            this.label8.Location = new System.Drawing.Point(299, 149);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(52, 16);
             this.label8.TabIndex = 75;
@@ -319,7 +324,7 @@ namespace Smart_Home
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label9.ForeColor = System.Drawing.Color.Maroon;
-            this.label9.Location = new System.Drawing.Point(309, 156);
+            this.label9.Location = new System.Drawing.Point(299, 112);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(52, 16);
             this.label9.TabIndex = 74;
@@ -331,7 +336,7 @@ namespace Smart_Home
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label12.ForeColor = System.Drawing.Color.Maroon;
-            this.label12.Location = new System.Drawing.Point(309, 119);
+            this.label12.Location = new System.Drawing.Point(299, 75);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(52, 16);
             this.label12.TabIndex = 73;
@@ -343,7 +348,7 @@ namespace Smart_Home
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label18.ForeColor = System.Drawing.Color.Maroon;
-            this.label18.Location = new System.Drawing.Point(309, 80);
+            this.label18.Location = new System.Drawing.Point(299, 36);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(49, 16);
             this.label18.TabIndex = 87;
@@ -355,7 +360,7 @@ namespace Smart_Home
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label19.ForeColor = System.Drawing.Color.Maroon;
-            this.label19.Location = new System.Drawing.Point(380, 80);
+            this.label19.Location = new System.Drawing.Point(370, 36);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(135, 16);
             this.label19.TabIndex = 88;
@@ -363,30 +368,18 @@ namespace Smart_Home
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Maroon;
+            this.button1.BackColor = System.Drawing.Color.Green;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(293, 376);
+            this.button1.Location = new System.Drawing.Point(302, 382);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(134, 49);
+            this.button1.Size = new System.Drawing.Size(101, 30);
             this.button1.TabIndex = 89;
-            this.button1.Text = "Αποθήκευση Προγράμματος";
+            this.button1.Text = "Αποθήκευση";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label20.ForeColor = System.Drawing.Color.Maroon;
-            this.label20.Location = new System.Drawing.Point(644, 80);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(151, 16);
-            this.label20.TabIndex = 90;
-            this.label20.Text = "Επιπλέον ενέργειες:";
             // 
             // label21
             // 
@@ -418,7 +411,7 @@ namespace Smart_Home
             "Ύπνος",
             "Χαλάρωση στο σπίτι",
             "Ψώνια"});
-            this.comboBox2.Location = new System.Drawing.Point(66, 153);
+            this.comboBox2.Location = new System.Drawing.Point(56, 109);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(170, 23);
             this.comboBox2.TabIndex = 92;
@@ -442,7 +435,7 @@ namespace Smart_Home
             "Ύπνος",
             "Χαλάρωση στο σπίτι",
             "Ψώνια"});
-            this.comboBox3.Location = new System.Drawing.Point(66, 190);
+            this.comboBox3.Location = new System.Drawing.Point(56, 146);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(170, 23);
             this.comboBox3.TabIndex = 93;
@@ -466,7 +459,7 @@ namespace Smart_Home
             "Ύπνος",
             "Χαλάρωση στο σπίτι",
             "Ψώνια"});
-            this.comboBox4.Location = new System.Drawing.Point(66, 226);
+            this.comboBox4.Location = new System.Drawing.Point(56, 182);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(170, 23);
             this.comboBox4.TabIndex = 94;
@@ -490,7 +483,7 @@ namespace Smart_Home
             "Ύπνος",
             "Χαλάρωση στο σπίτι",
             "Ψώνια"});
-            this.comboBox5.Location = new System.Drawing.Point(66, 265);
+            this.comboBox5.Location = new System.Drawing.Point(56, 221);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(170, 23);
             this.comboBox5.TabIndex = 95;
@@ -514,7 +507,7 @@ namespace Smart_Home
             "Ύπνος",
             "Χαλάρωση στο σπίτι",
             "Ψώνια"});
-            this.comboBox6.Location = new System.Drawing.Point(66, 301);
+            this.comboBox6.Location = new System.Drawing.Point(56, 257);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(170, 23);
             this.comboBox6.TabIndex = 96;
@@ -538,7 +531,7 @@ namespace Smart_Home
             "Ύπνος",
             "Χαλάρωση στο σπίτι",
             "Ψώνια"});
-            this.comboBox7.Location = new System.Drawing.Point(66, 336);
+            this.comboBox7.Location = new System.Drawing.Point(56, 292);
             this.comboBox7.Name = "comboBox7";
             this.comboBox7.Size = new System.Drawing.Size(170, 23);
             this.comboBox7.TabIndex = 97;
@@ -562,7 +555,7 @@ namespace Smart_Home
             "Ύπνος",
             "Χαλάρωση στο σπίτι",
             "Ψώνια"});
-            this.comboBox8.Location = new System.Drawing.Point(66, 373);
+            this.comboBox8.Location = new System.Drawing.Point(56, 329);
             this.comboBox8.Name = "comboBox8";
             this.comboBox8.Size = new System.Drawing.Size(170, 23);
             this.comboBox8.TabIndex = 98;
@@ -586,7 +579,7 @@ namespace Smart_Home
             "Ύπνος",
             "Χαλάρωση στο σπίτι",
             "Ψώνια"});
-            this.comboBox9.Location = new System.Drawing.Point(367, 116);
+            this.comboBox9.Location = new System.Drawing.Point(357, 72);
             this.comboBox9.Name = "comboBox9";
             this.comboBox9.Size = new System.Drawing.Size(170, 23);
             this.comboBox9.TabIndex = 99;
@@ -610,7 +603,7 @@ namespace Smart_Home
             "Ύπνος",
             "Χαλάρωση στο σπίτι",
             "Ψώνια"});
-            this.comboBox10.Location = new System.Drawing.Point(367, 153);
+            this.comboBox10.Location = new System.Drawing.Point(357, 109);
             this.comboBox10.Name = "comboBox10";
             this.comboBox10.Size = new System.Drawing.Size(170, 23);
             this.comboBox10.TabIndex = 100;
@@ -634,7 +627,7 @@ namespace Smart_Home
             "Ύπνος",
             "Χαλάρωση στο σπίτι",
             "Ψώνια"});
-            this.comboBox11.Location = new System.Drawing.Point(367, 190);
+            this.comboBox11.Location = new System.Drawing.Point(357, 146);
             this.comboBox11.Name = "comboBox11";
             this.comboBox11.Size = new System.Drawing.Size(170, 23);
             this.comboBox11.TabIndex = 101;
@@ -658,7 +651,7 @@ namespace Smart_Home
             "Ύπνος",
             "Χαλάρωση στο σπίτι",
             "Ψώνια"});
-            this.comboBox12.Location = new System.Drawing.Point(367, 226);
+            this.comboBox12.Location = new System.Drawing.Point(357, 182);
             this.comboBox12.Name = "comboBox12";
             this.comboBox12.Size = new System.Drawing.Size(170, 23);
             this.comboBox12.TabIndex = 102;
@@ -682,7 +675,7 @@ namespace Smart_Home
             "Ύπνος",
             "Χαλάρωση στο σπίτι",
             "Ψώνια"});
-            this.comboBox13.Location = new System.Drawing.Point(367, 265);
+            this.comboBox13.Location = new System.Drawing.Point(357, 221);
             this.comboBox13.Name = "comboBox13";
             this.comboBox13.Size = new System.Drawing.Size(170, 23);
             this.comboBox13.TabIndex = 103;
@@ -706,7 +699,7 @@ namespace Smart_Home
             "Ύπνος",
             "Χαλάρωση στο σπίτι",
             "Ψώνια"});
-            this.comboBox14.Location = new System.Drawing.Point(367, 301);
+            this.comboBox14.Location = new System.Drawing.Point(357, 257);
             this.comboBox14.Name = "comboBox14";
             this.comboBox14.Size = new System.Drawing.Size(170, 23);
             this.comboBox14.TabIndex = 104;
@@ -730,7 +723,7 @@ namespace Smart_Home
             "Ύπνος",
             "Χαλάρωση στο σπίτι",
             "Ψώνια"});
-            this.comboBox15.Location = new System.Drawing.Point(367, 336);
+            this.comboBox15.Location = new System.Drawing.Point(357, 292);
             this.comboBox15.Name = "comboBox15";
             this.comboBox15.Size = new System.Drawing.Size(170, 23);
             this.comboBox15.TabIndex = 105;
@@ -746,7 +739,7 @@ namespace Smart_Home
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label22);
-            this.panel1.Location = new System.Drawing.Point(671, 190);
+            this.panel1.Location = new System.Drawing.Point(620, 192);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(255, 275);
             this.panel1.TabIndex = 106;
@@ -836,11 +829,11 @@ namespace Smart_Home
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Location = new System.Drawing.Point(435, 376);
+            this.button4.Location = new System.Drawing.Point(425, 382);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(134, 49);
+            this.button4.Size = new System.Drawing.Size(122, 30);
             this.button4.TabIndex = 107;
-            this.button4.Text = "Διαγραφή Προγράμματος";
+            this.button4.Text = "Διαγραφή όλων";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -860,10 +853,11 @@ namespace Smart_Home
             this.panel2.Controls.Add(this.label25);
             this.panel2.Controls.Add(this.label26);
             this.panel2.Controls.Add(this.label27);
-            this.panel2.Location = new System.Drawing.Point(647, 190);
+            this.panel2.Location = new System.Drawing.Point(620, 189);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(297, 275);
+            this.panel2.Size = new System.Drawing.Size(255, 278);
             this.panel2.TabIndex = 112;
+            this.panel2.Visible = false;
             // 
             // button8
             // 
@@ -872,7 +866,7 @@ namespace Smart_Home
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button8.Location = new System.Drawing.Point(148, 230);
+            this.button8.Location = new System.Drawing.Point(135, 240);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(76, 30);
             this.button8.TabIndex = 120;
@@ -888,7 +882,7 @@ namespace Smart_Home
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button7.Location = new System.Drawing.Point(148, 189);
+            this.button7.Location = new System.Drawing.Point(135, 199);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(76, 30);
             this.button7.TabIndex = 119;
@@ -904,7 +898,7 @@ namespace Smart_Home
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button6.Location = new System.Drawing.Point(148, 145);
+            this.button6.Location = new System.Drawing.Point(135, 155);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(76, 30);
             this.button6.TabIndex = 118;
@@ -920,7 +914,7 @@ namespace Smart_Home
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button5.Location = new System.Drawing.Point(148, 99);
+            this.button5.Location = new System.Drawing.Point(135, 109);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(76, 30);
             this.button5.TabIndex = 117;
@@ -936,7 +930,7 @@ namespace Smart_Home
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(148, 57);
+            this.button3.Location = new System.Drawing.Point(135, 67);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(76, 30);
             this.button3.TabIndex = 112;
@@ -951,7 +945,7 @@ namespace Smart_Home
             this.label31.BackColor = System.Drawing.Color.Transparent;
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label31.ForeColor = System.Drawing.Color.Black;
-            this.label31.Location = new System.Drawing.Point(47, 238);
+            this.label31.Location = new System.Drawing.Point(34, 248);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(78, 16);
             this.label31.TabIndex = 116;
@@ -964,7 +958,7 @@ namespace Smart_Home
             this.label30.BackColor = System.Drawing.Color.Transparent;
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label30.ForeColor = System.Drawing.Color.Black;
-            this.label30.Location = new System.Drawing.Point(47, 196);
+            this.label30.Location = new System.Drawing.Point(34, 206);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(80, 16);
             this.label30.TabIndex = 115;
@@ -977,7 +971,7 @@ namespace Smart_Home
             this.label29.BackColor = System.Drawing.Color.Transparent;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label29.ForeColor = System.Drawing.Color.Black;
-            this.label29.Location = new System.Drawing.Point(47, 106);
+            this.label29.Location = new System.Drawing.Point(34, 116);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(91, 16);
             this.label29.TabIndex = 114;
@@ -990,7 +984,7 @@ namespace Smart_Home
             this.label28.BackColor = System.Drawing.Color.Transparent;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label28.ForeColor = System.Drawing.Color.Black;
-            this.label28.Location = new System.Drawing.Point(47, 152);
+            this.label28.Location = new System.Drawing.Point(34, 162);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(75, 16);
             this.label28.TabIndex = 113;
@@ -1003,7 +997,7 @@ namespace Smart_Home
             this.label25.BackColor = System.Drawing.Color.Transparent;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label25.ForeColor = System.Drawing.Color.Black;
-            this.label25.Location = new System.Drawing.Point(47, 64);
+            this.label25.Location = new System.Drawing.Point(34, 74);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(82, 16);
             this.label25.TabIndex = 112;
@@ -1016,11 +1010,11 @@ namespace Smart_Home
             this.label26.BackColor = System.Drawing.Color.Transparent;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label26.ForeColor = System.Drawing.Color.Maroon;
-            this.label26.Location = new System.Drawing.Point(3, 26);
+            this.label26.Location = new System.Drawing.Point(-4, 26);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(250, 16);
+            this.label26.Size = new System.Drawing.Size(127, 16);
             this.label26.TabIndex = 110;
-            this.label26.Text = "που χρειάζεται να αγοράσετε είναι:";
+            this.label26.Text = " αγοράσετε είναι:";
             // 
             // label27
             // 
@@ -1030,9 +1024,89 @@ namespace Smart_Home
             this.label27.ForeColor = System.Drawing.Color.Maroon;
             this.label27.Location = new System.Drawing.Point(3, 10);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(295, 16);
+            this.label27.Size = new System.Drawing.Size(229, 16);
             this.label27.TabIndex = 107;
-            this.label27.Text = "Με βάση το πρόγραμμά σας, τα παπούτσια";
+            this.label27.Text = "Τα παπούτσια που χρειάζεται να";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.button4);
+            this.panel3.Controls.Add(this.comboBox15);
+            this.panel3.Controls.Add(this.comboBox14);
+            this.panel3.Controls.Add(this.comboBox13);
+            this.panel3.Controls.Add(this.comboBox12);
+            this.panel3.Controls.Add(this.comboBox11);
+            this.panel3.Controls.Add(this.comboBox10);
+            this.panel3.Controls.Add(this.comboBox9);
+            this.panel3.Controls.Add(this.comboBox8);
+            this.panel3.Controls.Add(this.comboBox7);
+            this.panel3.Controls.Add(this.comboBox6);
+            this.panel3.Controls.Add(this.comboBox5);
+            this.panel3.Controls.Add(this.comboBox4);
+            this.panel3.Controls.Add(this.comboBox3);
+            this.panel3.Controls.Add(this.comboBox2);
+            this.panel3.Controls.Add(this.button1);
+            this.panel3.Controls.Add(this.label19);
+            this.panel3.Controls.Add(this.label18);
+            this.panel3.Controls.Add(this.label16);
+            this.panel3.Controls.Add(this.label17);
+            this.panel3.Controls.Add(this.label14);
+            this.panel3.Controls.Add(this.label15);
+            this.panel3.Controls.Add(this.label8);
+            this.panel3.Controls.Add(this.label9);
+            this.panel3.Controls.Add(this.label12);
+            this.panel3.Controls.Add(this.comboBox1);
+            this.panel3.Controls.Add(this.label13);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.label10);
+            this.panel3.Controls.Add(this.label11);
+            this.panel3.Controls.Add(this.label7);
+            this.panel3.Controls.Add(this.label6);
+            this.panel3.Controls.Add(this.label5);
+            this.panel3.Controls.Add(this.label4);
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Location = new System.Drawing.Point(10, 44);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(567, 423);
+            this.panel3.TabIndex = 113;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Transparent;
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.button20);
+            this.panel4.Location = new System.Drawing.Point(620, 44);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(255, 93);
+            this.panel4.TabIndex = 114;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.BackColor = System.Drawing.Color.Transparent;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label20.ForeColor = System.Drawing.Color.Black;
+            this.label20.Location = new System.Drawing.Point(627, 25);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(151, 16);
+            this.label20.TabIndex = 115;
+            this.label20.Text = "Eπιπλέον ενέργειες:";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.BackColor = System.Drawing.Color.Transparent;
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label32.ForeColor = System.Drawing.Color.Black;
+            this.label32.Location = new System.Drawing.Point(624, 170);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(178, 16);
+            this.label32.TabIndex = 116;
+            this.label32.Text = "Αγορά νέων παπουτσιών:";
+            this.label32.Visible = false;
             // 
             // TimeSchedule
             // 
@@ -1041,59 +1115,28 @@ namespace Smart_Home
             this.AutoScroll = true;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(992, 495);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.comboBox15);
-            this.Controls.Add(this.comboBox14);
-            this.Controls.Add(this.comboBox13);
-            this.Controls.Add(this.comboBox12);
-            this.Controls.Add(this.comboBox11);
-            this.Controls.Add(this.comboBox10);
-            this.Controls.Add(this.comboBox9);
-            this.Controls.Add(this.comboBox8);
-            this.Controls.Add(this.comboBox7);
-            this.Controls.Add(this.comboBox6);
-            this.Controls.Add(this.comboBox5);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.label21);
+            this.ClientSize = new System.Drawing.Size(889, 495);
+            this.Controls.Add(this.label32);
             this.Controls.Add(this.label20);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.label18);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.button20);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label21);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(1008, 534);
+            this.MaximumSize = new System.Drawing.Size(905, 534);
             this.Name = "TimeSchedule";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Διαχείριση Χρονοπρογράμματος";
+            this.Text = "Διαχείριση προγράμματος ημέρας";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TimeSchedule_FormClosing);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1122,7 +1165,6 @@ namespace Smart_Home
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboBox3;
@@ -1159,5 +1201,9 @@ namespace Smart_Home
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label32;
     }
 }
