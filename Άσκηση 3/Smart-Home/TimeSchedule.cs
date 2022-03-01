@@ -106,6 +106,9 @@ namespace Smart_Home
         // κουμπί "Αποθήκευση Προγράμματος" ημέρας χρήστη
         private void button1_Click(object sender, EventArgs e)
         {
+            // clear the list
+            schedule.Clear();
+
             // προσθήκη γεγονότων όλων των comboboxes σε μία λίστα
             for (int i = 1; i < 15; i++)
             {
@@ -120,6 +123,13 @@ namespace Smart_Home
                     schedule.Add(my_comboBox.Text);
                 }   
             }
+        }
+
+        // αγορά παπουτσιού
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Αγοράσατε καινούριο ζευγάρι παπουτσιών");
+            shoes.Add("eidos");
         }
     }
 }
