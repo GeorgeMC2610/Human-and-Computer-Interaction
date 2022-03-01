@@ -261,52 +261,6 @@ namespace Smart_Home
             
         }
 
-        private void agora_papoutsiou(string item)
-        {
-            if (item.Equals("Αθλητικά")) // αγορά αθλητικών παπουτσιών
-            {
-                panel1.Visible = true;
-                label23.Text = "αθλητικών παπουτσιών";
-                pictureBox1.Image = Properties.Resources.athlitika1;
-                shoes.Add("Αθλητικά");
-            }
-            else if (item.Equals("Μοκασίνια")) // αγορά μοκασινιών
-            {
-                panel1.Visible = true;
-                label23.Text = "μοκασίνια";
-                pictureBox1.Image = Properties.Resources.mokasinia1;
-                shoes.Add("Μοκασίνια");
-            }
-            else if (item.Equals("Sneakers")) // αγορά sneakers
-            {
-                panel1.Visible = true;
-                label23.Text = "sneakers";
-                pictureBox1.Image = Properties.Resources.sneakers1;
-                shoes.Add("Sneakers");
-            }
-            else if (item.Equals("Sneakers")) // αγορά sneakers
-            {
-                panel1.Visible = true;
-                label23.Text = "sneakers";
-                pictureBox1.Image = Properties.Resources.sneakers1;
-                shoes.Add("Sneakers");
-            }
-            else if (item.Equals("Παντόφλες")) // αγορά παντόφλας
-            {
-                panel1.Visible = true;
-                label23.Text = "με παντόφλες";
-                pictureBox1.Image = Properties.Resources.padofles;
-                shoes.Add("Παντόφλες");
-            }
-            else if (item.Equals("Σκαρπίνια")) // αγορά σκαρπι΄νιών
-            {
-                panel1.Visible = true;
-                label23.Text = "σκαρπίνια";
-                pictureBox1.Image = Properties.Resources.skarpinia1;
-                shoes.Add("Σκαρπίνια");
-            }
-        }
-
         // διαγραφή προγράμματος ημέρας
         private void button4_Click(object sender, EventArgs e)
         {
@@ -343,6 +297,46 @@ namespace Smart_Home
         {
             panel1.Visible = false;
             panel2.Visible = true;
+        }
+
+        // αγορά ζευγαριού με παντόφλες
+        private void button5_Click(object sender, EventArgs e)
+        {
+            panel2.Visible = false;
+            panel1.Visible = true;
+            label23.Text = "με παντόφλες";
+            pictureBox1.Image = Properties.Resources.padofles;
+            current_shoe = "Παντόφλες";
+        }
+
+        // αγορά ζευγαρού με αθλητικά
+        private void button6_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+            panel2.Visible = false;
+            label23.Text = "αθλητικών παπουτσιών";
+            pictureBox1.Image = Properties.Resources.athlitika1;
+            current_shoe = "Αθλητικά";
+        }
+
+        // αγορά ζευγαριού με σκαρπίνια
+        private void button7_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+            panel2.Visible = false;
+            label23.Text = "σκαρπίνια";
+            pictureBox1.Image = Properties.Resources.skarpinia1;
+            current_shoe = "Σκαρπίνια";
+        }
+
+        // αγορά sneakers
+        private void button8_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+            panel2.Visible = false;
+            label23.Text = "sneakers";
+            pictureBox1.Image = Properties.Resources.sneakers1;
+            current_shoe = "Sneakers";
         }
     }
 }
