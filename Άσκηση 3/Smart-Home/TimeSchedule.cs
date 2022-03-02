@@ -339,6 +339,8 @@ namespace Smart_Home
         // κουμπί για γεωγραφικές οδηγίες
         private void button10_Click(object sender, EventArgs e)
         {
+            button21.Enabled = true;
+
             // αρχικά ψάχνουμε ποιες δραστηριότητες εκτός σπιτιού έχει στο πρόγραμμά του ο χρήστης (8 στο σύνολο δραστηριότητες)
             bool bolta = false;
             bool gimnastiki = false;
@@ -469,5 +471,67 @@ namespace Smart_Home
             label34.Visible = true;
         }
 
+        // οδηγίες για "Γυμναστική"
+        private void button17_Click(object sender, EventArgs e)
+        {
+            pictureBox2.Visible = true;
+            pictureBox2.Image = Properties.Resources.gimnastiki_odigies;
+            label34.Visible = true;
+        }
+
+        // οδηγίες για "Δουλειά"
+        private void button13_Click(object sender, EventArgs e)
+        {
+            pictureBox2.Visible = true;
+            pictureBox2.Image = Properties.Resources.odigies_douleia;
+            label34.Visible = true;
+        }
+
+        // οδηγίες για "Περπάτημα"
+        private void button15_Click(object sender, EventArgs e)
+        {
+            pictureBox2.Visible = true;
+            pictureBox2.Image = Properties.Resources.perpatima_odigies;
+            label34.Visible = true;
+        }
+
+        // οδηγίες για "Τρέξιμο"
+        private void button14_Click(object sender, EventArgs e)
+        {
+            pictureBox2.Visible = true;
+            pictureBox2.Image = Properties.Resources.treximo_odigies;
+            label34.Visible = true;
+        }
+
+        // οδηγίες για "Συνέντευξη"
+        private void button18_Click(object sender, EventArgs e)
+        {
+            pictureBox2.Visible = true;
+            pictureBox2.Image = Properties.Resources.sinedeuxi_odigies;
+            label34.Visible = true;
+        }
+
+        // οδηγίες για "Αθλήματα"
+        private void button12_Click(object sender, EventArgs e)
+        {
+            pictureBox2.Visible = true;
+            pictureBox2.Image = Properties.Resources.odigies_athlimata;
+            label34.Visible = true;
+        }
+
+        // οδηγίες για "Ψώνια"
+        private void button16_Click(object sender, EventArgs e)
+        {
+            pictureBox2.Visible = true;
+            pictureBox2.Image = Properties.Resources.odigies_psonia;
+            label34.Visible = true;
+        }
+
+        // κουμπί για παραγγελία καφέ
+        private void button21_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Έχει γίνει παραγγελία του καφέ σας! Περάστε να τον πάρετε σε 10 λεπτά.");
+            button21.Enabled = false;
+        }
     }
 }

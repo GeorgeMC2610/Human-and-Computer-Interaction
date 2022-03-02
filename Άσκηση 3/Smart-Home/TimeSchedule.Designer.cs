@@ -95,6 +95,7 @@ namespace Smart_Home
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.button19 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
@@ -106,7 +107,7 @@ namespace Smart_Home
             this.label35 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button19 = new System.Windows.Forms.Button();
+            this.button21 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -1158,6 +1159,7 @@ namespace Smart_Home
             // 
             this.panel5.BackColor = System.Drawing.Color.Transparent;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.button21);
             this.panel5.Controls.Add(this.button19);
             this.panel5.Controls.Add(this.button12);
             this.panel5.Controls.Add(this.button14);
@@ -1176,6 +1178,21 @@ namespace Smart_Home
             this.panel5.TabIndex = 118;
             this.panel5.Visible = false;
             // 
+            // button19
+            // 
+            this.button19.BackColor = System.Drawing.Color.IndianRed;
+            this.button19.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button19.Location = new System.Drawing.Point(158, 422);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(77, 25);
+            this.button19.TabIndex = 108;
+            this.button19.Text = "Κλείσιμο";
+            this.button19.UseVisualStyleBackColor = false;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
+            // 
             // button12
             // 
             this.button12.BackColor = System.Drawing.Color.DarkGreen;
@@ -1190,6 +1207,7 @@ namespace Smart_Home
             this.button12.Text = "Αθλήματα";
             this.button12.UseVisualStyleBackColor = false;
             this.button12.Visible = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
             // 
             // button14
             // 
@@ -1205,6 +1223,7 @@ namespace Smart_Home
             this.button14.Text = "Τρέξιμο";
             this.button14.UseVisualStyleBackColor = false;
             this.button14.Visible = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // button15
             // 
@@ -1220,6 +1239,7 @@ namespace Smart_Home
             this.button15.Text = "Περπάτημα";
             this.button15.UseVisualStyleBackColor = false;
             this.button15.Visible = false;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // button17
             // 
@@ -1235,6 +1255,7 @@ namespace Smart_Home
             this.button17.Text = "Γυμναστική";
             this.button17.UseVisualStyleBackColor = false;
             this.button17.Visible = false;
+            this.button17.Click += new System.EventHandler(this.button17_Click);
             // 
             // button16
             // 
@@ -1250,6 +1271,7 @@ namespace Smart_Home
             this.button16.Text = "Ψώνια";
             this.button16.UseVisualStyleBackColor = false;
             this.button16.Visible = false;
+            this.button16.Click += new System.EventHandler(this.button16_Click);
             // 
             // button18
             // 
@@ -1265,6 +1287,7 @@ namespace Smart_Home
             this.button18.Text = "Συνέντευξη";
             this.button18.UseVisualStyleBackColor = false;
             this.button18.Visible = false;
+            this.button18.Click += new System.EventHandler(this.button18_Click);
             // 
             // button13
             // 
@@ -1280,6 +1303,7 @@ namespace Smart_Home
             this.button13.Text = "Δουλειά";
             this.button13.UseVisualStyleBackColor = false;
             this.button13.Visible = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // button11
             // 
@@ -1327,7 +1351,6 @@ namespace Smart_Home
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::Smart_Home.Properties.Resources.odigies_douleia;
             this.pictureBox2.Location = new System.Drawing.Point(3, 212);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(228, 154);
@@ -1336,20 +1359,20 @@ namespace Smart_Home
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Visible = false;
             // 
-            // button19
+            // button21
             // 
-            this.button19.BackColor = System.Drawing.Color.IndianRed;
-            this.button19.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.button19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button19.Location = new System.Drawing.Point(154, 418);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(77, 25);
-            this.button19.TabIndex = 108;
-            this.button19.Text = "Κλείσιμο";
-            this.button19.UseVisualStyleBackColor = false;
-            this.button19.Click += new System.EventHandler(this.button19_Click);
+            this.button21.BackColor = System.Drawing.Color.SaddleBrown;
+            this.button21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button21.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button21.Location = new System.Drawing.Point(-1, 422);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(130, 25);
+            this.button21.TabIndex = 135;
+            this.button21.Text = "Παραγγελία Καφέ";
+            this.button21.UseVisualStyleBackColor = false;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // TimeSchedule
             // 
@@ -1468,5 +1491,6 @@ namespace Smart_Home
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.Button button19;
+        private System.Windows.Forms.Button button21;
     }
 }

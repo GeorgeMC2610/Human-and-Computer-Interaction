@@ -473,9 +473,29 @@ namespace Smart_Home.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap odigies_athlimata {
+            get {
+                object obj = ResourceManager.GetObject("odigies_athlimata", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap odigies_douleia {
             get {
                 object obj = ResourceManager.GetObject("odigies_douleia", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap odigies_psonia {
+            get {
+                object obj = ResourceManager.GetObject("odigies_psonia", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -496,6 +516,16 @@ namespace Smart_Home.Properties {
         internal static System.Drawing.Bitmap pawprint {
             get {
                 object obj = ResourceManager.GetObject("pawprint", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap perpatima_odigies {
+            get {
+                object obj = ResourceManager.GetObject("perpatima_odigies", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -666,6 +696,16 @@ namespace Smart_Home.Properties {
         internal static System.Drawing.Bitmap temperature_hot_2 {
             get {
                 object obj = ResourceManager.GetObject("temperature_hot_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap treximo_odigies {
+            get {
+                object obj = ResourceManager.GetObject("treximo_odigies", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
