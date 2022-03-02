@@ -339,9 +339,135 @@ namespace Smart_Home
         // κουμπί για γεωγραφικές οδηγίες
         private void button10_Click(object sender, EventArgs e)
         {
-            this.Width = 1188;
-            label33.Visible = true;
-            panel5.Visible = true;
+            // αρχικά ψάχνουμε ποιες δραστηριότητες εκτός σπιτιού έχει στο πρόγραμμά του ο χρήστης (8 στο σύνολο δραστηριότητες)
+            bool bolta = false;
+            bool gimnastiki = false;
+            bool douleia = false;
+            bool sinedeuxi = false;
+            bool perpatima = false;
+            bool athlimata = false;
+            bool treximo = false;
+            bool psonia = false;
+
+            foreach (string item in schedule)
+            {
+                if (item.Equals("Βόλτα"))
+                {
+                    bolta = true;
+                }
+                else if (item.Equals("Γυμναστική"))
+                {
+                    gimnastiki = true;
+                }
+                else if (item.Equals("Δουλειά"))
+                {
+                    douleia = true;
+                }
+                else if (item.Equals("Περπάτημα"))
+                {
+                    perpatima = true;
+                }
+                else if (item.Equals("Συνέντευξη"))
+                {
+                    sinedeuxi = true;
+                }
+                else if (item.Equals("Τρέξιμο"))
+                {
+                    treximo = true;
+                }
+                else if (item.Equals("Ψώνια"))
+                {
+                    psonia = true;
+                }
+                else if (item.Equals("Αθλήματα"))
+                {
+                    athlimata = true;
+                }
+            }
+
+            // εάν ο χρήστης έχει δραστηριότητες εκτός σπιτιού, εμφανίζεται ο χώρος στην φόρμα για
+            // οδηγίες τοποθεσίας
+
+            if (athlimata || treximo || sinedeuxi || perpatima || psonia || douleia || gimnastiki || bolta)
+            {
+                this.Width = 1188;
+                label33.Visible = true;
+                panel5.Visible = true;
+                button10.Enabled = false;
+            }
+            else
+            {
+                MessageBox.Show("Δεν έχετε δραστηριότητες εκτός σπιτιού στο πρόγραμμα ημέρας σας!");
+                button10.Enabled = true;
+            }
+
+            // στο σημείο που δίνεται η επεξήγηση τοποθεσίας, εμφανίζονται κατάλληλες επιλογές
+            // οι επιλογές πρέπει να συμφωνούν με το πρόγραμμα του χρήστη. Δεν εμφανίζονται επιλογές
+            // τοποθεσίας για δραστηριότητες που δεν συμπεριλαμβάνονται στο πρόγραμμα του χρήστη.
+            if (bolta)
+            {
+                button11.Visible = true;
+            }
+            
+            if (treximo)
+            {
+                button14.Visible = true;
+            }
+            
+            if (psonia)
+            {
+                button16.Visible = true;
+            }
+
+            if (athlimata)
+            {
+                button12.Visible = true;
+            }
+
+            if (gimnastiki)
+            {
+                button17.Visible = true;
+            }
+
+            if (douleia)
+            {
+                button13.Visible = true;
+            }
+
+            if (sinedeuxi)
+            {
+                button18.Visible = true;
+            }
+
+            if (perpatima)
+            {
+                button15.Visible = true;
+            }
+            
         }
+
+        // επιλογή για άνοιγμα τοποθεσίας στο Google Maps
+        private void label34_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Το Google Maps είναι έτοιμο προς χρήση!");
+        }
+
+        // κουμπί κλείσιμο
+        private void button19_Click(object sender, EventArgs e)
+        {
+            this.Width = 905;
+            label33.Visible = false;
+            panel5.Visible = false;
+            button10.Enabled = true;
+        }
+
+        // οδηγίες για "Βόλτα"
+        private void button11_Click(object sender, EventArgs e)
+        {
+            pictureBox2.Visible = true;
+            pictureBox2.Image = Properties.Resources.bolta_odigies;
+            label34.Visible = true;
+        }
+
     }
 }

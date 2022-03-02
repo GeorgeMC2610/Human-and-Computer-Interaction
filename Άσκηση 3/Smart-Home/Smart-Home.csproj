@@ -274,5 +274,17 @@
   <ItemGroup>
     <None Include="Resources\padofles.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bolta_odigies.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gimnastiki_odigies.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\odigies_douleia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sinedeuxi_odigies.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

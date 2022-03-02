@@ -90,16 +90,30 @@ namespace Smart_Home
             this.label27 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.button10 = new System.Windows.Forms.Button();
             this.label20 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.button10 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button15 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.button19 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // button20
@@ -1087,6 +1101,21 @@ namespace Smart_Home
             this.panel4.Size = new System.Drawing.Size(255, 93);
             this.panel4.TabIndex = 114;
             // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.Orange;
+            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button10.Location = new System.Drawing.Point(135, 3);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(115, 85);
+            this.button10.TabIndex = 39;
+            this.button10.Text = "Πληροφοριές για γεωγραφικές Οδηγίες";
+            this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
             // label20
             // 
             this.label20.AutoSize = true;
@@ -1129,26 +1158,198 @@ namespace Smart_Home
             // 
             this.panel5.BackColor = System.Drawing.Color.Transparent;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.button19);
+            this.panel5.Controls.Add(this.button12);
+            this.panel5.Controls.Add(this.button14);
+            this.panel5.Controls.Add(this.button15);
+            this.panel5.Controls.Add(this.button17);
+            this.panel5.Controls.Add(this.button16);
+            this.panel5.Controls.Add(this.button18);
+            this.panel5.Controls.Add(this.button13);
+            this.panel5.Controls.Add(this.button11);
+            this.panel5.Controls.Add(this.label35);
+            this.panel5.Controls.Add(this.label34);
+            this.panel5.Controls.Add(this.pictureBox2);
             this.panel5.Location = new System.Drawing.Point(924, 45);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(236, 422);
+            this.panel5.Size = new System.Drawing.Size(236, 448);
             this.panel5.TabIndex = 118;
             this.panel5.Visible = false;
             // 
-            // button10
+            // button12
             // 
-            this.button10.BackColor = System.Drawing.Color.Orange;
-            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.button10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button10.Location = new System.Drawing.Point(135, 3);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(115, 85);
-            this.button10.TabIndex = 39;
-            this.button10.Text = "Πληροφοριές για γεωγραφικές Οδηγίες";
-            this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.button12.BackColor = System.Drawing.Color.DarkGreen;
+            this.button12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button12.Location = new System.Drawing.Point(122, 174);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(100, 30);
+            this.button12.TabIndex = 134;
+            this.button12.Text = "Αθλήματα";
+            this.button12.UseVisualStyleBackColor = false;
+            this.button12.Visible = false;
+            // 
+            // button14
+            // 
+            this.button14.BackColor = System.Drawing.Color.DarkGreen;
+            this.button14.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button14.Location = new System.Drawing.Point(15, 130);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(76, 30);
+            this.button14.TabIndex = 133;
+            this.button14.Text = "Τρέξιμο";
+            this.button14.UseVisualStyleBackColor = false;
+            this.button14.Visible = false;
+            // 
+            // button15
+            // 
+            this.button15.BackColor = System.Drawing.Color.DarkGreen;
+            this.button15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button15.Location = new System.Drawing.Point(122, 85);
+            this.button15.Name = "button15";
+            this.button15.Size = new System.Drawing.Size(100, 30);
+            this.button15.TabIndex = 132;
+            this.button15.Text = "Περπάτημα";
+            this.button15.UseVisualStyleBackColor = false;
+            this.button15.Visible = false;
+            // 
+            // button17
+            // 
+            this.button17.BackColor = System.Drawing.Color.DarkGreen;
+            this.button17.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button17.Location = new System.Drawing.Point(122, 41);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(100, 30);
+            this.button17.TabIndex = 131;
+            this.button17.Text = "Γυμναστική";
+            this.button17.UseVisualStyleBackColor = false;
+            this.button17.Visible = false;
+            // 
+            // button16
+            // 
+            this.button16.BackColor = System.Drawing.Color.DarkGreen;
+            this.button16.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button16.Location = new System.Drawing.Point(15, 174);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(76, 30);
+            this.button16.TabIndex = 130;
+            this.button16.Text = "Ψώνια";
+            this.button16.UseVisualStyleBackColor = false;
+            this.button16.Visible = false;
+            // 
+            // button18
+            // 
+            this.button18.BackColor = System.Drawing.Color.DarkGreen;
+            this.button18.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button18.Location = new System.Drawing.Point(122, 130);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(100, 30);
+            this.button18.TabIndex = 129;
+            this.button18.Text = "Συνέντευξη";
+            this.button18.UseVisualStyleBackColor = false;
+            this.button18.Visible = false;
+            // 
+            // button13
+            // 
+            this.button13.BackColor = System.Drawing.Color.DarkGreen;
+            this.button13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button13.Location = new System.Drawing.Point(15, 85);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(76, 30);
+            this.button13.TabIndex = 123;
+            this.button13.Text = "Δουλειά";
+            this.button13.UseVisualStyleBackColor = false;
+            this.button13.Visible = false;
+            // 
+            // button11
+            // 
+            this.button11.BackColor = System.Drawing.Color.DarkGreen;
+            this.button11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button11.Location = new System.Drawing.Point(15, 41);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(76, 30);
+            this.button11.TabIndex = 121;
+            this.button11.Text = "Βόλτα";
+            this.button11.UseVisualStyleBackColor = false;
+            this.button11.Visible = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.BackColor = System.Drawing.Color.Transparent;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label35.ForeColor = System.Drawing.Color.Maroon;
+            this.label35.Location = new System.Drawing.Point(12, 18);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(157, 16);
+            this.label35.TabIndex = 108;
+            this.label35.Text = "Προβολή οδηγιών για:";
+            // 
+            // label34
+            // 
+            this.label34.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.label34.AutoSize = true;
+            this.label34.BackColor = System.Drawing.Color.Transparent;
+            this.label34.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label34.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label34.ForeColor = System.Drawing.Color.Red;
+            this.label34.Location = new System.Drawing.Point(3, 369);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(210, 15);
+            this.label34.TabIndex = 13;
+            this.label34.Text = "Άνοιγμα τοποθεσίας στο Google Maps";
+            this.label34.Visible = false;
+            this.label34.Click += new System.EventHandler(this.label34_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Smart_Home.Properties.Resources.odigies_douleia;
+            this.pictureBox2.Location = new System.Drawing.Point(3, 212);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(228, 154);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Visible = false;
+            // 
+            // button19
+            // 
+            this.button19.BackColor = System.Drawing.Color.IndianRed;
+            this.button19.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button19.Location = new System.Drawing.Point(154, 418);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(77, 25);
+            this.button19.TabIndex = 108;
+            this.button19.Text = "Κλείσιμο";
+            this.button19.UseVisualStyleBackColor = false;
+            this.button19.Click += new System.EventHandler(this.button19_Click);
             // 
             // TimeSchedule
             // 
@@ -1181,6 +1382,9 @@ namespace Smart_Home
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel4.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1252,5 +1456,17 @@ namespace Smart_Home
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Button button13;
+        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button14;
+        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button button18;
+        private System.Windows.Forms.Button button19;
     }
 }
