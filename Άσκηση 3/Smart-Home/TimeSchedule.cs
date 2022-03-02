@@ -28,6 +28,7 @@ namespace Smart_Home
         public TimeSchedule()
         {
             InitializeComponent();
+            this.Width = 905;
         }
 
         // ο χρήστης πατώντας αυτό το κουμπί, μπορεί να δει τα διαθέσιμα παπούτσια που βρίσκονται
@@ -333,6 +334,14 @@ namespace Smart_Home
                 label32.Visible = false;
                 MessageBox.Show("Με βάση το πρόγραμμά σας, δεν χρειάζεται να αγοράσετε νέα παπούτσια!");
             }
+        }
+
+        // κουμπί για γεωγραφικές οδηγίες
+        private void button10_Click(object sender, EventArgs e)
+        {
+            this.Width = 1188;
+            label33.Visible = true;
+            panel5.Visible = true;
         }
     }
 }

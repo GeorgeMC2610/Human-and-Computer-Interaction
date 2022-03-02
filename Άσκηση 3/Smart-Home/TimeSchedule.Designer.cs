@@ -92,6 +92,9 @@ namespace Smart_Home
             this.panel4 = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.button10 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -1077,6 +1080,7 @@ namespace Smart_Home
             // 
             this.panel4.BackColor = System.Drawing.Color.Transparent;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.button10);
             this.panel4.Controls.Add(this.button20);
             this.panel4.Location = new System.Drawing.Point(620, 44);
             this.panel4.Name = "panel4";
@@ -1108,6 +1112,44 @@ namespace Smart_Home
             this.label32.Text = "Αγορά νέων παπουτσιών:";
             this.label32.Visible = false;
             // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.BackColor = System.Drawing.Color.Transparent;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.label33.ForeColor = System.Drawing.Color.Black;
+            this.label33.Location = new System.Drawing.Point(937, 25);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(158, 16);
+            this.label33.TabIndex = 117;
+            this.label33.Text = "Γεωγραφικές οδηγίες:";
+            this.label33.Visible = false;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.Transparent;
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Location = new System.Drawing.Point(924, 45);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(236, 422);
+            this.panel5.TabIndex = 118;
+            this.panel5.Visible = false;
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.Orange;
+            this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button10.Location = new System.Drawing.Point(135, 3);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(115, 85);
+            this.button10.TabIndex = 39;
+            this.button10.Text = "Πληροφοριές για γεωγραφικές Οδηγίες";
+            this.button10.UseVisualStyleBackColor = false;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
             // TimeSchedule
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1115,7 +1157,9 @@ namespace Smart_Home
             this.AutoScroll = true;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(889, 495);
+            this.ClientSize = new System.Drawing.Size(1172, 495);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.label33);
             this.Controls.Add(this.label32);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.panel4);
@@ -1124,7 +1168,7 @@ namespace Smart_Home
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label21);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(905, 534);
+            this.MaximumSize = new System.Drawing.Size(1188, 534);
             this.Name = "TimeSchedule";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Διαχείριση προγράμματος ημέρας";
@@ -1205,5 +1249,8 @@ namespace Smart_Home
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button button10;
     }
 }
