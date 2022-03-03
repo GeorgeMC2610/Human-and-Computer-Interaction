@@ -92,7 +92,11 @@ namespace Smart_Home
         private void button1_Click(object sender, EventArgs e)
         {
             button1.Enabled = false;
+            button1.BackColor = Color.Gray;
+            button1.ForeColor = Color.Black;
             button4.Enabled = true;
+            button4.BackColor = Color.Maroon;
+            button4.ForeColor = Color.White;
 
             // προσθήκη γεγονότων όλων των comboboxes σε μία λίστα
             for (int i = 1; i <= 15; i++)
@@ -115,6 +119,9 @@ namespace Smart_Home
         // αγορά παπουτσιού
         private void button2_Click(object sender, EventArgs e)
         {
+            if (MessageBox.Show("Είστε σίγουρος ότι θέλετε να αγοράσετε αυτό ο ζευγάρι παπουτσιών;", "Αγορά Παπουτσιών", MessageBoxButtons.YesNo) == DialogResult.No)
+                return;
+
             MessageBox.Show("Αγοράσατε καινούριο ζευγάρι παπουτσιών!");
             
             if (current_shoe.Equals("Μοκασίνια"))
@@ -252,7 +259,11 @@ namespace Smart_Home
 
 
             button1.Enabled = true;
+            button1.BackColor = Color.Green;
+            button1.ForeColor = Color.White;
             button4.Enabled = false;
+            button4.BackColor = Color.Gray;
+            button4.ForeColor = Color.Black;
 
             label32.Visible = false;
             panel2.Visible = false;
@@ -400,11 +411,15 @@ namespace Smart_Home
                 label33.Visible = true;
                 panel5.Visible = true;
                 button10.Enabled = false;
+                button10.BackColor = Color.Gray;
+                button10.ForeColor = Color.Black;
             }
             else
             {
                 MessageBox.Show("Δεν έχετε δραστηριότητες εκτός σπιτιού στο πρόγραμμα ημέρας σας!");
                 button10.Enabled = true;
+                button10.BackColor = Color.Orange;
+                button10.ForeColor = Color.White;
             }
 
             // στο σημείο που δίνεται η επεξήγηση τοποθεσίας, εμφανίζονται κατάλληλες επιλογές
@@ -465,6 +480,8 @@ namespace Smart_Home
             label33.Visible = false;
             panel5.Visible = false;
             button10.Enabled = true;
+            button10.BackColor = Color.Orange;
+            button10.ForeColor = Color.White;
         }
 
         // οδηγίες για "Βόλτα"
