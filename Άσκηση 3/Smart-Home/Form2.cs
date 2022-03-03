@@ -102,11 +102,8 @@ namespace Smart_Home
 
         private void timerAnimals_Tick(object sender, EventArgs e)
         {
-            if ((from bowl in Bowls where bowl.Capacity < 20 select bowl.Capacity).Any())
-            {
-                labelAnimalWarning.Text = "Ίσως χρειαστεί να γεμίσετε κάποιο μπωλ.";
+            if ((from bowl in Bowls where bowl.Capacity < 20 select bowl.Capacity).Any() || (from furniture in FragileFurniture where furniture.Broken select furniture).Any())
                 labelAnimalWarning.Visible = true;
-            }
 
             //Αν ο Χρήστης είναι σπίτι, τότε τα ζώα έχουνε μικρή πιθανότητα να σπάσουν κάτι ή να είναι ζωηρά.
             if (isHome)

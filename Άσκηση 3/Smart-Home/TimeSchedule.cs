@@ -247,6 +247,10 @@ namespace Smart_Home
         // διαγραφή προγράμματος ημέρας
         private void button4_Click(object sender, EventArgs e)
         {
+            if (MessageBox.Show("Είστε σίγουρος ότι θέλετε να διαγράψετε το πρόγραμμά σας;", "Διαγραφή Προγράμματος", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.No)
+                return;
+
+
             button1.Enabled = true;
             button4.Enabled = false;
 

@@ -8,16 +8,20 @@ namespace Smart_Home
 {
     public class FragileFurniture
     {
-        public bool Broken { get; set; }
-        private string type;
-        private string[] types = { "curtain", "vase", "plate", "glass", "couch" };
-        private static Random random = new Random();
+        private readonly string[] Types = { "curtain", "vase", "plate", "glass", "couch" };
+        private readonly static Random random = new Random();
 
-        public string Type { get { return type; } }
+        public bool Broken { get; private set; }
+        public string Type { get; private set; }
 
         public FragileFurniture()
         {
-            type = types[random.Next(0, types.Length)];
+            Type = Types[random.Next(0, Types.Length)];
+            Broken = false;
+        }
+
+        public void Repair()
+        {
             Broken = false;
         }
 
