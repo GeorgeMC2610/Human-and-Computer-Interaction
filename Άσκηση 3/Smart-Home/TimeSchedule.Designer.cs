@@ -95,6 +95,7 @@ namespace Smart_Home
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.button21 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
@@ -107,7 +108,6 @@ namespace Smart_Home
             this.label35 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button21 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -1178,6 +1178,21 @@ namespace Smart_Home
             this.panel5.TabIndex = 118;
             this.panel5.Visible = false;
             // 
+            // button21
+            // 
+            this.button21.BackColor = System.Drawing.Color.SaddleBrown;
+            this.button21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button21.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button21.Location = new System.Drawing.Point(-1, 422);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(130, 25);
+            this.button21.TabIndex = 135;
+            this.button21.Text = "Παραγγελία Καφέ";
+            this.button21.UseVisualStyleBackColor = false;
+            this.button21.Click += new System.EventHandler(this.button21_Click);
+            // 
             // button19
             // 
             this.button19.BackColor = System.Drawing.Color.IndianRed;
@@ -1358,21 +1373,6 @@ namespace Smart_Home
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Visible = false;
-            // 
-            // button21
-            // 
-            this.button21.BackColor = System.Drawing.Color.SaddleBrown;
-            this.button21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.button21.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button21.Location = new System.Drawing.Point(-1, 422);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(130, 25);
-            this.button21.TabIndex = 135;
-            this.button21.Text = "Παραγγελία Καφέ";
-            this.button21.UseVisualStyleBackColor = false;
-            this.button21.Click += new System.EventHandler(this.button21_Click);
             // 
             // TimeSchedule
             // 
