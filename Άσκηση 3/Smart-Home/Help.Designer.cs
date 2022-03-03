@@ -57,6 +57,7 @@ namespace Smart_Home
             // 
             // label8
             // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
@@ -68,6 +69,7 @@ namespace Smart_Home
             // 
             // button5
             // 
+            this.button5.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button5.BackColor = System.Drawing.Color.LightCoral;
             this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -83,6 +85,7 @@ namespace Smart_Home
             // 
             // button1
             // 
+            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button1.BackColor = System.Drawing.Color.LightCoral;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -98,6 +101,7 @@ namespace Smart_Home
             // 
             // button2
             // 
+            this.button2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button2.BackColor = System.Drawing.Color.LightCoral;
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -113,6 +117,7 @@ namespace Smart_Home
             // 
             // button3
             // 
+            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button3.BackColor = System.Drawing.Color.LightCoral;
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -128,6 +133,7 @@ namespace Smart_Home
             // 
             // button4
             // 
+            this.button4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button4.BackColor = System.Drawing.Color.LightCoral;
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -143,6 +149,7 @@ namespace Smart_Home
             // 
             // button7
             // 
+            this.button7.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button7.BackColor = System.Drawing.Color.LightCoral;
             this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -158,6 +165,7 @@ namespace Smart_Home
             // 
             // button6
             // 
+            this.button6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button6.BackColor = System.Drawing.Color.LightCoral;
             this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -173,6 +181,7 @@ namespace Smart_Home
             // 
             // button8
             // 
+            this.button8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button8.BackColor = System.Drawing.Color.LightCoral;
             this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -188,7 +197,8 @@ namespace Smart_Home
             // 
             // button9
             // 
-            this.button9.BackColor = System.Drawing.Color.Tomato;
+            this.button9.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.button9.BackColor = System.Drawing.Color.LightCoral;
             this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
@@ -203,6 +213,7 @@ namespace Smart_Home
             // 
             // button10
             // 
+            this.button10.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button10.BackColor = System.Drawing.Color.Tomato;
             this.button10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -218,6 +229,7 @@ namespace Smart_Home
             // 
             // button11
             // 
+            this.button11.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button11.BackColor = System.Drawing.Color.Tomato;
             this.button11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -233,6 +245,7 @@ namespace Smart_Home
             // 
             // button13
             // 
+            this.button13.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button13.BackColor = System.Drawing.Color.Tomato;
             this.button13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -248,6 +261,7 @@ namespace Smart_Home
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
@@ -259,6 +273,7 @@ namespace Smart_Home
             // 
             // button12
             // 
+            this.button12.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button12.BackColor = System.Drawing.Color.Tomato;
             this.button12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -274,6 +289,7 @@ namespace Smart_Home
             // 
             // button14
             // 
+            this.button14.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button14.BackColor = System.Drawing.Color.LightCoral;
             this.button14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -289,6 +305,7 @@ namespace Smart_Home
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
@@ -300,6 +317,7 @@ namespace Smart_Home
             // 
             // button15
             // 
+            this.button15.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button15.BackColor = System.Drawing.Color.Sienna;
             this.button15.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -315,6 +333,7 @@ namespace Smart_Home
             // 
             // button16
             // 
+            this.button16.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button16.BackColor = System.Drawing.Color.Sienna;
             this.button16.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -330,6 +349,7 @@ namespace Smart_Home
             // 
             // button17
             // 
+            this.button17.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button17.BackColor = System.Drawing.Color.Sienna;
             this.button17.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -345,6 +365,7 @@ namespace Smart_Home
             // 
             // button18
             // 
+            this.button18.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button18.BackColor = System.Drawing.Color.Sienna;
             this.button18.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -360,6 +381,7 @@ namespace Smart_Home
             // 
             // button20
             // 
+            this.button20.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button20.BackColor = System.Drawing.Color.Sienna;
             this.button20.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -375,6 +397,7 @@ namespace Smart_Home
             // 
             // button21
             // 
+            this.button21.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.button21.BackColor = System.Drawing.Color.Sienna;
             this.button21.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -394,6 +417,7 @@ namespace Smart_Home
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackgroundImage = global::Smart_Home.Properties.Resources.background_2;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 403);
             this.Controls.Add(this.button20);
             this.Controls.Add(this.button21);
