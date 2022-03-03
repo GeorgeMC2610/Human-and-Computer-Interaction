@@ -25,6 +25,11 @@ namespace Smart_Home
             Broken = false;
         }
 
+        public void Break()
+        {
+            Broken = true;
+        }
+
         public override string ToString()
         {
             return "Class: Furniture, Type: " + Type;

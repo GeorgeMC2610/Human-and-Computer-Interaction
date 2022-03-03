@@ -69,6 +69,15 @@ namespace Smart_Home
             }
         }
 
+        /// <summary>
+        /// Κάνει ένα ζώο να σπάει ένα αντικείμενο.
+        /// </summary>
+        /// <param name="furniture">Το αντικείμενο που θέλουμε να σπάσουμε.</param>
+        public void BreakFurniture(FragileFurniture furniture)
+        {
+            furniture.Break();
+        }
+
         public void Debug()
         {
             Console.WriteLine(Name + " is " + ActivityPercentage.ToString() + "% active, " + HungerPercentage.ToString() + "% hungry and " + ThirstPercentage.ToString() + "% thirsty.");
