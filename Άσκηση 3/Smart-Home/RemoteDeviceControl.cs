@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace Smart_Home
@@ -609,5 +610,14 @@ namespace Smart_Home
             e.Cancel = true;
         }
 
+        // Η φόρμα πάντα βρίσκεται στη μέση όταν γίνεται resize
+        private void Remote_Device_Control_Resize(object sender, EventArgs e)
+        {
+            Screen myScreen = Screen.FromControl(this);
+            Rectangle area = myScreen.WorkingArea;
+
+            this.Top = (area.Height - this.Height) / 2;
+            this.Left = (area.Width - this.Width) / 2;
+        }
     }
 }

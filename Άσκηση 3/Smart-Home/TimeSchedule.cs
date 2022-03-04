@@ -267,6 +267,7 @@ namespace Smart_Home
 
             label32.Visible = false;
             panel2.Visible = false;
+            panel1.Visible = false;
 
             // καθαρισμός όλων των λιστών
             required_shoes.Clear();
@@ -553,6 +554,16 @@ namespace Smart_Home
         {
             MessageBox.Show("Έχει γίνει παραγγελία του καφέ σας! Περάστε να τον πάρετε σε 10 λεπτά.");
             button21.Enabled = false;
+        }
+
+        // Η φόρμα πάντα βρίσκεται στη μέση όταν γίνεται resize
+        private void TimeSchedule_Resize(object sender, EventArgs e)
+        {
+            Screen myScreen = Screen.FromControl(this);
+            Rectangle area = myScreen.WorkingArea;
+
+            this.Top = (area.Height - this.Height) / 2;
+            this.Left = (area.Width - this.Width) / 2;
         }
     }
 }

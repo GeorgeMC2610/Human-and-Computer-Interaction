@@ -1392,11 +1392,13 @@ namespace Smart_Home
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label21);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(1188, 534);
             this.Name = "TimeSchedule";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Διαχείριση προγράμματος ημέρας";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TimeSchedule_FormClosing);
+            this.Resize += new System.EventHandler(this.TimeSchedule_Resize);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

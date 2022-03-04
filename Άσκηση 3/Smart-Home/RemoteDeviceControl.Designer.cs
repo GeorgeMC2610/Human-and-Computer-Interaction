@@ -1646,11 +1646,13 @@ namespace Smart_Home
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(803, 747);
             this.Name = "Remote_Device_Control";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Απομακρυνσμένος Έλεγχος Συσκευών";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Remote_Device_Control_FormClosing);
+            this.Resize += new System.EventHandler(this.Remote_Device_Control_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.shoeCase)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
