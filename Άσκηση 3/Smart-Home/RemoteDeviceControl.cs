@@ -153,7 +153,7 @@ namespace Smart_Home
         {
             if (temp_hol == false)
             {
-                button3.Text = "Κλέίσιμο θέρμανσης";
+                button3.Text = "Κλείσιμο θέρμανσης";
                 pictureBox5.Image = Properties.Resources.temperature;
                 MessageBox.Show("Η θέρμανση στο χωλ έχει ανοίξει.");
                 temp_hol = true;
@@ -173,7 +173,7 @@ namespace Smart_Home
         {
             if (temp_living_room == false)
             {
-                button4.Text = "Κλέίσιμο θέρμανσης";
+                button4.Text = "Κλείσιμο θέρμανσης";
                 pictureBox2.Image = Properties.Resources.temperature;
                 MessageBox.Show("Η θέρμανση στο σαλόνι έχει ανοίξει.");
                 temp_living_room = true;
@@ -193,7 +193,7 @@ namespace Smart_Home
         {
             if (temp_kitchen == false)
             {
-                button6.Text = "Κλέίσιμο θέρμανσης";
+                button6.Text = "Κλείσιμο θέρμανσης";
                 pictureBox4.Image = Properties.Resources.temperature;
                 MessageBox.Show("Η θέρμανση στην κουζίνα έχει ανοίξει.");
                 temp_kitchen = true;
@@ -213,7 +213,7 @@ namespace Smart_Home
         {
             if (temp_bathroom == false)
             {
-                button9.Text = "Κλέίσιμο θέρμανσης";
+                button9.Text = "Κλείσιμο θέρμανσης";
                 pictureBox3.Image = Properties.Resources.temperature;
                 MessageBox.Show("Η θέρμανση στο μπάνιο έχει ανοίξει.");
                 temp_bathroom = true;
@@ -233,7 +233,7 @@ namespace Smart_Home
         {
             if (temp_bedroom == false)
             {
-                button12.Text = "Κλέίσιμο θέρμανσης";
+                button12.Text = "Κλείσιμο θέρμανσης";
                 pictureBox12.Image = Properties.Resources.temperature;
                 MessageBox.Show("Η θέρμανση στο υπνοδωμάτιο έχει ανοίξει.");
                 temp_bedroom = true;
@@ -253,7 +253,7 @@ namespace Smart_Home
         {
             if (temp_garage == false)
             {
-                button13.Text = "Κλέίσιμο θέρμανσης";
+                button13.Text = "Κλείσιμο θέρμανσης";
                 pictureBox14.Image = Properties.Resources.temperature;
                 MessageBox.Show("Η θέρμανση στο γκαράζ έχει ανοίξει.");
                 temp_garage = true;
@@ -335,7 +335,7 @@ namespace Smart_Home
         {
             if (papoutsotiki)
             {
-                button2.Text = "Άνοιγμα παπουτσόθήκης";
+                button2.Text = "Άνοιγμα παπουτσοθήκης";
                 MessageBox.Show("Η παπουτσοθήκη απενεργοποιήθηκε!");
                 papoutsotiki = false;
             }
