@@ -76,6 +76,7 @@ namespace Smart_Home
             this.buttonRefill.TabIndex = 0;
             this.buttonRefill.Text = "ΓΕΜΙΣΜΑ ΟΛΩΝ ΤΩΝ ΜΠΟΛ";
             this.buttonRefill.UseVisualStyleBackColor = false;
+            this.buttonRefill.Click += new System.EventHandler(this.buttonRefill_Click);
             // 
             // buttonFixBrokenFurniture
             // 

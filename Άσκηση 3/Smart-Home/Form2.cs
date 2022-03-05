@@ -104,6 +104,8 @@ namespace Smart_Home
         {
             if ((from bowl in Bowls where bowl.Capacity < 20 select bowl.Capacity).Any() || (from furniture in FragileFurniture where furniture.Broken select furniture).Any())
                 labelAnimalWarning.Visible = true;
+            else
+                labelAnimalWarning.Visible = false;
 
             //Αν ο Χρήστης είναι σπίτι, τότε τα ζώα έχουνε μικρή πιθανότητα να σπάσουν κάτι ή να είναι ζωηρά.
             if (isHome)

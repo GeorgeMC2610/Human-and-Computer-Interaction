@@ -102,6 +102,15 @@ namespace Smart_Home
         private void buttonFixBrokenFurniture_Click(object sender, EventArgs e)
         {
             FormMain.FragileFurniture.ForEach(f => f.Repair());
+            HandleButton((from furniture in FormMain.FragileFurniture where furniture.Broken select furniture).Any());
+        }
+
+        private void buttonRefill_Click(object sender, EventArgs e)
+        {
+            foreach (Bowl b in FormMain.Bowls)
+                b.Capacity = Bowl.MaxCapacity;
+
+            Console.WriteLine("Filled all bowls.");
         }
     }
 }
