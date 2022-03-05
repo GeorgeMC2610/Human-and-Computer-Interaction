@@ -13,8 +13,7 @@ namespace Smart_Home
     public partial class FormMain : Form
     {
         //TODO: 
-        // - Πρέπει να κάνω τα ζώα να σπάνε αντικείμενα
-        // - Πρέπει να βρω φωτογραφίες για τα ζώα, άδειο και γεμάτο μπωλs
+        // - Πρέπει να βρω φωτογραφίες για άδειο και γεμάτο μπωλs
 
         public static List<FragileFurniture> FragileFurniture = new List<FragileFurniture>();
         public static List<Animal> Pets = new List<Animal>();
