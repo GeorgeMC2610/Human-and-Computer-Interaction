@@ -22,7 +22,7 @@ namespace Smart_Home
 
         public int hungerPercentage { get { return HungerPercentage; } }
         public int thirstPercentage { get { return ThirstPercentage; } }
-        public int activityPercentage { get { return activityPercentage; } }
+        public int activityPercentage { get { return ActivityPercentage; } }
 
         //Το όνομα του κατοικιδίου (θα είναι τυχαίο)
         public string Name { get { return name; } }

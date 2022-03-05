@@ -25,7 +25,7 @@ namespace Smart_Home
         private static int[] DogImages = { 0, 1, 2 };
 
         private static readonly Random random = new Random();
-        public static bool isHome = true;
+        public static bool isHome = false;
 
         // αντικείμενο φόρμας διαχέρισης συσκευών
         Remote_Device_Control rmctrl;
@@ -125,8 +125,8 @@ namespace Smart_Home
                 else
                     Pets.ForEach(pet => pet.Calm());
 
-                //15% πιθανότητα να σπάσει κάποιο αντικείμενο ένα ζώο.
-                if (random.Next(0, 15) == 0)
+                //1 στις 30 πιθανότητα να σπάσει κάποιο αντικείμενο ένα ζώο.
+                if (random.Next(0, 30) == 0)
                     AnimalBreakFurniture();
             }
 
@@ -208,7 +208,7 @@ namespace Smart_Home
         private void AnimalBreakFurniture()
         {
             //παίρνουμε τα
-            var ActiveAnimals = (from pet in Pets where pet.activityPercentage > (isHome ? 50 : 30) select pet).ToArray();
+            var ActiveAnimals = (from pet in Pets where pet.activityPercentage > (isHome ? 50 : 40) select pet).ToArray();
             var NotBrokenFragileFurniture = (from furniture in FragileFurniture where !furniture.Broken select furniture).ToArray();
 
             if (ActiveAnimals.Length == 0 || NotBrokenFragileFurniture.Length == 0)
