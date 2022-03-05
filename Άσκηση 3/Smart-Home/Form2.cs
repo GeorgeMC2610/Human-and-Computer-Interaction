@@ -113,6 +113,10 @@ namespace Smart_Home
                 else
                     Pets.ForEach(pet => pet.Awaken());
 
+                //1% πιθανότητα να σπάσει κάτι ένα ζώο.
+                if (random.Next(0, 100) == 0)
+                    AnimalBreakFurniture();
+                
             }
             else
             {
@@ -120,6 +124,10 @@ namespace Smart_Home
                     Pets.ForEach(pet => pet.Awaken());
                 else
                     Pets.ForEach(pet => pet.Calm());
+
+                //15% πιθανότητα να σπάσει κάποιο αντικείμενο ένα ζώο.
+                if (random.Next(0, 15) == 0)
+                    AnimalBreakFurniture();
             }
 
             //έχουμε 10% πιθανότητα να πεινάσει/διψάσει κάποιο ζώο.
@@ -195,6 +203,20 @@ namespace Smart_Home
             }
 
             Pets.ForEach(pet => pet.Debug());
+        }
+
+        private void AnimalBreakFurniture()
+        {
+            //παίρνουμε τα
+            var ActiveAnimals = (from pet in Pets where pet.activityPercentage > (isHome ? 50 : 30) select pet).ToArray();
+            var NotBrokenFragileFurniture = (from furniture in FragileFurniture where !furniture.Broken select furniture).ToArray();
+
+            if (ActiveAnimals.Length == 0 || NotBrokenFragileFurniture.Length == 0)
+                return;
+
+            ActiveAnimals[random.Next(0, ActiveAnimals.Length)].BreakFurniture(NotBrokenFragileFurniture[random.Next(0, NotBrokenFragileFurniture.Length)]);
+            Console.WriteLine("Random furniture just broke.");
+            labelAnimalWarning.Visible = true;
         }
 
         private void FormMain_FormClosed(object sender, FormClosedEventArgs e)
