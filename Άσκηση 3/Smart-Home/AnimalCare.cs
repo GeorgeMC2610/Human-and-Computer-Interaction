@@ -82,7 +82,26 @@ namespace Smart_Home
             labelDog2.Location = new Point(pictureBoxDog2.Location.X + pictureBoxDog2.Width / 2 - labelDog2.Width / 2, labelDog2.Location.Y);
             labelDog3.Location = new Point(pictureBoxDog3.Location.X + pictureBoxDog3.Width / 2 - labelDog3.Width / 2, labelDog3.Location.Y);
 
+            //αν υπάρχει τουλάχιστον ένα σπασμένο αντικείμενο τότε ενεργοποιούμε το κουμπί.
+            HandleButton((from furniture in FormMain.FragileFurniture where furniture.Broken select furniture).Any());
+        }
 
+        private void HandleButton(bool handling)
+        {
+            buttonFixBrokenFurniture.Enabled   =  handling;
+            buttonFixBrokenFurniture.BackColor = (handling) ? Color.WhiteSmoke : Color.Gray;
+            buttonFixBrokenFurniture.ForeColor = (handling) ? Color.Black : Color.DarkGray;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            HandleButton((from furniture in FormMain.FragileFurniture where furniture.Broken select furniture).Any());
+            Console.WriteLine("there are " + (from furniture in FormMain.FragileFurniture where furniture.Broken select furniture).ToArray().Length.ToString() + " broken furniture");
+        }
+
+        private void buttonFixBrokenFurniture_Click(object sender, EventArgs e)
+        {
+            FormMain.FragileFurniture.ForEach(f => f.Repair());
         }
     }
 }

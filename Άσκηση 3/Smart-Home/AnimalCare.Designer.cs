@@ -32,7 +32,7 @@ namespace Smart_Home
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AnimalCare));
             this.buttonRefill = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonFixBrokenFurniture = new System.Windows.Forms.Button();
             this.pictureBoxCat1 = new System.Windows.Forms.PictureBox();
             this.pictureBoxDog1 = new System.Windows.Forms.PictureBox();
             this.pictureBoxCat2 = new System.Windows.Forms.PictureBox();
@@ -70,34 +70,35 @@ namespace Smart_Home
             this.buttonRefill.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonRefill.ForeColor = System.Drawing.Color.White;
             this.buttonRefill.Location = new System.Drawing.Point(16, 465);
-            this.buttonRefill.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonRefill.Margin = new System.Windows.Forms.Padding(4);
             this.buttonRefill.Name = "buttonRefill";
             this.buttonRefill.Size = new System.Drawing.Size(511, 74);
             this.buttonRefill.TabIndex = 0;
             this.buttonRefill.Text = "ΓΕΜΙΣΜΑ ΟΛΩΝ ΤΩΝ ΜΠΟΛ";
             this.buttonRefill.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // buttonFixBrokenFurniture
             // 
-            this.button1.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.button1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(552, 465);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(499, 74);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "ΕΠΙΣΚΕΥΗ ΕΥΘΡΑΥΣΤΩΝ ΑΝΤΙΚΕΙΜΕΝΩΝ";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonFixBrokenFurniture.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.buttonFixBrokenFurniture.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.buttonFixBrokenFurniture.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonFixBrokenFurniture.Font = new System.Drawing.Font("Microsoft YaHei UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonFixBrokenFurniture.ForeColor = System.Drawing.Color.Black;
+            this.buttonFixBrokenFurniture.Location = new System.Drawing.Point(552, 465);
+            this.buttonFixBrokenFurniture.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonFixBrokenFurniture.Name = "buttonFixBrokenFurniture";
+            this.buttonFixBrokenFurniture.Size = new System.Drawing.Size(499, 74);
+            this.buttonFixBrokenFurniture.TabIndex = 1;
+            this.buttonFixBrokenFurniture.Text = "ΕΠΙΣΚΕΥΗ ΕΥΘΡΑΥΣΤΩΝ ΑΝΤΙΚΕΙΜΕΝΩΝ";
+            this.buttonFixBrokenFurniture.UseVisualStyleBackColor = false;
+            this.buttonFixBrokenFurniture.Click += new System.EventHandler(this.buttonFixBrokenFurniture_Click);
             // 
             // pictureBoxCat1
             // 
             this.pictureBoxCat1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxCat1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBoxCat1.Location = new System.Drawing.Point(17, 16);
-            this.pictureBoxCat1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxCat1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxCat1.Name = "pictureBoxCat1";
             this.pictureBoxCat1.Size = new System.Drawing.Size(133, 123);
             this.pictureBoxCat1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -110,7 +111,7 @@ namespace Smart_Home
             this.pictureBoxDog1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxDog1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBoxDog1.Location = new System.Drawing.Point(917, 16);
-            this.pictureBoxDog1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxDog1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxDog1.Name = "pictureBoxDog1";
             this.pictureBoxDog1.Size = new System.Drawing.Size(133, 123);
             this.pictureBoxDog1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -122,7 +123,7 @@ namespace Smart_Home
             this.pictureBoxCat2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxCat2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBoxCat2.Location = new System.Drawing.Point(159, 16);
-            this.pictureBoxCat2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxCat2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxCat2.Name = "pictureBoxCat2";
             this.pictureBoxCat2.Size = new System.Drawing.Size(133, 123);
             this.pictureBoxCat2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -134,7 +135,7 @@ namespace Smart_Home
             this.pictureBoxCat3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxCat3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBoxCat3.Location = new System.Drawing.Point(300, 16);
-            this.pictureBoxCat3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxCat3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxCat3.Name = "pictureBoxCat3";
             this.pictureBoxCat3.Size = new System.Drawing.Size(133, 123);
             this.pictureBoxCat3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -147,7 +148,7 @@ namespace Smart_Home
             this.pictureBoxDog2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxDog2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBoxDog2.Location = new System.Drawing.Point(776, 16);
-            this.pictureBoxDog2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxDog2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxDog2.Name = "pictureBoxDog2";
             this.pictureBoxDog2.Size = new System.Drawing.Size(133, 123);
             this.pictureBoxDog2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -160,7 +161,7 @@ namespace Smart_Home
             this.pictureBoxDog3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxDog3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBoxDog3.Location = new System.Drawing.Point(635, 16);
-            this.pictureBoxDog3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxDog3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxDog3.Name = "pictureBoxDog3";
             this.pictureBoxDog3.Size = new System.Drawing.Size(133, 123);
             this.pictureBoxDog3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -170,7 +171,7 @@ namespace Smart_Home
             // pictureBoxCatBowlWater
             // 
             this.pictureBoxCatBowlWater.Location = new System.Drawing.Point(89, 234);
-            this.pictureBoxCatBowlWater.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxCatBowlWater.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxCatBowlWater.Name = "pictureBoxCatBowlWater";
             this.pictureBoxCatBowlWater.Size = new System.Drawing.Size(133, 123);
             this.pictureBoxCatBowlWater.TabIndex = 8;
@@ -179,7 +180,7 @@ namespace Smart_Home
             // pictureBoxCatBowlFood
             // 
             this.pictureBoxCatBowlFood.Location = new System.Drawing.Point(231, 234);
-            this.pictureBoxCatBowlFood.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxCatBowlFood.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxCatBowlFood.Name = "pictureBoxCatBowlFood";
             this.pictureBoxCatBowlFood.Size = new System.Drawing.Size(133, 123);
             this.pictureBoxCatBowlFood.TabIndex = 9;
@@ -189,7 +190,7 @@ namespace Smart_Home
             // 
             this.pictureBoxDogBowlFood.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxDogBowlFood.Location = new System.Drawing.Point(841, 234);
-            this.pictureBoxDogBowlFood.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxDogBowlFood.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxDogBowlFood.Name = "pictureBoxDogBowlFood";
             this.pictureBoxDogBowlFood.Size = new System.Drawing.Size(133, 123);
             this.pictureBoxDogBowlFood.TabIndex = 10;
@@ -199,7 +200,7 @@ namespace Smart_Home
             // 
             this.pictureBoxDogBowlWater.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxDogBowlWater.Location = new System.Drawing.Point(700, 234);
-            this.pictureBoxDogBowlWater.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxDogBowlWater.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxDogBowlWater.Name = "pictureBoxDogBowlWater";
             this.pictureBoxDogBowlWater.Size = new System.Drawing.Size(133, 123);
             this.pictureBoxDogBowlWater.TabIndex = 11;
@@ -282,7 +283,9 @@ namespace Smart_Home
             // 
             // timer1
             // 
+            this.timer1.Enabled = true;
             this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // AnimalCare
             // 
@@ -307,10 +310,10 @@ namespace Smart_Home
             this.Controls.Add(this.pictureBoxCat2);
             this.Controls.Add(this.pictureBoxDog1);
             this.Controls.Add(this.pictureBoxCat1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonFixBrokenFurniture);
             this.Controls.Add(this.buttonRefill);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AnimalCare";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Φροντίδα Κατοικιδίων";
@@ -333,7 +336,7 @@ namespace Smart_Home
         #endregion
 
         private System.Windows.Forms.Button buttonRefill;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonFixBrokenFurniture;
         private System.Windows.Forms.PictureBox pictureBoxCat1;
         private System.Windows.Forms.PictureBox pictureBoxDog1;
         private System.Windows.Forms.PictureBox pictureBoxCat2;
