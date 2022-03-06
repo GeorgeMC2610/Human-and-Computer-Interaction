@@ -83,6 +83,7 @@
     <Compile Include="RemoteDeviceControl.Designer.cs">
       <DependentUpon>RemoteDeviceControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="SoundEffects.cs" />
     <Compile Include="TimeSchedule.cs">
       <SubType>Form</SubType>
     </Compile>

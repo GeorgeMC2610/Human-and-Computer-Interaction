@@ -27,6 +27,25 @@ namespace Smart_Home
 
         public void Break()
         {
+            switch (Type)
+            {
+                case "curtain":
+                    SoundEffects.Curtain();
+                    break;
+                case "vase":
+                    SoundEffects.Vase();
+                    break;
+                case "plate":
+                    SoundEffects.Vase();
+                    break;
+                case "glass":
+                    SoundEffects.Vase();
+                    break;
+                case "couch":
+                    SoundEffects.Couch();
+                    break;
+            }
+
             Broken = true;
         }
 
