@@ -257,6 +257,13 @@ namespace Smart_Home
             if (MessageBox.Show("Είστε σίγουρος ότι θέλετε να διαγράψετε το πρόγραμμά σας;", "Διαγραφή Προγράμματος", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.No)
                 return;
 
+            this.Width = 905;
+            label36.Visible = false;
+            label33.Visible = false;
+            panel5.Visible = false;
+            button10.Enabled = true;
+            button10.BackColor = Color.Orange;
+            button10.ForeColor = Color.White;
 
             button1.Enabled = true;
             button1.BackColor = Color.Green;
@@ -355,8 +362,7 @@ namespace Smart_Home
         // κουμπί για γεωγραφικές οδηγίες
         private void button10_Click(object sender, EventArgs e)
         {
-            button21.Enabled = true;
-
+           
             // αρχικά ψάχνουμε ποιες δραστηριότητες εκτός σπιτιού έχει στο πρόγραμμά του ο χρήστης (8 στο σύνολο δραστηριότητες)
             bool bolta = false;
             bool gimnastiki = false;
@@ -408,8 +414,12 @@ namespace Smart_Home
 
             if (athlimata || treximo || sinedeuxi || perpatima || psonia || douleia || gimnastiki || bolta)
             {
+                button21.Enabled = true;
+                pictureBox2.Visible = true;
+                pictureBox2.Image = Properties.Resources.google_maps;
                 this.Width = 1188;
                 label33.Visible = true;
+                label36.Visible = false;
                 panel5.Visible = true;
                 button10.Enabled = false;
                 button10.BackColor = Color.Gray;
@@ -417,6 +427,7 @@ namespace Smart_Home
             }
             else
             {
+                button21.Enabled = false;
                 MessageBox.Show("Δεν έχετε δραστηριότητες εκτός σπιτιού στο πρόγραμμα ημέρας σας!");
                 button10.Enabled = true;
                 button10.BackColor = Color.Orange;
@@ -430,40 +441,72 @@ namespace Smart_Home
             {
                 button11.Visible = true;
             }
+            else
+            {
+                button11.Visible = false;
+            }
             
             if (treximo)
             {
                 button14.Visible = true;
+            }
+            else
+            {
+                button14.Visible = false;
             }
             
             if (psonia)
             {
                 button16.Visible = true;
             }
+            else
+            {
+                button16.Visible = false;
+            }
 
             if (athlimata)
             {
                 button12.Visible = true;
+            }
+            else
+            {
+                button12.Visible = false;
             }
 
             if (gimnastiki)
             {
                 button17.Visible = true;
             }
+            else
+            {
+                button17.Visible = false;
+            }
 
             if (douleia)
             {
                 button13.Visible = true;
+            }
+            else
+            {
+                button13.Visible = false;
             }
 
             if (sinedeuxi)
             {
                 button18.Visible = true;
             }
+            else
+            {
+                button18.Visible = false;
+            }
 
             if (perpatima)
             {
                 button15.Visible = true;
+            }
+            else
+            {
+                button15.Visible = false;
             }
             
         }
@@ -478,6 +521,7 @@ namespace Smart_Home
         private void button19_Click(object sender, EventArgs e)
         {
             this.Width = 905;
+            pictureBox2.Image = Properties.Resources.google_maps;
             label33.Visible = false;
             panel5.Visible = false;
             button10.Enabled = true;
@@ -488,6 +532,8 @@ namespace Smart_Home
         // οδηγίες για "Βόλτα"
         private void button11_Click(object sender, EventArgs e)
         {
+            label36.Visible = true;
+            label36.Text = "Οδηγίες για βόλτα";
             pictureBox2.Visible = true;
             pictureBox2.Image = Properties.Resources.bolta_odigies;
             label34.Visible = true;
@@ -496,6 +542,8 @@ namespace Smart_Home
         // οδηγίες για "Γυμναστική"
         private void button17_Click(object sender, EventArgs e)
         {
+            label36.Visible = true;
+            label36.Text = "Οδηγίες για γυμναστική";
             pictureBox2.Visible = true;
             pictureBox2.Image = Properties.Resources.gimnastiki_odigies;
             label34.Visible = true;
@@ -504,6 +552,8 @@ namespace Smart_Home
         // οδηγίες για "Δουλειά"
         private void button13_Click(object sender, EventArgs e)
         {
+            label36.Visible = true;
+            label36.Text = "Οδηγίες για δουλειά";
             pictureBox2.Visible = true;
             pictureBox2.Image = Properties.Resources.odigies_douleia;
             label34.Visible = true;
@@ -512,6 +562,8 @@ namespace Smart_Home
         // οδηγίες για "Περπάτημα"
         private void button15_Click(object sender, EventArgs e)
         {
+            label36.Visible = true;
+            label36.Text = "Οδηγίες για περπάτημα";
             pictureBox2.Visible = true;
             pictureBox2.Image = Properties.Resources.perpatima_odigies;
             label34.Visible = true;
@@ -520,6 +572,8 @@ namespace Smart_Home
         // οδηγίες για "Τρέξιμο"
         private void button14_Click(object sender, EventArgs e)
         {
+            label36.Visible = true;
+            label36.Text = "Οδηγίες για τρέξιμο";
             pictureBox2.Visible = true;
             pictureBox2.Image = Properties.Resources.treximo_odigies;
             label34.Visible = true;
@@ -528,6 +582,8 @@ namespace Smart_Home
         // οδηγίες για "Συνέντευξη"
         private void button18_Click(object sender, EventArgs e)
         {
+            label36.Visible = true;
+            label36.Text = "Οδηγίες για συνέντευξη";
             pictureBox2.Visible = true;
             pictureBox2.Image = Properties.Resources.sinedeuxi_odigies;
             label34.Visible = true;
@@ -536,6 +592,8 @@ namespace Smart_Home
         // οδηγίες για "Αθλήματα"
         private void button12_Click(object sender, EventArgs e)
         {
+            label36.Visible = true;
+            label36.Text = "Οδηγίες για αθλήματα";
             pictureBox2.Visible = true;
             pictureBox2.Image = Properties.Resources.odigies_athlimata;
             label34.Visible = true;
@@ -544,6 +602,8 @@ namespace Smart_Home
         // οδηγίες για "Ψώνια"
         private void button16_Click(object sender, EventArgs e)
         {
+            label36.Visible = true;
+            label36.Text = "Οδηγίες για ψώνια";
             pictureBox2.Visible = true;
             pictureBox2.Image = Properties.Resources.odigies_psonia;
             label34.Visible = true;

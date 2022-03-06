@@ -298,5 +298,8 @@
   <ItemGroup>
     <None Include="Resources\odigies_psonia.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google_maps.jfif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
