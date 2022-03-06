@@ -36,10 +36,10 @@ namespace Smart_Home
                     SoundEffects.Vase();
                     break;
                 case "plate":
-                    SoundEffects.Vase();
+                    SoundEffects.Plate();
                     break;
                 case "glass":
-                    SoundEffects.Vase();
+                    SoundEffects.Glass();
                     break;
                 case "couch":
                     SoundEffects.Couch();
