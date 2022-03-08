@@ -102,13 +102,25 @@ namespace Smart_Home
 
         private void timerAnimals_Tick(object sender, EventArgs e)
         {
-            string[] outside_activities = { "Βόλτα", "Γυμναστική", "Δουλειά", "Περπάτημα", "Αθλήματα", "Τρέξιμο", "Ψώνια" };
+            string[] outside_activities = { "Βόλτα", "Γυμναστική", "Δουλειά", "Περπάτημα", "Αθλήματα", "Τρέξιμο", "Ψώνια", "Συνέντευξη" };
+            Activities.ForEach(o => Console.WriteLine(o));
+
 
             //θα δίνουμε notification στον χρήστη ότι κάτι πάει λάθος, όταν θα υπάρχει τουλάχιστον ένα μπωλ με λιγότερο από 20% περιεκτικότητα ή αν υπάρχει τουλάχιστον ένα σπασμένο αντικείμενο.
             labelAnimalWarning.Visible = (from bowl in Bowls where bowl.Capacity < 20 select bowl.Capacity).Any() || (from furniture in FragileFurniture where furniture.Broken select furniture).Any();
 
             //θα ξέρουμε ότι ο χρήστης είναι σπίτι αν δεν έχει δραστηριότητες, ή, αν οι δραστηριότητες, που έχει, είναι όλες για μέσα.
-            isHome = Activities.Count == 0 ? true : (from activity in Activities where outside_activities.Contains(activity) select activity).Any();
+            isHome = Activities.Count == 0 ? true : (from activity in Activities where activity == outside_activities[0] || 
+                                                                                       activity == outside_activities[1] || 
+                                                                                       activity == outside_activities[2] || 
+                                                                                       activity == outside_activities[3] || 
+                                                                                       activity == outside_activities[4] || 
+                                                                                       activity == outside_activities[5] || 
+                                                                                       activity == outside_activities[6] || 
+                                                                                       activity == outside_activities[7] 
+                                                     select activity).Any();
+
+            labelSchedule.Visible = Activities.Count == 0;
 
             Console.WriteLine(isHome ? "You are currently home." : "You're currently outside.");
 
