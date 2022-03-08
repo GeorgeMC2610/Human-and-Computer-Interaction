@@ -16,7 +16,7 @@ namespace Smart_Home
         List<String> shoes = new List<string>();
 
         // λίστα που εμπεριέχει το πρόγραμμα του χρήστη (15 εγγραφές)
-        List<string> schedule = new List<string>();
+        public static List<string> schedule = new List<string>();
 
         // λίστα με τα παπούτσια που αναγκαστικά πρέπει να έχει ο χρήστης
         // αν ένα ζευγάρι παπουτσιών που είναι απαραίτητο (π.χ αθλητικά για γυμναστική)
@@ -104,16 +104,14 @@ namespace Smart_Home
                 var my_comboBox = panel3.Controls["comboBox" + i.ToString()];
 
                 if (my_comboBox.Text == "Τί θα κάνετε αυτή την ώρα;")
-                {
                     continue;
-                }
                 else
-                {
                     schedule.Add(my_comboBox.Text);
-                }   
             }
 
             shoe_analysis(); // γίνεται ανάληση του προγράμματος ημέρας
+
+            schedule.ForEach(o => Console.WriteLine(o));
         }
 
         // αγορά παπουτσιού

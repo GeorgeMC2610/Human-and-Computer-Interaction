@@ -17,6 +17,7 @@ namespace Smart_Home
 
         public static List<FragileFurniture> FragileFurniture = new List<FragileFurniture>();
         public static List<Animal> Pets = new List<Animal>();
+        public static List<string> Activities = new List<string>();
 
         public static Bowl[] Bowls = new Bowl[4];
 
@@ -24,7 +25,7 @@ namespace Smart_Home
         private static int[] DogImages = { 0, 1, 2 };
 
         private static readonly Random random = new Random();
-        public static bool isHome = false;
+        public static bool isHome { get; private set; }
 
         // αντικείμενο φόρμας διαχέρισης συσκευών
         Remote_Device_Control rmctrl;
@@ -101,10 +102,12 @@ namespace Smart_Home
 
         private void timerAnimals_Tick(object sender, EventArgs e)
         {
-            if ((from bowl in Bowls where bowl.Capacity < 20 select bowl.Capacity).Any() || (from furniture in FragileFurniture where furniture.Broken select furniture).Any())
-                labelAnimalWarning.Visible = true;
-            else
-                labelAnimalWarning.Visible = false;
+            string[] outside_activities = { "Βόλτα", "Γυμναστική", "Δουλειά", "Περπάτημα", "Αθλήματα", "Τρέξιμο", "Ψώνια" };
+
+            labelAnimalWarning.Visible = (from bowl in Bowls where bowl.Capacity < 20 select bowl.Capacity).Any() || (from furniture in FragileFurniture where furniture.Broken select furniture).Any();
+            isHome = (from activity in TimeSchedule.schedule where outside_activities.Contains(activity) select activity).Any();
+
+            Console.WriteLine(isHome ? "You are currently home." : "You're currently outside.");
 
             //Αν ο Χρήστης είναι σπίτι, τότε τα ζώα έχουνε μικρή πιθανότητα να σπάσουν κάτι ή να είναι ζωηρά.
             if (isHome)
