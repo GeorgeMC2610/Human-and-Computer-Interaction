@@ -437,77 +437,17 @@ namespace Smart_Home
             // στο σημείο που δίνεται η επεξήγηση τοποθεσίας, εμφανίζονται κατάλληλες επιλογές
             // οι επιλογές πρέπει να συμφωνούν με το πρόγραμμα του χρήστη. Δεν εμφανίζονται επιλογές
             // τοποθεσίας για δραστηριότητες που δεν συμπεριλαμβάνονται στο πρόγραμμα του χρήστη.
-            if (bolta)
-            {
-                button11.Visible = true;
-            }
-            else
-            {
-                button11.Visible = false;
-            }
-            
-            if (treximo)
-            {
-                button14.Visible = true;
-            }
-            else
-            {
-                button14.Visible = false;
-            }
-            
-            if (psonia)
-            {
-                button16.Visible = true;
-            }
-            else
-            {
-                button16.Visible = false;
-            }
 
-            if (athlimata)
-            {
-                button12.Visible = true;
-            }
-            else
-            {
-                button12.Visible = false;
-            }
+            //τι έχεις κάνει γτθς
 
-            if (gimnastiki)
-            {
-                button17.Visible = true;
-            }
-            else
-            {
-                button17.Visible = false;
-            }
-
-            if (douleia)
-            {
-                button13.Visible = true;
-            }
-            else
-            {
-                button13.Visible = false;
-            }
-
-            if (sinedeuxi)
-            {
-                button18.Visible = true;
-            }
-            else
-            {
-                button18.Visible = false;
-            }
-
-            if (perpatima)
-            {
-                button15.Visible = true;
-            }
-            else
-            {
-                button15.Visible = false;
-            }
+            button11.Visible = bolta;
+            button12.Visible = athlimata;
+            button13.Visible = douleia;
+            button14.Visible = treximo;
+            button15.Visible = perpatima;
+            button16.Visible = psonia;
+            button17.Visible = gimnastiki;
+            button18.Visible = sinedeuxi;
             
         }
 
