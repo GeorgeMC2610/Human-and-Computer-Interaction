@@ -104,8 +104,11 @@ namespace Smart_Home
         {
             string[] outside_activities = { "Βόλτα", "Γυμναστική", "Δουλειά", "Περπάτημα", "Αθλήματα", "Τρέξιμο", "Ψώνια" };
 
+            //θα δίνουμε notification στον χρήστη ότι κάτι πάει λάθος, όταν θα υπάρχει τουλάχιστον ένα μπωλ με λιγότερο από 20% περιεκτικότητα ή αν υπάρχει τουλάχιστον ένα σπασμένο αντικείμενο.
             labelAnimalWarning.Visible = (from bowl in Bowls where bowl.Capacity < 20 select bowl.Capacity).Any() || (from furniture in FragileFurniture where furniture.Broken select furniture).Any();
-            isHome = (from activity in TimeSchedule.schedule where outside_activities.Contains(activity) select activity).Any();
+
+            //θα ξέρουμε ότι ο χρήστης είναι σπίτι αν δεν έχει δραστηριότητες, ή, αν οι δραστηριότητες, που έχει, είναι όλες για μέσα.
+            isHome = Activities.Count == 0 ? true : (from activity in Activities where outside_activities.Contains(activity) select activity).Any();
 
             Console.WriteLine(isHome ? "You are currently home." : "You're currently outside.");
 

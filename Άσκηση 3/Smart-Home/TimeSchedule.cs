@@ -111,7 +111,7 @@ namespace Smart_Home
 
             shoe_analysis(); // γίνεται ανάληση του προγράμματος ημέρας
 
-            schedule.ForEach(o => Console.WriteLine(o));
+            FormMain.Activities = schedule;
         }
 
         // αγορά παπουτσιού
