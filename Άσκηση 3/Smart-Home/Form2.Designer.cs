@@ -44,6 +44,7 @@ namespace Smart_Home
             this.timerAnimals = new System.Windows.Forms.Timer(this.components);
             this.labelAnimalWarning = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.labelSchedule = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -210,6 +211,19 @@ namespace Smart_Home
             this.label1.TabIndex = 12;
             this.label1.Text = "Ανατρέξτε στην online βοήθεια του προσωπικού βοηθού";
             // 
+            // labelSchedule
+            // 
+            this.labelSchedule.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelSchedule.AutoSize = true;
+            this.labelSchedule.BackColor = System.Drawing.Color.Transparent;
+            this.labelSchedule.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSchedule.ForeColor = System.Drawing.Color.Green;
+            this.labelSchedule.Location = new System.Drawing.Point(94, 242);
+            this.labelSchedule.Name = "labelSchedule";
+            this.labelSchedule.Size = new System.Drawing.Size(218, 19);
+            this.labelSchedule.TabIndex = 13;
+            this.labelSchedule.Text = "To πρόγραμμά σας είναι άδειο!";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -217,6 +231,7 @@ namespace Smart_Home
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(453, 502);
+            this.Controls.Add(this.labelSchedule);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labelAnimalWarning);
             this.Controls.Add(this.label_choose_action);
@@ -261,5 +276,6 @@ namespace Smart_Home
         private System.Windows.Forms.Timer timerAnimals;
         private System.Windows.Forms.Label labelAnimalWarning;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelSchedule;
     }
 }
