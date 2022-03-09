@@ -367,7 +367,7 @@ namespace Smart_Home
             // buttonAutoFeed
             // 
             this.buttonAutoFeed.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonAutoFeed.BackColor = System.Drawing.Color.DarkRed;
+            this.buttonAutoFeed.BackColor = System.Drawing.Color.ForestGreen;
             this.buttonAutoFeed.BackgroundImage = global::Smart_Home.Properties.Resources.on_off1;
             this.buttonAutoFeed.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.buttonAutoFeed.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
