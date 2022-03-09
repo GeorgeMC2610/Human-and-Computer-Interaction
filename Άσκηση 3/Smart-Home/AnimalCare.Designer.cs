@@ -50,6 +50,10 @@ namespace Smart_Home
             this.labelDog2 = new System.Windows.Forms.Label();
             this.labelDog3 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.progressBarCatWater = new System.Windows.Forms.ProgressBar();
+            this.progressBarCatFood = new System.Windows.Forms.ProgressBar();
+            this.progressBarDogWater = new System.Windows.Forms.ProgressBar();
+            this.progressBarDogFood = new System.Windows.Forms.ProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCat1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDog1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCat2)).BeginInit();
@@ -69,10 +73,9 @@ namespace Smart_Home
             this.buttonRefill.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonRefill.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonRefill.ForeColor = System.Drawing.Color.White;
-            this.buttonRefill.Location = new System.Drawing.Point(16, 465);
-            this.buttonRefill.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonRefill.Location = new System.Drawing.Point(12, 378);
             this.buttonRefill.Name = "buttonRefill";
-            this.buttonRefill.Size = new System.Drawing.Size(511, 74);
+            this.buttonRefill.Size = new System.Drawing.Size(383, 60);
             this.buttonRefill.TabIndex = 0;
             this.buttonRefill.Text = "ΓΕΜΙΣΜΑ ΟΛΩΝ ΤΩΝ ΜΠΟΛ";
             this.buttonRefill.UseVisualStyleBackColor = false;
@@ -85,10 +88,9 @@ namespace Smart_Home
             this.buttonFixBrokenFurniture.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonFixBrokenFurniture.Font = new System.Drawing.Font("Microsoft YaHei UI", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonFixBrokenFurniture.ForeColor = System.Drawing.Color.Black;
-            this.buttonFixBrokenFurniture.Location = new System.Drawing.Point(552, 465);
-            this.buttonFixBrokenFurniture.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonFixBrokenFurniture.Location = new System.Drawing.Point(414, 378);
             this.buttonFixBrokenFurniture.Name = "buttonFixBrokenFurniture";
-            this.buttonFixBrokenFurniture.Size = new System.Drawing.Size(499, 74);
+            this.buttonFixBrokenFurniture.Size = new System.Drawing.Size(374, 60);
             this.buttonFixBrokenFurniture.TabIndex = 1;
             this.buttonFixBrokenFurniture.Text = "ΕΠΙΣΚΕΥΗ ΕΥΘΡΑΥΣΤΩΝ ΑΝΤΙΚΕΙΜΕΝΩΝ";
             this.buttonFixBrokenFurniture.UseVisualStyleBackColor = false;
@@ -98,10 +100,9 @@ namespace Smart_Home
             // 
             this.pictureBoxCat1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxCat1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxCat1.Location = new System.Drawing.Point(17, 16);
-            this.pictureBoxCat1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBoxCat1.Location = new System.Drawing.Point(13, 13);
             this.pictureBoxCat1.Name = "pictureBoxCat1";
-            this.pictureBoxCat1.Size = new System.Drawing.Size(133, 123);
+            this.pictureBoxCat1.Size = new System.Drawing.Size(100, 100);
             this.pictureBoxCat1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxCat1.TabIndex = 2;
             this.pictureBoxCat1.TabStop = false;
@@ -111,10 +112,9 @@ namespace Smart_Home
             this.pictureBoxDog1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxDog1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxDog1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxDog1.Location = new System.Drawing.Point(917, 16);
-            this.pictureBoxDog1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBoxDog1.Location = new System.Drawing.Point(688, 13);
             this.pictureBoxDog1.Name = "pictureBoxDog1";
-            this.pictureBoxDog1.Size = new System.Drawing.Size(133, 123);
+            this.pictureBoxDog1.Size = new System.Drawing.Size(100, 100);
             this.pictureBoxDog1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxDog1.TabIndex = 3;
             this.pictureBoxDog1.TabStop = false;
@@ -123,10 +123,9 @@ namespace Smart_Home
             // 
             this.pictureBoxCat2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxCat2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxCat2.Location = new System.Drawing.Point(159, 16);
-            this.pictureBoxCat2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBoxCat2.Location = new System.Drawing.Point(119, 13);
             this.pictureBoxCat2.Name = "pictureBoxCat2";
-            this.pictureBoxCat2.Size = new System.Drawing.Size(133, 123);
+            this.pictureBoxCat2.Size = new System.Drawing.Size(100, 100);
             this.pictureBoxCat2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxCat2.TabIndex = 4;
             this.pictureBoxCat2.TabStop = false;
@@ -135,10 +134,9 @@ namespace Smart_Home
             // 
             this.pictureBoxCat3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxCat3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxCat3.Location = new System.Drawing.Point(300, 16);
-            this.pictureBoxCat3.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBoxCat3.Location = new System.Drawing.Point(225, 13);
             this.pictureBoxCat3.Name = "pictureBoxCat3";
-            this.pictureBoxCat3.Size = new System.Drawing.Size(133, 123);
+            this.pictureBoxCat3.Size = new System.Drawing.Size(100, 100);
             this.pictureBoxCat3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxCat3.TabIndex = 5;
             this.pictureBoxCat3.TabStop = false;
@@ -148,10 +146,9 @@ namespace Smart_Home
             this.pictureBoxDog2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxDog2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxDog2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxDog2.Location = new System.Drawing.Point(776, 16);
-            this.pictureBoxDog2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBoxDog2.Location = new System.Drawing.Point(582, 13);
             this.pictureBoxDog2.Name = "pictureBoxDog2";
-            this.pictureBoxDog2.Size = new System.Drawing.Size(133, 123);
+            this.pictureBoxDog2.Size = new System.Drawing.Size(100, 100);
             this.pictureBoxDog2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxDog2.TabIndex = 6;
             this.pictureBoxDog2.TabStop = false;
@@ -161,49 +158,44 @@ namespace Smart_Home
             this.pictureBoxDog3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxDog3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxDog3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxDog3.Location = new System.Drawing.Point(635, 16);
-            this.pictureBoxDog3.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBoxDog3.Location = new System.Drawing.Point(476, 13);
             this.pictureBoxDog3.Name = "pictureBoxDog3";
-            this.pictureBoxDog3.Size = new System.Drawing.Size(133, 123);
+            this.pictureBoxDog3.Size = new System.Drawing.Size(100, 100);
             this.pictureBoxDog3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxDog3.TabIndex = 7;
             this.pictureBoxDog3.TabStop = false;
             // 
             // pictureBoxCatBowlWater
             // 
-            this.pictureBoxCatBowlWater.Location = new System.Drawing.Point(89, 234);
-            this.pictureBoxCatBowlWater.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBoxCatBowlWater.Location = new System.Drawing.Point(67, 190);
             this.pictureBoxCatBowlWater.Name = "pictureBoxCatBowlWater";
-            this.pictureBoxCatBowlWater.Size = new System.Drawing.Size(133, 123);
+            this.pictureBoxCatBowlWater.Size = new System.Drawing.Size(100, 100);
             this.pictureBoxCatBowlWater.TabIndex = 8;
             this.pictureBoxCatBowlWater.TabStop = false;
             // 
             // pictureBoxCatBowlFood
             // 
-            this.pictureBoxCatBowlFood.Location = new System.Drawing.Point(231, 234);
-            this.pictureBoxCatBowlFood.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBoxCatBowlFood.Location = new System.Drawing.Point(173, 190);
             this.pictureBoxCatBowlFood.Name = "pictureBoxCatBowlFood";
-            this.pictureBoxCatBowlFood.Size = new System.Drawing.Size(133, 123);
+            this.pictureBoxCatBowlFood.Size = new System.Drawing.Size(100, 100);
             this.pictureBoxCatBowlFood.TabIndex = 9;
             this.pictureBoxCatBowlFood.TabStop = false;
             // 
             // pictureBoxDogBowlFood
             // 
             this.pictureBoxDogBowlFood.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBoxDogBowlFood.Location = new System.Drawing.Point(841, 234);
-            this.pictureBoxDogBowlFood.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBoxDogBowlFood.Location = new System.Drawing.Point(631, 190);
             this.pictureBoxDogBowlFood.Name = "pictureBoxDogBowlFood";
-            this.pictureBoxDogBowlFood.Size = new System.Drawing.Size(133, 123);
+            this.pictureBoxDogBowlFood.Size = new System.Drawing.Size(100, 100);
             this.pictureBoxDogBowlFood.TabIndex = 10;
             this.pictureBoxDogBowlFood.TabStop = false;
             // 
             // pictureBoxDogBowlWater
             // 
             this.pictureBoxDogBowlWater.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBoxDogBowlWater.Location = new System.Drawing.Point(700, 234);
-            this.pictureBoxDogBowlWater.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBoxDogBowlWater.Location = new System.Drawing.Point(525, 190);
             this.pictureBoxDogBowlWater.Name = "pictureBoxDogBowlWater";
-            this.pictureBoxDogBowlWater.Size = new System.Drawing.Size(133, 123);
+            this.pictureBoxDogBowlWater.Size = new System.Drawing.Size(100, 100);
             this.pictureBoxDogBowlWater.TabIndex = 11;
             this.pictureBoxDogBowlWater.TabStop = false;
             // 
@@ -212,10 +204,9 @@ namespace Smart_Home
             this.labelCat1.AutoSize = true;
             this.labelCat1.BackColor = System.Drawing.Color.Transparent;
             this.labelCat1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCat1.Location = new System.Drawing.Point(60, 143);
-            this.labelCat1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelCat1.Location = new System.Drawing.Point(45, 116);
             this.labelCat1.Name = "labelCat1";
-            this.labelCat1.Size = new System.Drawing.Size(47, 19);
+            this.labelCat1.Size = new System.Drawing.Size(39, 17);
             this.labelCat1.TabIndex = 12;
             this.labelCat1.Text = "Cat 1";
             // 
@@ -224,10 +215,9 @@ namespace Smart_Home
             this.labelCat2.AutoSize = true;
             this.labelCat2.BackColor = System.Drawing.Color.Transparent;
             this.labelCat2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCat2.Location = new System.Drawing.Point(193, 143);
-            this.labelCat2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelCat2.Location = new System.Drawing.Point(145, 116);
             this.labelCat2.Name = "labelCat2";
-            this.labelCat2.Size = new System.Drawing.Size(47, 19);
+            this.labelCat2.Size = new System.Drawing.Size(39, 17);
             this.labelCat2.TabIndex = 13;
             this.labelCat2.Text = "Cat 2";
             // 
@@ -236,10 +226,9 @@ namespace Smart_Home
             this.labelCat3.AutoSize = true;
             this.labelCat3.BackColor = System.Drawing.Color.Transparent;
             this.labelCat3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCat3.Location = new System.Drawing.Point(337, 143);
-            this.labelCat3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelCat3.Location = new System.Drawing.Point(253, 116);
             this.labelCat3.Name = "labelCat3";
-            this.labelCat3.Size = new System.Drawing.Size(47, 19);
+            this.labelCat3.Size = new System.Drawing.Size(39, 17);
             this.labelCat3.TabIndex = 14;
             this.labelCat3.Text = "Cat 3";
             // 
@@ -249,10 +238,9 @@ namespace Smart_Home
             this.labelDog1.AutoSize = true;
             this.labelDog1.BackColor = System.Drawing.Color.Transparent;
             this.labelDog1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDog1.Location = new System.Drawing.Point(953, 143);
-            this.labelDog1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelDog1.Location = new System.Drawing.Point(715, 116);
             this.labelDog1.Name = "labelDog1";
-            this.labelDog1.Size = new System.Drawing.Size(54, 19);
+            this.labelDog1.Size = new System.Drawing.Size(45, 17);
             this.labelDog1.TabIndex = 15;
             this.labelDog1.Text = "Dog 1";
             // 
@@ -262,10 +250,9 @@ namespace Smart_Home
             this.labelDog2.AutoSize = true;
             this.labelDog2.BackColor = System.Drawing.Color.Transparent;
             this.labelDog2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDog2.Location = new System.Drawing.Point(816, 143);
-            this.labelDog2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelDog2.Location = new System.Drawing.Point(612, 116);
             this.labelDog2.Name = "labelDog2";
-            this.labelDog2.Size = new System.Drawing.Size(54, 19);
+            this.labelDog2.Size = new System.Drawing.Size(45, 17);
             this.labelDog2.TabIndex = 16;
             this.labelDog2.Text = "Dog 2";
             // 
@@ -275,10 +262,9 @@ namespace Smart_Home
             this.labelDog3.AutoSize = true;
             this.labelDog3.BackColor = System.Drawing.Color.Transparent;
             this.labelDog3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDog3.Location = new System.Drawing.Point(676, 143);
-            this.labelDog3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelDog3.Location = new System.Drawing.Point(507, 116);
             this.labelDog3.Name = "labelDog3";
-            this.labelDog3.Size = new System.Drawing.Size(54, 19);
+            this.labelDog3.Size = new System.Drawing.Size(45, 17);
             this.labelDog3.TabIndex = 17;
             this.labelDog3.Text = "Dog 3";
             // 
@@ -288,13 +274,45 @@ namespace Smart_Home
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // progressBarCatWater
+            // 
+            this.progressBarCatWater.Location = new System.Drawing.Point(67, 296);
+            this.progressBarCatWater.Name = "progressBarCatWater";
+            this.progressBarCatWater.Size = new System.Drawing.Size(100, 23);
+            this.progressBarCatWater.TabIndex = 18;
+            // 
+            // progressBarCatFood
+            // 
+            this.progressBarCatFood.Location = new System.Drawing.Point(173, 296);
+            this.progressBarCatFood.Name = "progressBarCatFood";
+            this.progressBarCatFood.Size = new System.Drawing.Size(100, 23);
+            this.progressBarCatFood.TabIndex = 19;
+            // 
+            // progressBarDogWater
+            // 
+            this.progressBarDogWater.Location = new System.Drawing.Point(525, 296);
+            this.progressBarDogWater.Name = "progressBarDogWater";
+            this.progressBarDogWater.Size = new System.Drawing.Size(100, 23);
+            this.progressBarDogWater.TabIndex = 20;
+            // 
+            // progressBarDogFood
+            // 
+            this.progressBarDogFood.Location = new System.Drawing.Point(631, 296);
+            this.progressBarDogFood.Name = "progressBarDogFood";
+            this.progressBarDogFood.Size = new System.Drawing.Size(100, 23);
+            this.progressBarDogFood.TabIndex = 21;
+            // 
             // AnimalCare
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.progressBarDogFood);
+            this.Controls.Add(this.progressBarDogWater);
+            this.Controls.Add(this.progressBarCatFood);
+            this.Controls.Add(this.progressBarCatWater);
             this.Controls.Add(this.labelDog3);
             this.Controls.Add(this.labelDog2);
             this.Controls.Add(this.labelDog1);
@@ -314,7 +332,6 @@ namespace Smart_Home
             this.Controls.Add(this.buttonFixBrokenFurniture);
             this.Controls.Add(this.buttonRefill);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AnimalCare";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Φροντίδα Κατοικιδίων";
@@ -355,5 +372,9 @@ namespace Smart_Home
         private System.Windows.Forms.Label labelDog2;
         private System.Windows.Forms.Label labelDog3;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ProgressBar progressBarCatWater;
+        private System.Windows.Forms.ProgressBar progressBarCatFood;
+        private System.Windows.Forms.ProgressBar progressBarDogWater;
+        private System.Windows.Forms.ProgressBar progressBarDogFood;
     }
 }
