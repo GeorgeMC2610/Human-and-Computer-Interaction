@@ -81,8 +81,8 @@ namespace Smart_Home
             labelDog3.Location = new Point(pictureBoxDog3.Location.X + pictureBoxDog3.Width / 2 - labelDog3.Width / 2, labelDog3.Location.Y);
 
             //κάνουμε και τα labels του φαγητού resize
-            FixBowlLabelLocations();
             UpdateBowlLabelVisibility();
+            FixBowlLabelLocations();
 
             //αν υπάρχει τουλάχιστον ένα σπασμένο αντικείμενο τότε ενεργοποιούμε το κουμπί.
             HandleButton((from furniture in FormMain.FragileFurniture where furniture.Broken select furniture).Any());
@@ -118,57 +118,56 @@ namespace Smart_Home
         {
             //cat water
             labelCatWater.Visible = FormMain.Bowls[0].Capacity < 30;
-            if (FormMain.Bowls[0].Capacity < 30)
-            {
-                labelCatWater.ForeColor = Color.DarkGoldenrod;
-                labelCatWater.Text = "Αδειάζει";
-            }
-            else if (FormMain.Bowls[0].Capacity == 0)
+            if (FormMain.Bowls[0].Capacity < 6)
             {
                 labelCatWater.ForeColor = Color.Red;
                 labelCatWater.Text = "Άδειο";
             }
+            else if (FormMain.Bowls[0].Capacity < 30)
+            {
+                labelCatWater.ForeColor = Color.DarkGoldenrod;
+                labelCatWater.Text = "Αδειάζει";
+            }
 
             //cat food
             labelCatFood.Visible = FormMain.Bowls[2].Capacity < 30;
-            if (FormMain.Bowls[2].Capacity < 30)
-            {
-                labelCatFood.ForeColor = Color.DarkGoldenrod;
-                labelCatFood.Text = "Αδειάζει";
-            }
-            else if (FormMain.Bowls[2].Capacity == 0)
+            if (FormMain.Bowls[2].Capacity < 6)
             {
                 labelCatFood.ForeColor = Color.Red;
                 labelCatFood.Text = "Άδειο";
 
             }
+            else if (FormMain.Bowls[2].Capacity < 30)
+            {
+                labelCatFood.ForeColor = Color.DarkGoldenrod;
+                labelCatFood.Text = "Αδειάζει";
+            }
 
             //dog water
-            labelDogWater.Visible = FormMain.Bowls[2].Capacity < 30;
-            if (FormMain.Bowls[1].Capacity < 30)
-            {
-                labelDogWater.ForeColor = Color.DarkGoldenrod;
-                labelDogWater.Text = "Αδειάζει";
-            }
-            else if (FormMain.Bowls[1].Capacity == 0)
+            labelDogWater.Visible = FormMain.Bowls[1].Capacity < 30;
+            if (FormMain.Bowls[1].Capacity < 6)
             {
                 labelDogWater.ForeColor = Color.Red;
                 labelDogWater.Text = "Άδειο";
 
             }
+            else if (FormMain.Bowls[1].Capacity < 30)
+            {
+                labelDogWater.ForeColor = Color.DarkGoldenrod;
+                labelDogWater.Text = "Αδειάζει";
+            }
 
             //dog food
-            labelDogFood.Visible = FormMain.Bowls[2].Capacity < 30;
-            if (FormMain.Bowls[3].Capacity < 30)
-            {
-                labelDogFood.ForeColor = Color.DarkGoldenrod;
-                labelDogFood.Text = "Αδειάζει";
-            }
-            else if (FormMain.Bowls[3].Capacity == 0)
+            labelDogFood.Visible = FormMain.Bowls[3].Capacity < 30;
+            if (FormMain.Bowls[3].Capacity < 6)
             {
                 labelDogFood.ForeColor = Color.Red;
                 labelDogFood.Text = "Άδειο";
-
+            }
+            else if (FormMain.Bowls[3].Capacity < 30)
+            {
+                labelDogFood.ForeColor = Color.DarkGoldenrod;
+                labelDogFood.Text = "Αδειάζει";
             }
         }
 
@@ -178,8 +177,8 @@ namespace Smart_Home
             HandleButton((from furniture in FormMain.FragileFurniture where furniture.Broken select furniture).Any());
             Console.WriteLine("there are " + (from furniture in FormMain.FragileFurniture where furniture.Broken select furniture).ToArray().Length.ToString() + " broken furniture");
             UpdateProgressBars();
-            FixBowlLabelLocations();
             UpdateBowlLabelVisibility();
+            FixBowlLabelLocations();
         }
 
         private void buttonFixBrokenFurniture_Click(object sender, EventArgs e)
