@@ -80,6 +80,9 @@ namespace Smart_Home
             labelDog2.Location = new Point(pictureBoxDog2.Location.X + pictureBoxDog2.Width / 2 - labelDog2.Width / 2, labelDog2.Location.Y);
             labelDog3.Location = new Point(pictureBoxDog3.Location.X + pictureBoxDog3.Width / 2 - labelDog3.Width / 2, labelDog3.Location.Y);
 
+            //κάνουμε και τα labels του φαγητού resize
+            FixBowlLabelLocations();
+
             //αν υπάρχει τουλάχιστον ένα σπασμένο αντικείμενο τότε ενεργοποιούμε το κουμπί.
             HandleButton((from furniture in FormMain.FragileFurniture where furniture.Broken select furniture).Any());
 
@@ -102,11 +105,20 @@ namespace Smart_Home
             progressBarDogFood.Value  = FormMain.Bowls[3].Capacity;
         }
 
+        private void FixBowlLabelLocations()
+        {
+            labelCatWater.Location = new Point(pictureBoxCatBowlWater.Location.X + pictureBoxCatBowlWater.Width / 2 - labelCatWater.Width / 2, labelCatWater.Location.Y);
+            labelCatFood.Location = new Point(pictureBoxCatBowlFood.Location.X + pictureBoxCatBowlFood.Width / 2 - labelCatFood.Width / 2, labelCatFood.Location.Y);
+            labelDogWater.Location = new Point(pictureBoxDogBowlWater.Location.X + pictureBoxDogBowlWater.Width / 2 - labelDogWater.Width / 2, labelDogWater.Location.Y);
+            labelDogFood.Location = new Point(pictureBoxDogBowlFood.Location.X + pictureBoxDogBowlFood.Width / 2 - labelDogFood.Width / 2, labelDogFood.Location.Y);
+        }
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             HandleButton((from furniture in FormMain.FragileFurniture where furniture.Broken select furniture).Any());
             Console.WriteLine("there are " + (from furniture in FormMain.FragileFurniture where furniture.Broken select furniture).ToArray().Length.ToString() + " broken furniture");
             UpdateProgressBars();
+            FixBowlLabelLocations();
         }
 
         private void buttonFixBrokenFurniture_Click(object sender, EventArgs e)
