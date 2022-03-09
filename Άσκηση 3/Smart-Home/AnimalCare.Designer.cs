@@ -174,17 +174,23 @@ namespace Smart_Home
             // 
             // pictureBoxCatBowlWater
             // 
+            this.pictureBoxCatBowlWater.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxCatBowlWater.Image = global::Smart_Home.Properties.Resources.cat_water;
             this.pictureBoxCatBowlWater.Location = new System.Drawing.Point(67, 190);
             this.pictureBoxCatBowlWater.Name = "pictureBoxCatBowlWater";
             this.pictureBoxCatBowlWater.Size = new System.Drawing.Size(100, 100);
+            this.pictureBoxCatBowlWater.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxCatBowlWater.TabIndex = 8;
             this.pictureBoxCatBowlWater.TabStop = false;
             // 
             // pictureBoxCatBowlFood
             // 
+            this.pictureBoxCatBowlFood.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxCatBowlFood.Image = global::Smart_Home.Properties.Resources.cat_bowl;
             this.pictureBoxCatBowlFood.Location = new System.Drawing.Point(173, 190);
             this.pictureBoxCatBowlFood.Name = "pictureBoxCatBowlFood";
             this.pictureBoxCatBowlFood.Size = new System.Drawing.Size(100, 100);
+            this.pictureBoxCatBowlFood.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBoxCatBowlFood.TabIndex = 9;
             this.pictureBoxCatBowlFood.TabStop = false;
             // 
