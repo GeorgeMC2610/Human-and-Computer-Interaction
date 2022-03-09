@@ -220,6 +220,9 @@
   <data name="sneakers1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sneakers1.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="on_off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\on_off.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="athlitika1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\athlitika1.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -238,6 +241,9 @@
   <data name="garage_dark_light" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\garage_dark_light.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="google_maps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\google_maps.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="shoe_case2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\shoe_case2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -246,6 +252,9 @@
   </data>
   <data name="skarpinia2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\skarpinia2.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shoe_case11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shoe_case11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="hole-dark-light" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hole-dark-light1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -274,17 +283,14 @@
   <data name="coffee_machine_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\coffee_machine_21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="shoe_case11" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\shoe_case11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="treximo_odigies" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\treximo_odigies.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="background_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\background_21.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pawprint" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pawprint1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="treximo_odigies" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\treximo_odigies.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="temperature" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\temperature1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -313,7 +319,7 @@
   <data name="bedroom-medium-light" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bedroom-medium-light1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="google_maps" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\google_maps.jfif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="on_off1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\on_off1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

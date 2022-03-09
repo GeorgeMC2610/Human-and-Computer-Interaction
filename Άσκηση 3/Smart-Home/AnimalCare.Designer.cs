@@ -58,6 +58,9 @@ namespace Smart_Home
             this.labelCatFood = new System.Windows.Forms.Label();
             this.labelDogWater = new System.Windows.Forms.Label();
             this.labelDogFood = new System.Windows.Forms.Label();
+            this.buttonAutoFeed = new System.Windows.Forms.Button();
+            this.labelAutoFeed = new System.Windows.Forms.Label();
+            this.labelAutoFeedON_OFF = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCat1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDog1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCat2)).BeginInit();
@@ -361,6 +364,43 @@ namespace Smart_Home
             this.labelDogFood.TabIndex = 25;
             this.labelDogFood.Text = "label1";
             // 
+            // buttonAutoFeed
+            // 
+            this.buttonAutoFeed.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonAutoFeed.BackColor = System.Drawing.Color.DarkRed;
+            this.buttonAutoFeed.BackgroundImage = global::Smart_Home.Properties.Resources.on_off1;
+            this.buttonAutoFeed.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonAutoFeed.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonAutoFeed.Location = new System.Drawing.Point(382, 205);
+            this.buttonAutoFeed.Name = "buttonAutoFeed";
+            this.buttonAutoFeed.Size = new System.Drawing.Size(50, 50);
+            this.buttonAutoFeed.TabIndex = 26;
+            this.buttonAutoFeed.UseVisualStyleBackColor = false;
+            // 
+            // labelAutoFeed
+            // 
+            this.labelAutoFeed.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelAutoFeed.AutoSize = true;
+            this.labelAutoFeed.BackColor = System.Drawing.Color.Transparent;
+            this.labelAutoFeed.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAutoFeed.Location = new System.Drawing.Point(349, 185);
+            this.labelAutoFeed.Name = "labelAutoFeed";
+            this.labelAutoFeed.Size = new System.Drawing.Size(119, 15);
+            this.labelAutoFeed.TabIndex = 27;
+            this.labelAutoFeed.Text = "Αυτόματη Ταΐστρα";
+            // 
+            // labelAutoFeedON_OFF
+            // 
+            this.labelAutoFeedON_OFF.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelAutoFeedON_OFF.AutoSize = true;
+            this.labelAutoFeedON_OFF.BackColor = System.Drawing.Color.Transparent;
+            this.labelAutoFeedON_OFF.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAutoFeedON_OFF.Location = new System.Drawing.Point(349, 258);
+            this.labelAutoFeedON_OFF.Name = "labelAutoFeedON_OFF";
+            this.labelAutoFeedON_OFF.Size = new System.Drawing.Size(112, 15);
+            this.labelAutoFeedON_OFF.TabIndex = 28;
+            this.labelAutoFeedON_OFF.Text = "ΑΝΟΙΧΤΗ/ΚΛΕΙΣΤΗ";
+            // 
             // AnimalCare
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -368,6 +408,9 @@ namespace Smart_Home
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.labelAutoFeedON_OFF);
+            this.Controls.Add(this.labelAutoFeed);
+            this.Controls.Add(this.buttonAutoFeed);
             this.Controls.Add(this.labelDogFood);
             this.Controls.Add(this.labelDogWater);
             this.Controls.Add(this.labelCatFood);
@@ -443,5 +486,8 @@ namespace Smart_Home
         private System.Windows.Forms.Label labelCatFood;
         private System.Windows.Forms.Label labelDogWater;
         private System.Windows.Forms.Label labelDogFood;
+        private System.Windows.Forms.Button buttonAutoFeed;
+        private System.Windows.Forms.Label labelAutoFeed;
+        private System.Windows.Forms.Label labelAutoFeedON_OFF;
     }
 }

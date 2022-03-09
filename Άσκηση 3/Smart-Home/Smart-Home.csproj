@@ -302,5 +302,11 @@
   <ItemGroup>
     <None Include="Resources\google_maps.jfif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\on_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\on_off1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
