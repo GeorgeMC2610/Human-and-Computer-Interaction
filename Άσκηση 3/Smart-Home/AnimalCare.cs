@@ -82,7 +82,7 @@ namespace Smart_Home
 
             //κάνουμε και τα labels του φαγητού resize
             UpdateBowlLabelVisibility();
-
+            UpdateAutoFeedLabel();
             FixBowlLabelLocations();
 
             //αν υπάρχει τουλάχιστον ένα σπασμένο αντικείμενο τότε ενεργοποιούμε το κουμπί.
@@ -99,10 +99,13 @@ namespace Smart_Home
             buttonFixBrokenFurniture.ForeColor = (handling) ? Color.Black : Color.DarkGray;
         }
 
-        private void UpdateAutoFeedLabelLocation()
+        private void UpdateAutoFeedLabel()
         {
+            labelAutoFeedON_OFF.Text = FormMain.AutoFeedEnabled ? "ΑΝΟΙΧΤΗ" : "ΚΛΕΙΣΤΗ";
+            buttonAutoFeed.BackColor = FormMain.AutoFeedEnabled ? Color.DarkGreen : Color.DarkRed;
+
             labelAutoFeed.Location       = new Point(buttonAutoFeed.Location.X + buttonAutoFeed.Width / 2 - labelAutoFeed.Width / 2, labelAutoFeed.Location.Y);
-            labelAutoFeedON_OFF.Location = new Point(buttonAutoFeed.Location.X + buttonAutoFeed.Width / 2 - labelAutoFeed.Width / 2, labelAutoFeed.Location.Y);
+            labelAutoFeedON_OFF.Location = new Point(buttonAutoFeed.Location.X + buttonAutoFeed.Width / 2 - labelAutoFeedON_OFF.Width / 2, labelAutoFeedON_OFF.Location.Y);
         }
 
         private void UpdateProgressBars()
@@ -201,6 +204,12 @@ namespace Smart_Home
 
             Console.WriteLine("Filled all bowls.");
             UpdateProgressBars();
+        }
+
+        private void buttonAutoFeed_Click(object sender, EventArgs e)
+        {
+            FormMain.AutoFeedEnabled = !(FormMain.AutoFeedEnabled);
+            UpdateAutoFeedLabel();
         }
     }
 }

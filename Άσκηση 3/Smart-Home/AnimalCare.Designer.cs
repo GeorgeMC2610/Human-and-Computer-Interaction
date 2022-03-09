@@ -376,6 +376,7 @@ namespace Smart_Home
             this.buttonAutoFeed.Size = new System.Drawing.Size(50, 50);
             this.buttonAutoFeed.TabIndex = 26;
             this.buttonAutoFeed.UseVisualStyleBackColor = false;
+            this.buttonAutoFeed.Click += new System.EventHandler(this.buttonAutoFeed_Click);
             // 
             // labelAutoFeed
             // 
