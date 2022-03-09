@@ -276,6 +276,7 @@ namespace Smart_Home
             // 
             // progressBarCatWater
             // 
+            this.progressBarCatWater.ForeColor = System.Drawing.Color.Transparent;
             this.progressBarCatWater.Location = new System.Drawing.Point(67, 296);
             this.progressBarCatWater.Name = "progressBarCatWater";
             this.progressBarCatWater.Size = new System.Drawing.Size(100, 23);
@@ -283,6 +284,7 @@ namespace Smart_Home
             // 
             // progressBarCatFood
             // 
+            this.progressBarCatFood.ForeColor = System.Drawing.Color.Transparent;
             this.progressBarCatFood.Location = new System.Drawing.Point(173, 296);
             this.progressBarCatFood.Name = "progressBarCatFood";
             this.progressBarCatFood.Size = new System.Drawing.Size(100, 23);
@@ -290,6 +292,8 @@ namespace Smart_Home
             // 
             // progressBarDogWater
             // 
+            this.progressBarDogWater.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.progressBarDogWater.ForeColor = System.Drawing.Color.Transparent;
             this.progressBarDogWater.Location = new System.Drawing.Point(525, 296);
             this.progressBarDogWater.Name = "progressBarDogWater";
             this.progressBarDogWater.Size = new System.Drawing.Size(100, 23);
@@ -297,6 +301,8 @@ namespace Smart_Home
             // 
             // progressBarDogFood
             // 
+            this.progressBarDogFood.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.progressBarDogFood.ForeColor = System.Drawing.Color.Transparent;
             this.progressBarDogFood.Location = new System.Drawing.Point(631, 296);
             this.progressBarDogFood.Name = "progressBarDogFood";
             this.progressBarDogFood.Size = new System.Drawing.Size(100, 23);
