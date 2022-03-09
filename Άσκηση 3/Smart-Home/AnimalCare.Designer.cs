@@ -54,6 +54,10 @@ namespace Smart_Home
             this.progressBarCatFood = new System.Windows.Forms.ProgressBar();
             this.progressBarDogWater = new System.Windows.Forms.ProgressBar();
             this.progressBarDogFood = new System.Windows.Forms.ProgressBar();
+            this.labelCatWater = new System.Windows.Forms.Label();
+            this.labelCatFood = new System.Windows.Forms.Label();
+            this.labelDogWater = new System.Windows.Forms.Label();
+            this.labelDogFood = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCat1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDog1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCat2)).BeginInit();
@@ -309,6 +313,54 @@ namespace Smart_Home
             this.progressBarDogFood.Size = new System.Drawing.Size(100, 23);
             this.progressBarDogFood.TabIndex = 21;
             // 
+            // labelCatWater
+            // 
+            this.labelCatWater.AutoSize = true;
+            this.labelCatWater.BackColor = System.Drawing.Color.Transparent;
+            this.labelCatWater.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCatWater.ForeColor = System.Drawing.Color.Goldenrod;
+            this.labelCatWater.Location = new System.Drawing.Point(98, 174);
+            this.labelCatWater.Name = "labelCatWater";
+            this.labelCatWater.Size = new System.Drawing.Size(43, 13);
+            this.labelCatWater.TabIndex = 22;
+            this.labelCatWater.Text = "label1";
+            // 
+            // labelCatFood
+            // 
+            this.labelCatFood.AutoSize = true;
+            this.labelCatFood.BackColor = System.Drawing.Color.Transparent;
+            this.labelCatFood.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCatFood.ForeColor = System.Drawing.Color.Goldenrod;
+            this.labelCatFood.Location = new System.Drawing.Point(200, 174);
+            this.labelCatFood.Name = "labelCatFood";
+            this.labelCatFood.Size = new System.Drawing.Size(43, 13);
+            this.labelCatFood.TabIndex = 23;
+            this.labelCatFood.Text = "label1";
+            // 
+            // labelDogWater
+            // 
+            this.labelDogWater.AutoSize = true;
+            this.labelDogWater.BackColor = System.Drawing.Color.Transparent;
+            this.labelDogWater.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDogWater.ForeColor = System.Drawing.Color.Goldenrod;
+            this.labelDogWater.Location = new System.Drawing.Point(556, 174);
+            this.labelDogWater.Name = "labelDogWater";
+            this.labelDogWater.Size = new System.Drawing.Size(43, 13);
+            this.labelDogWater.TabIndex = 24;
+            this.labelDogWater.Text = "label1";
+            // 
+            // labelDogFood
+            // 
+            this.labelDogFood.AutoSize = true;
+            this.labelDogFood.BackColor = System.Drawing.Color.Transparent;
+            this.labelDogFood.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelDogFood.ForeColor = System.Drawing.Color.Goldenrod;
+            this.labelDogFood.Location = new System.Drawing.Point(662, 174);
+            this.labelDogFood.Name = "labelDogFood";
+            this.labelDogFood.Size = new System.Drawing.Size(43, 13);
+            this.labelDogFood.TabIndex = 25;
+            this.labelDogFood.Text = "label1";
+            // 
             // AnimalCare
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -316,6 +368,10 @@ namespace Smart_Home
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.labelDogFood);
+            this.Controls.Add(this.labelDogWater);
+            this.Controls.Add(this.labelCatFood);
+            this.Controls.Add(this.labelCatWater);
             this.Controls.Add(this.progressBarDogFood);
             this.Controls.Add(this.progressBarDogWater);
             this.Controls.Add(this.progressBarCatFood);
@@ -383,5 +439,9 @@ namespace Smart_Home
         private System.Windows.Forms.ProgressBar progressBarCatFood;
         private System.Windows.Forms.ProgressBar progressBarDogWater;
         private System.Windows.Forms.ProgressBar progressBarDogFood;
+        private System.Windows.Forms.Label labelCatWater;
+        private System.Windows.Forms.Label labelCatFood;
+        private System.Windows.Forms.Label labelDogWater;
+        private System.Windows.Forms.Label labelDogFood;
     }
 }
