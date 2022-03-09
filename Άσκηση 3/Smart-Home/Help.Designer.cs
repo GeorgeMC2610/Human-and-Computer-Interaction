@@ -457,6 +457,7 @@ namespace Smart_Home
             this.button22.TabIndex = 65;
             this.button22.Text = "Αυτόματη Ταΐστρα";
             this.button22.UseVisualStyleBackColor = false;
+            this.button22.Click += new System.EventHandler(this.button22_Click);
             // 
             // button23
             // 
@@ -472,6 +473,7 @@ namespace Smart_Home
             this.button23.TabIndex = 66;
             this.button23.Text = "Επισκευή Επίπλων";
             this.button23.UseVisualStyleBackColor = false;
+            this.button23.Click += new System.EventHandler(this.button23_Click);
             // 
             // Help
             // 
