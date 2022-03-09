@@ -57,5 +57,10 @@ namespace Smart_Home
             InitiateSoundEffect("sound/plate.wav");
         }
 
+        public static void Refill()
+        {
+            InitiateSoundEffect("sound/refill.wav");
+        }
+
     }
 }

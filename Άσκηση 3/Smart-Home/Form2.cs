@@ -26,6 +26,7 @@ namespace Smart_Home
 
         private static readonly Random random = new Random();
         public static bool isHome { get; private set; }
+        public static bool AutoFeedEnabled { get; set; }
 
         // αντικείμενο φόρμας διαχέρισης συσκευών
         Remote_Device_Control rmctrl;
@@ -82,6 +83,9 @@ namespace Smart_Home
 
             CatImages = Shuffle(CatImages);
             DogImages = Shuffle(DogImages);
+
+            //by default έχουμε ανοιχτή την αυτόματη ταΐστρα.
+            AutoFeedEnabled = true;
         }
 
         public int[] Shuffle(int[] array)
@@ -103,8 +107,6 @@ namespace Smart_Home
         private void timerAnimals_Tick(object sender, EventArgs e)
         {
             string[] outside_activities = { "Βόλτα", "Γυμναστική", "Δουλειά", "Περπάτημα", "Αθλήματα", "Τρέξιμο", "Ψώνια", "Συνέντευξη" };
-            Activities.ForEach(o => Console.WriteLine(o));
-
 
             //θα δίνουμε notification στον χρήστη ότι κάτι πάει λάθος, όταν θα υπάρχει τουλάχιστον ένα μπωλ με λιγότερο από 20% περιεκτικότητα ή αν υπάρχει τουλάχιστον ένα σπασμένο αντικείμενο.
             labelAnimalWarning.Visible = (from bowl in Bowls where bowl.Capacity < 20 select bowl.Capacity).Any() || (from furniture in FragileFurniture where furniture.Broken select furniture).Any();
@@ -120,9 +122,16 @@ namespace Smart_Home
                                                                                         activity == outside_activities[7] 
                                                      select activity).Any();
 
+            //θα δείχνουμε στον χρήστη ότι δεν έχει δραστηριότητες ανάλογα με το μέγεθος της λίστας.
             labelSchedule.Visible = Activities.Count == 0;
-
             Console.WriteLine(isHome ? "You are currently home." : "You're currently outside.");
+
+            //αυτόματη ταΐστρα
+            if (AutoFeedEnabled)
+                foreach (Bowl b in Bowls)
+                    if (b.Capacity < 30)
+                        b.Capacity += 35;
+
 
             //Αν ο Χρήστης είναι σπίτι, τότε τα ζώα έχουνε μικρή πιθανότητα να σπάσουν κάτι ή να είναι ζωηρά.
             if (isHome)

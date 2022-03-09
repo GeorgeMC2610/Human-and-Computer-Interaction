@@ -82,6 +82,7 @@ namespace Smart_Home
 
             //κάνουμε και τα labels του φαγητού resize
             UpdateBowlLabelVisibility();
+
             FixBowlLabelLocations();
 
             //αν υπάρχει τουλάχιστον ένα σπασμένο αντικείμενο τότε ενεργοποιούμε το κουμπί.
@@ -96,6 +97,12 @@ namespace Smart_Home
             buttonFixBrokenFurniture.Enabled   =  handling;
             buttonFixBrokenFurniture.BackColor = (handling) ? Color.WhiteSmoke : Color.Gray;
             buttonFixBrokenFurniture.ForeColor = (handling) ? Color.Black : Color.DarkGray;
+        }
+
+        private void UpdateAutoFeedLabelLocation()
+        {
+            labelAutoFeed.Location       = new Point(buttonAutoFeed.Location.X + buttonAutoFeed.Width / 2 - labelAutoFeed.Width / 2, labelAutoFeed.Location.Y);
+            labelAutoFeedON_OFF.Location = new Point(buttonAutoFeed.Location.X + buttonAutoFeed.Width / 2 - labelAutoFeed.Width / 2, labelAutoFeed.Location.Y);
         }
 
         private void UpdateProgressBars()
