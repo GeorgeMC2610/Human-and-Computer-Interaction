@@ -318,7 +318,7 @@ namespace Smart_Home
             this.labelCatWater.AutoSize = true;
             this.labelCatWater.BackColor = System.Drawing.Color.Transparent;
             this.labelCatWater.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCatWater.ForeColor = System.Drawing.Color.Goldenrod;
+            this.labelCatWater.ForeColor = System.Drawing.Color.Red;
             this.labelCatWater.Location = new System.Drawing.Point(98, 174);
             this.labelCatWater.Name = "labelCatWater";
             this.labelCatWater.Size = new System.Drawing.Size(43, 13);
