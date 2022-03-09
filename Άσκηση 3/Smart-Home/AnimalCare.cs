@@ -82,6 +82,9 @@ namespace Smart_Home
 
             //αν υπάρχει τουλάχιστον ένα σπασμένο αντικείμενο τότε ενεργοποιούμε το κουμπί.
             HandleButton((from furniture in FormMain.FragileFurniture where furniture.Broken select furniture).Any());
+
+            //βάζουμε την ποσότητα φαγητού και νερού σωστά στα progress bars
+            UpdateProgressBars();
         }
 
         private void HandleButton(bool handling)
@@ -91,10 +94,19 @@ namespace Smart_Home
             buttonFixBrokenFurniture.ForeColor = (handling) ? Color.Black : Color.DarkGray;
         }
 
+        private void UpdateProgressBars()
+        {
+            progressBarCatWater.Value = FormMain.Bowls[0].Capacity;
+            progressBarDogWater.Value = FormMain.Bowls[1].Capacity;
+            progressBarCatFood.Value  = FormMain.Bowls[2].Capacity;
+            progressBarDogFood.Value  = FormMain.Bowls[3].Capacity;
+        }
+
         private void timer1_Tick(object sender, EventArgs e)
         {
             HandleButton((from furniture in FormMain.FragileFurniture where furniture.Broken select furniture).Any());
             Console.WriteLine("there are " + (from furniture in FormMain.FragileFurniture where furniture.Broken select furniture).ToArray().Length.ToString() + " broken furniture");
+            UpdateProgressBars();
         }
 
         private void buttonFixBrokenFurniture_Click(object sender, EventArgs e)
@@ -109,6 +121,7 @@ namespace Smart_Home
                 b.Capacity = Bowl.MaxCapacity;
 
             Console.WriteLine("Filled all bowls.");
+            UpdateProgressBars();
         }
     }
 }

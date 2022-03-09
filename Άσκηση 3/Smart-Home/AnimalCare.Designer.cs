@@ -276,10 +276,11 @@ namespace Smart_Home
             // 
             // progressBarCatWater
             // 
-            this.progressBarCatWater.ForeColor = System.Drawing.Color.Transparent;
+            this.progressBarCatWater.ForeColor = System.Drawing.Color.DarkRed;
             this.progressBarCatWater.Location = new System.Drawing.Point(67, 296);
             this.progressBarCatWater.Name = "progressBarCatWater";
             this.progressBarCatWater.Size = new System.Drawing.Size(100, 23);
+            this.progressBarCatWater.Step = 1;
             this.progressBarCatWater.TabIndex = 18;
             // 
             // progressBarCatFood
