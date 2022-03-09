@@ -106,7 +106,7 @@ namespace Smart_Home
             // pictureBoxCat1
             // 
             this.pictureBoxCat1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxCat1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxCat1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBoxCat1.Location = new System.Drawing.Point(13, 13);
             this.pictureBoxCat1.Name = "pictureBoxCat1";
             this.pictureBoxCat1.Size = new System.Drawing.Size(100, 100);
@@ -118,7 +118,7 @@ namespace Smart_Home
             // 
             this.pictureBoxDog1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxDog1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxDog1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxDog1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBoxDog1.Location = new System.Drawing.Point(688, 13);
             this.pictureBoxDog1.Name = "pictureBoxDog1";
             this.pictureBoxDog1.Size = new System.Drawing.Size(100, 100);
@@ -129,7 +129,7 @@ namespace Smart_Home
             // pictureBoxCat2
             // 
             this.pictureBoxCat2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxCat2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxCat2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBoxCat2.Location = new System.Drawing.Point(119, 13);
             this.pictureBoxCat2.Name = "pictureBoxCat2";
             this.pictureBoxCat2.Size = new System.Drawing.Size(100, 100);
@@ -140,7 +140,7 @@ namespace Smart_Home
             // pictureBoxCat3
             // 
             this.pictureBoxCat3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxCat3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxCat3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBoxCat3.Location = new System.Drawing.Point(225, 13);
             this.pictureBoxCat3.Name = "pictureBoxCat3";
             this.pictureBoxCat3.Size = new System.Drawing.Size(100, 100);
@@ -152,7 +152,7 @@ namespace Smart_Home
             // 
             this.pictureBoxDog2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxDog2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxDog2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxDog2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBoxDog2.Location = new System.Drawing.Point(582, 13);
             this.pictureBoxDog2.Name = "pictureBoxDog2";
             this.pictureBoxDog2.Size = new System.Drawing.Size(100, 100);
@@ -164,7 +164,7 @@ namespace Smart_Home
             // 
             this.pictureBoxDog3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxDog3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxDog3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxDog3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBoxDog3.Location = new System.Drawing.Point(476, 13);
             this.pictureBoxDog3.Name = "pictureBoxDog3";
             this.pictureBoxDog3.Size = new System.Drawing.Size(100, 100);
