@@ -110,14 +110,14 @@ namespace Smart_Home
             labelAnimalWarning.Visible = (from bowl in Bowls where bowl.Capacity < 20 select bowl.Capacity).Any() || (from furniture in FragileFurniture where furniture.Broken select furniture).Any();
 
             //θα ξέρουμε ότι ο χρήστης είναι σπίτι αν δεν έχει δραστηριότητες, ή, αν οι δραστηριότητες, που έχει, είναι όλες για μέσα.
-            isHome = Activities.Count == 0 ? true : (from activity in Activities where activity == outside_activities[0] || 
-                                                                                       activity == outside_activities[1] || 
-                                                                                       activity == outside_activities[2] || 
-                                                                                       activity == outside_activities[3] || 
-                                                                                       activity == outside_activities[4] || 
-                                                                                       activity == outside_activities[5] || 
-                                                                                       activity == outside_activities[6] || 
-                                                                                       activity == outside_activities[7] 
+            isHome = Activities.Count == 0 ? true : !(from activity in Activities where activity == outside_activities[0] || 
+                                                                                        activity == outside_activities[1] || 
+                                                                                        activity == outside_activities[2] || 
+                                                                                        activity == outside_activities[3] || 
+                                                                                        activity == outside_activities[4] || 
+                                                                                        activity == outside_activities[5] || 
+                                                                                        activity == outside_activities[6] || 
+                                                                                        activity == outside_activities[7] 
                                                      select activity).Any();
 
             labelSchedule.Visible = Activities.Count == 0;
