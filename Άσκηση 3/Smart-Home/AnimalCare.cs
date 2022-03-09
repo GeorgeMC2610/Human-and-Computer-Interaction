@@ -204,6 +204,7 @@ namespace Smart_Home
 
             Console.WriteLine("Filled all bowls.");
             UpdateProgressBars();
+            SoundEffects.Refill();
         }
 
         private void buttonAutoFeed_Click(object sender, EventArgs e)
